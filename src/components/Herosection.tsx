@@ -6,7 +6,7 @@ function Herosection() {
   return (
     <div className="herosection">
       <div className="w-5/6 mx-auto py-40 absolute top-0 left-0 right-0 flex flex-col gap-4">
-        <h1 className="text-[140px] text-white w-3/4 font-medium leading-none">
+        <h1 className="text-[130px] text-white w-3/4 font-medium leading-none">
           Charity is an act of a Soft Heart
         </h1>
         <p className="text-white w-2/4 text-2xl">
