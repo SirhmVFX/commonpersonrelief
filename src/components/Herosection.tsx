@@ -4,7 +4,7 @@ import { BsDot } from "react-icons/bs";
 
 function Herosection() {
   return (
-    <div className="herosection">
+    <div className="herosection relative">
       <div className="w-5/6 mx-auto py-40 absolute top-0 left-0 right-0 flex flex-col gap-4">
         <h1 className="text-[130px] text-white w-3/4 font-medium leading-none">
           Charity is an act of a Soft Heart
@@ -23,7 +23,7 @@ function Herosection() {
           </button>
         </div>
       </div>
-      <div className="w-5/6 pt-[662px] mx-auto absolute  left-0 right-0">
+      <div className="w-5/6 pt-[37%] mx-auto absolute  left-0 right-0">
         <div className="overflow-hidden flex gap-4 items-center whitespace-nowrap animate-marquee">
           <p className="text-white text-2xl ">EMPOWERMENT</p>
           <BsDot className="text-white text-2xl " />
@@ -38,7 +38,7 @@ function Herosection() {
           <p className="text-white text-2xl ">SUSTAINABILITY</p>
         </div>
       </div>
-      <div className="w-5/6 mx-auto absolute  left-0 right-0 pt-[750px]">
+      <div className="w-5/6 mx-auto absolute  left-0 right-0 pt-[40%]">
         <div className="overflow-hidden flex gap-4 items-center whitespace-nowrap animate-marquee">
           <div className="w-[950px] h-[300px]">
             <Image

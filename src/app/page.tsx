@@ -58,7 +58,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="w-5/6 mx-auto pt-[200px] flex flex-col gap-4">
+      <div className="w-5/6 mx-auto pt-[120px] flex flex-col gap-4">
         <div>
           <p className="text-gray-500">About us</p>
           <h1 className="text-7xl font-medium">Who we are</h1>
