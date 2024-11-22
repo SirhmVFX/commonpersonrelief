@@ -28,11 +28,11 @@ function Header() {
   const [showGiveDropdown, setShowGiveDropdown] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const closeAllDropdowns = () => {
-    setShowWhoDropdown(false);
-    setShowServeDropdown(false);
-    setShowGiveDropdown(false);
-  };
+  // const closeAllDropdowns = () => {
+  //   setShowWhoDropdown(false);
+  //   setShowServeDropdown(false);
+  //   setShowGiveDropdown(false);
+  // };
 
   return (
     <>
