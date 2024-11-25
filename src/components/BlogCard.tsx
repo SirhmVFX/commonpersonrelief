@@ -6,8 +6,8 @@ interface Blog {
 }
 function BlogCard({ title, image, description }: Blog) {
   return (
-    <div className="flex gap-14">
-      <div className="w-1/2 h-[350px]">
+    <div className="md:flex gap-14">
+      <div className="md:w-1/2 h-[350px]">
         <Image
           src={image}
           alt="news"
@@ -16,7 +16,7 @@ function BlogCard({ title, image, description }: Blog) {
           className="w-full h-full object-cover"
         />
       </div>
-      <div className="w-1/2 flex flex-col justify-between items-start">
+      <div className="md:w-1/2 flex flex-col justify-between items-start">
         <div className="flex flex-col gap-4 items-start">
           <h1 className="text-[38px] leading-none font-medium">{title}</h1>
           <p className="text-gray-500">{description}</p>

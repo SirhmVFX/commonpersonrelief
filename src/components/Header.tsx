@@ -19,7 +19,7 @@ import {
   BiMenu,
 } from "react-icons/bi";
 import { FaHandshake } from "react-icons/fa";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { CgClose } from "react-icons/cg";
 
 function Header() {
@@ -27,12 +27,26 @@ function Header() {
   const [showServeDropdown, setShowServeDropdown] = useState(false);
   const [showGiveDropdown, setShowGiveDropdown] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
-  // const closeAllDropdowns = () => {
-  //   setShowWhoDropdown(false);
-  //   setShowServeDropdown(false);
-  //   setShowGiveDropdown(false);
-  // };
+  // Handle scroll effect
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    // Add scroll event listener
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <>
@@ -41,13 +55,14 @@ function Header() {
           showWhoDropdown ||
           showServeDropdown ||
           showGiveDropdown ||
-          isMobileMenuOpen
+          isMobileMenuOpen ||
+          isScrolled
             ? "bg-black/30 backdrop-blur-md"
             : "bg-transparent"
         }`}
       >
         <div className="mx-auto w-5/6 flex justify-between items-center p-4">
-          <div className="w-[125px]">
+          <Link href="/" className="w-[125px]">
             <Image
               src="/images/logo.png"
               alt="Common Person Relief"
@@ -55,7 +70,7 @@ function Header() {
               height={100}
               className="w-full h-full object-contain"
             />
-          </div>
+          </Link>
 
           {/* Desktop Menu */}
           <div className="hidden lg:flex gap-10 items-center">
@@ -139,13 +154,13 @@ function Header() {
                   }`}
                 >
                   <Link
-                    href="/organization-leaders"
+                    href="/organisation-leaders"
                     className="block text-white hover:text-primarycolor py-2"
                   >
                     Our Organization and leaders
                   </Link>
                   <Link
-                    href="/mission-vision"
+                    href="/who-we-are/mission-vision"
                     className="block text-white hover:text-primarycolor py-2"
                   >
                     Our Mission and Vision
@@ -252,7 +267,7 @@ function Header() {
             <div className="grid grid-cols-3 gap-4">
               {/* Who we are dropdown content */}
               <Link
-                href="/organization-leaders"
+                href="/who-we-are/organisation-leaders"
                 className="flex items-start gap-3 p-8 hover:bg-[#ffffff10] rounded-md"
               >
                 <div className="text-primarycolor text-3xl mt-1">
@@ -269,7 +284,7 @@ function Header() {
               </Link>
 
               <Link
-                href="/mission-vision"
+                href="/who-we-are/mission-vision"
                 className="flex items-start gap-3 p-8 hover:bg-[#ffffff10] rounded-md"
               >
                 <div className="text-primarycolor text-3xl mt-1">
@@ -286,7 +301,7 @@ function Header() {
               </Link>
 
               <Link
-                href="/initiatives"
+                href="/who-we-are/initiatives"
                 className="flex items-start gap-3 p-8 hover:bg-[#ffffff10] rounded-md"
               >
                 <div className="text-primarycolor text-3xl mt-1">
