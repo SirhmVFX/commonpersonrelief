@@ -318,7 +318,7 @@ function Header() {
               </Link>
 
               <Link
-                href="/partners"
+                href="/who-we-are/partners"
                 className="flex items-start gap-3 p-8 hover:bg-[#ffffff10] rounded-md"
               >
                 <div className="text-primarycolor text-3xl mt-1">
@@ -531,7 +531,7 @@ function Header() {
               </Link>
 
               <Link
-                href="/partner"
+                href="/who-we-are/partners"
                 className="flex items-start gap-3 p-3 hover:bg-[#ffffff10] rounded-md"
               >
                 <div className="text-primarycolor text-3xl mt-1">
