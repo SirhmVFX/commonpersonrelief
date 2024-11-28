@@ -90,7 +90,7 @@ function Header() {
             <div>
               <Link
                 className="text-white hover:text-primarycolor flex items-center"
-                href="/"
+                href="/what-we-serve"
                 onMouseEnter={() => {
                   setShowWhoDropdown(false);
                   setShowServeDropdown(true);
@@ -111,18 +111,21 @@ function Header() {
             >
               Get Aid
             </Link>
-            <Link className="text-white hover:text-primarycolor " href="/">
+            <Link className="text-white hover:text-primarycolor " href="/about">
+              About Us
+            </Link>
+            <Link className="text-white hover:text-primarycolor " href="/contact">
               Contact Us
             </Link>
-            <Link className="text-white hover:text-primarycolor " href="/">
+            <Link className="text-white hover:text-primarycolor " href="/who-we-are/stories">
               News and Events
             </Link>
-            <Link className="text-white hover:text-primarycolor " href="/">
+            <Link className="text-white hover:text-primarycolor " href="/volunteer">
               Volunteer
             </Link>
-            <button className="bg-primarycolor text-white p-3 rounded-md">
+            <Link href="/donate" className="bg-primarycolor text-white p-3 rounded-md">
               <BiHeart />
-            </button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -190,7 +193,7 @@ function Header() {
                     Emergency Relief
                   </Link>
                   <Link
-                    href="/food-programs"
+                    href="/what-we-serve/#food-programs"
                     className="block text-white hover:text-primarycolor py-2"
                   >
                     Food Programs
@@ -229,6 +232,13 @@ function Header() {
               </div>
 
               <Link
+                href="/about"
+                className="block text-white hover:text-primarycolor py-2"
+              >
+                About Us
+              </Link>
+
+              <Link
                 href="/"
                 className="block text-white hover:text-primarycolor py-2"
               >
@@ -246,9 +256,9 @@ function Header() {
               >
                 Volunteer
               </Link>
-              <button className="bg-primarycolor text-white p-3 rounded-md w-full flex items-center justify-center gap-2">
+              <Link href={"/donate"} className="bg-primarycolor text-white p-3 rounded-md w-full flex items-center justify-center gap-2">
                 <BiHeart /> Donate Now
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -352,7 +362,7 @@ function Header() {
               </Link>
 
               <Link
-                href="/stories"
+                href="/who-we-are/stories"
                 className="flex items-start gap-3 p-8 hover:bg-[#ffffff10] rounded-md"
               >
                 <div className="text-primarycolor text-3xl mt-1">
@@ -381,25 +391,9 @@ function Header() {
           <div className="mx-auto w-5/6">
             <div className="grid grid-cols-3 gap-4">
               {/* What we serve dropdown content */}
-              <Link
-                href="/emergency-relief"
-                className="flex items-start gap-3 p-8 hover:bg-[#ffffff10] rounded-md"
-              >
-                <div className="text-primarycolor text-3xl mt-1">
-                  <BiFirstAid />
-                </div>
-                <div>
-                  <h1 className="text-2xl text-white font-bold">
-                    Emergency Relief
-                  </h1>
-                  <p className="text-gray-300 text-sm">
-                    Immediate assistance during crisis situations
-                  </p>
-                </div>
-              </Link>
 
               <Link
-                href="/food-programs"
+                href="/what-we-serve/#food-programs"
                 className="flex items-start gap-3 p-8 hover:bg-[#ffffff10] rounded-md"
               >
                 <div className="text-primarycolor text-3xl mt-1">
@@ -407,7 +401,7 @@ function Header() {
                 </div>
                 <div>
                   <h1 className="text-2xl text-white font-bold">
-                    Food Programs
+                    Feeding the Hungry
                   </h1>
                   <p className="text-gray-300 text-sm">
                     Nutritional support and meal services
@@ -416,7 +410,24 @@ function Header() {
               </Link>
 
               <Link
-                href="/shelter"
+                href="/what-we-serve/#economic-empowerment"
+                className="flex items-start gap-3 p-8 hover:bg-[#ffffff10] rounded-md"
+              >
+                <div className="text-primarycolor text-3xl mt-1">
+                  <BiFirstAid />
+                </div>
+                <div>
+                  <h1 className="text-2xl text-white font-bold">
+                    Economic Empowerment
+                  </h1>
+                  <p className="text-gray-300 text-sm">
+                    Skills development and job placement
+                  </p>
+                </div>
+              </Link>
+
+              <Link
+                href="/what-we-serve/#clothing-drive"
                 className="flex items-start gap-3 p-8 hover:bg-[#ffffff10] rounded-md"
               >
                 <div className="text-primarycolor text-3xl mt-1">
@@ -424,16 +435,16 @@ function Header() {
                 </div>
                 <div>
                   <h1 className="text-2xl text-white font-bold">
-                    Shelter Services
+                    Clothing Drive
                   </h1>
                   <p className="text-gray-300 text-sm">
-                    Safe housing and accommodation support
+                    Providing clothing to the needy
                   </p>
                 </div>
               </Link>
 
               <Link
-                href="/education"
+                href="/what-we-serve/#education-support"
                 className="flex items-start gap-3 p-8 hover:bg-[#ffffff10] rounded-md"
               >
                 <div className="text-primarycolor text-3xl mt-1">
@@ -441,7 +452,7 @@ function Header() {
                 </div>
                 <div>
                   <h1 className="text-2xl text-white font-bold">
-                    Education Support
+                    Education and Skills Training
                   </h1>
                   <p className="text-gray-300 text-sm">
                     Learning resources and academic assistance
@@ -450,7 +461,7 @@ function Header() {
               </Link>
 
               <Link
-                href="/healthcare"
+                href="/what-we-serve/#emergency-response"
                 className="flex items-start gap-3 p-8 hover:bg-[#ffffff10] rounded-md"
               >
                 <div className="text-primarycolor text-3xl mt-1">
@@ -458,16 +469,16 @@ function Header() {
                 </div>
                 <div>
                   <h1 className="text-2xl text-white font-bold">
-                    Healthcare Services
+                    Emergency Response
                   </h1>
                   <p className="text-gray-300 text-sm">
-                    Medical assistance and health programs
+                    Giving immediate assistance during crisis situations
                   </p>
                 </div>
               </Link>
 
               <Link
-                href="/counseling"
+                href="/what-we-serve/#counseling-support"
                 className="flex items-start gap-3 p-8 hover:bg-[#ffffff10] rounded-md"
               >
                 <div className="text-primarycolor text-3xl mt-1">
