@@ -109,7 +109,7 @@ function Header() {
                 setShowGiveDropdown(true);
               }}
             >
-              Get Aid
+              Give Aid
             </Link>
             <Link className="text-white hover:text-primarycolor " href="/about">
               About Us
@@ -206,7 +206,7 @@ function Header() {
                   onClick={() => setShowGiveDropdown(!showGiveDropdown)}
                   className="text-white hover:text-primarycolor w-full text-left py-2 flex justify-between items-center"
                 >
-                  Get Aid
+                  Give Aid
                   <span className="text-xl">
                     {showGiveDropdown ? <BiX /> : <BiMenu />}
                   </span>
