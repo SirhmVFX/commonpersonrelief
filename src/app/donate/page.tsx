@@ -9,7 +9,7 @@ export default function Donate() {
   const [activeTab, setActiveTab] = useState("onetime");
   return (
     <div>
-      <div className="w-full h-screen">
+      <div className="w-full h-[60vh]">
         <div className="w-full h-full relative">
           <Image
             src="/images/hero2.png"
@@ -19,8 +19,8 @@ export default function Donate() {
             className="w-full h-full object-cover"
           />
           <div className="absolute top-0 left-0 right-0 bottom-0 bg-black opacity-50"></div>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
-            <h1 className="md:text-7xl text-xl font-bold mb-4">
+          <div className="absolute top-20 md:top-1/2 md:left-1/2 transform md:-translate-x-1/2 md:-translate-y-1/2 text-white text-center">
+            <h1 className="md:text-7xl text-3xl font-bold mb-4">
               Support a Life Today
             </h1>
             <p className="mb-4">

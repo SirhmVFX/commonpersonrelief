@@ -6,7 +6,7 @@ export default function About() {
     <div>
       <div className="w-5/6 mx-auto py-16 md:py-32 h-[600px]">
         <Image
-          src="/images/hero2.png"
+          src="/images/op.jpeg"
           alt="about"
           width={1000}
           height={1000}
@@ -14,8 +14,8 @@ export default function About() {
         />
       </div>
 
-      <div className="w-5/6 mx-auto py-16 md:py-32 flex gap-4">
-        <div className="flex flex-col items-start gap-4 w-1/2">
+      <div className="w-5/6 mx-auto py-16 md:py-32 md:flex gap-4">
+        <div className="flex flex-col items-start gap-4 md:w-1/2">
           <p className="text-primarycolor text-sm md:text-lg py-2 px-4 rounded-full border border-primarycolor">
             About us
           </p>
@@ -24,7 +24,7 @@ export default function About() {
           </h1>
         </div>
 
-        <div className="flex flex-col gap-4 w-1/2">
+        <div className="flex flex-col gap-4 md:w-1/2">
           <p className="text-sm md:text-lg text-gray-500">
             At Common Person Relief, we are driven by a shared commitment to
             uplift the lives of underprivileged individuals across Africa. Since
@@ -41,17 +41,17 @@ export default function About() {
         </div>
       </div>
 
-      <div className="w-5/6 mx-auto py-16 md:py-32 flex items-center gap-10">
-        <div className="w-1/2 h-[400px]">
+      <div className="w-5/6 mx-auto py-16 md:py-32 md:flex items-center gap-10">
+        <div className="md:w-1/2 h-[400px]">
           <Image
-            src="/images/hero2.png"
+            src="/images/hero1.jpeg"
             alt="about"
             width={1000}
             height={1000}
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="w-1/2 flex flex-col gap-4">
+        <div className="md:w-1/2 flex flex-col gap-4">
           <h1 className="text-3xl md:text-5xl lg:text-7xl font-medium">
             What we stand for
           </h1>
@@ -90,11 +90,11 @@ export default function About() {
       </div>
 
       <div className="w-5/6 mx-auto py-16 md:py-32">
-        <div className=" flex items-center gap-4 p-4 border-b border-gray-200">
-          <h1 className="text-3xl md:text-5xl lg:text-7xl font-medium w-1/2">
+        <div className=" md:flex items-center gap-4 p-4 border-b border-gray-200">
+          <h1 className="text-3xl md:text-5xl lg:text-7xl font-medium md:w-1/2">
             Our Impact Areas
           </h1>
-          <p className="text-sm md:text-lg text-gray-500 w-1/2">
+          <p className="text-sm md:text-lg text-gray-500 md:w-1/2">
             With the support of dedicated volunteers, partners, and donors,
             we&apos;re creating lasting change one life at a time.
           </p>

@@ -211,7 +211,7 @@ function Header() {
                   }`}
                 >
                   <Link
-                    href="/emergency-relief"
+                   href="/what-we-serve/#food-programs"
                     className="block text-white hover:text-primarycolor py-2"
                   >
                     Feeding the Hungry
@@ -293,7 +293,7 @@ function Header() {
               </Link>
 
               <Link
-                href="/"
+                href="/contact"
                 className="block text-white hover:text-primarycolor py-2"
               >
                 Contact Us

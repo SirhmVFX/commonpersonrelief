@@ -4,14 +4,14 @@ import { BsArrowRight } from "react-icons/bs";
 export default function Contact() {
   return <div>
 
-    <div className="w-5/6 mx-auto py-16 md:py-32 flex items-center gap-4">
-      <h1 className="text-3xl md:text-5xl lg:text-7xl font-medium w-1/2">We&apos;d Love to Hear From You</h1>
-      <p className="text-gray-500 text-base md:text-lg w-1/2">Have questions, suggestions, or want to partner with us? Reach out today and let’s work together to make a difference!</p>
+    <div className="w-5/6 mx-auto py-16 md:py-32 md:flex items-center gap-4">
+      <h1 className="text-3xl md:text-5xl lg:text-7xl font-medium md:w-1/2">We&apos;d Love to Hear From You</h1>
+      <p className="text-gray-500 text-base md:text-lg md:w-1/2">Have questions, suggestions, or want to partner with us? Reach out today and let’s work together to make a difference!</p>
     </div>
 
-    <div className="w-5/6 mx-auto py-16 md:py-32 flex flex-col md:flex-row items-center gap-4">
-      <div className="w-full flex gap-8 p-16 bg-gray-50 rounded-lg">
-        <form className="w-3/5 flex flex-col gap-4 items-start">
+    <div className="w-5/6 mx-auto py-16 md:py-32 flex md:flex-row flex-col items-center gap-4">
+      <div className="w-full flex md:flex-row flex-col gap-8 p-6 md:p-16 bg-gray-50 rounded-lg">
+        <form className="md:w-3/5 flex flex-col gap-4 items-start">
         <h1 className="text-xl md:text-3xl lg:text-4xl font-medium">Leave us your info </h1>
         <input type="text" className="w-full bg-transparent p-2 rounded-md border border-gray-300" placeholder="Your Name" />
         <input type="text" className="w-full bg-transparent p-2 rounded-md border border-gray-300" placeholder="Your Email" />
@@ -26,9 +26,9 @@ export default function Contact() {
         </button>
         
         </form>
-        <div className="w-2/5 p-10 bg-white flex flex-col gap-8 rounded-2xl">
+        <div className="md:w-2/5 md:p-10 p-4 bg-white flex flex-col gap-8 rounded-2xl">
           <div className="flex items-start gap-4">
-            <div className=" p-2 border border-primarycolor rounded-full">
+            <div className=" hidden md:block p-2 border border-primarycolor rounded-full">
             <BiMailSend className="text-2xl md:text-3xl lg:text-4xl w-6 h-6 text-primarycolor " />
               
             </div>
@@ -41,7 +41,7 @@ export default function Contact() {
 
           <div className="w-full h-[1px] bg-gray-300"></div>
           <div className="flex items-start gap-4">
-            <div className=" p-2 border border-primarycolor rounded-full">
+            <div className="hidden md:block p-2 border border-primarycolor rounded-full">
             <BiPhone className="text-2xl md:text-3xl lg:text-4xl w-6 h-6 text-primarycolor " />
               
             </div>

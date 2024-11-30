@@ -5,7 +5,7 @@ export default function WhoWeServe() {
   return (
     <div>
       <div
-        className="w-5/6 mx-auto py-16 md:py-32 flex flex-col gap-4"
+        className="w-5/6 mx-auto py-20 md:py-32 flex flex-col gap-4"
         id="food-programs"
       >
         <h1 className="text-3xl md:text-5xl lg:text-7xl font-medium border-b-2 border-gray-200">
@@ -67,7 +67,7 @@ export default function WhoWeServe() {
           </div>
           <div className="w-full md:w-1/3 h-[400px] mt-6 md:mt-0">
             <Image
-              src="/images/hero2.png"
+              src="/images/food.jpeg"
               alt="mission-vision"
               width={1000}
               height={1000}
@@ -140,7 +140,7 @@ export default function WhoWeServe() {
           </div>
           <div className="w-full md:w-1/3 h-[400px] mt-6 md:mt-0">
             <Image
-              src="/images/hero2.png"
+              src="/images/im.jpg"
               alt="mission-vision"
               width={1000}
               height={1000}
@@ -208,7 +208,7 @@ export default function WhoWeServe() {
           </div>
           <div className="w-full md:w-1/3 h-[400px] mt-6 md:mt-0">
             <Image
-              src="/images/hero2.png"
+              src="/images/cloth.jpg"
               alt="mission-vision"
               width={1000}
               height={1000}
@@ -280,7 +280,7 @@ export default function WhoWeServe() {
           </div>
           <div className="w-full md:w-1/3 h-[400px] mt-6 md:mt-0">
             <Image
-              src="/images/hero2.png"
+              src="/images/wee2.png"
               alt="mission-vision"
               width={1000}
               height={1000}
@@ -349,7 +349,7 @@ export default function WhoWeServe() {
           </div>
           <div className="w-full md:w-1/3 h-[400px] mt-6 md:mt-0">
             <Image
-              src="/images/hero2.png"
+              src="/images/emerg.jpg"
               alt="mission-vision"
               width={1000}
               height={1000}
@@ -418,7 +418,7 @@ export default function WhoWeServe() {
           </div>
           <div className="w-full md:w-1/3 h-[400px] mt-6 md:mt-0">
             <Image
-              src="/images/hero2.png"
+              src="/images/we.jpg"
               alt="mission-vision"
               width={1000}
               height={1000}
