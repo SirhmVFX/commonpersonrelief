@@ -157,7 +157,7 @@ function Header() {
                   }`}
                 >
                   <Link
-                    href="/organisation-leaders"
+                    href="/who-we-are/organisation-leaders"
                     className="block text-white hover:text-primarycolor py-2"
                   >
                     Our Organization and leaders
@@ -167,6 +167,30 @@ function Header() {
                     className="block text-white hover:text-primarycolor py-2"
                   >
                     Our Mission and Vision
+                  </Link>
+                  <Link
+                    href="/who-we-are/initiatives"
+                    className="block text-white hover:text-primarycolor py-2"
+                  >
+                    Our Initiatives
+                  </Link>
+                  <Link
+                    href="/who-we-are/partners"
+                    className="block text-white hover:text-primarycolor py-2"
+                  >
+                    Our Partners
+                  </Link>
+                  <Link
+                    href="/who-we-are/oppourtunities"
+                    className="block text-white hover:text-primarycolor py-2"
+                  >
+                    Oppourtunities
+                  </Link>
+                  <Link
+                    href="/who-we-are/stories"
+                    className="block text-white hover:text-primarycolor py-2"
+                  >
+                    Our success stories
                   </Link>
                 </div>
               </div>
@@ -190,13 +214,43 @@ function Header() {
                     href="/emergency-relief"
                     className="block text-white hover:text-primarycolor py-2"
                   >
-                    Emergency Relief
+                    Feeding the Hungry
                   </Link>
                   <Link
                     href="/what-we-serve/#food-programs"
                     className="block text-white hover:text-primarycolor py-2"
                   >
-                    Food Programs
+                    Economic Empowerment 
+                  </Link>
+                  <Link
+                    href="/what-we-serve/#food-programs"
+                    className="block text-white hover:text-primarycolor py-2"
+                  >
+                    Clothing Drives
+                  </Link>
+                  <Link
+                    href="/what-we-serve/#food-programs"
+                    className="block text-white hover:text-primarycolor py-2"
+                  >
+                    Education Skills & Training
+                  </Link>
+                  <Link
+                    href="/what-we-serve/#food-programs"
+                    className="block text-white hover:text-primarycolor py-2"
+                  >
+                    Economic Empowerment 
+                  </Link>
+                  <Link
+                    href="/what-we-serve/#food-programs"
+                    className="block text-white hover:text-primarycolor py-2"
+                  >
+                    Emergency Response
+                  </Link>
+                  <Link
+                    href="/what-we-serve/#food-programs"
+                    className="block text-white hover:text-primarycolor py-2"
+                  >
+                    Counseling Support
                   </Link>
                 </div>
               </div>

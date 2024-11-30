@@ -28,7 +28,7 @@ export default function Oppourtunities() {
       <div className="w-5/6 mx-auto py-16 md:py-32 flex flex-col md:flex-row items-center gap-10">
         <div className="w-full md:w-1/2">
           <Image
-            src="/images/hero2.png"
+            src="/images/op.jpeg"
             alt="oppourtunities"
             width={1000}
             height={1000}

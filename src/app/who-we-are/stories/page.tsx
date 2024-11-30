@@ -42,11 +42,11 @@ export default function Stories() {
   ];
   return (
     <div>
-      <div className="w-5/6 mx-auto py-16 md:py-32 flex items-center gap-16">
-        <h1 className="text-3xl md:text-5xl lg:text-7xl font-medium w-1/2">
-          Our great events
+      <div className="w-5/6 mx-auto py-20 md:py-32 md:flex items-center gap-16">
+        <h1 className="text-3xl md:text-5xl lg:text-7xl font-medium md:w-1/2">
+          Our Great Events
         </h1>
-        <p className="w-1/2 text-gray-500 text-base md:text-lg">
+        <p className="md:w-1/2 text-gray-500 text-base md:text-lg">
           Our past events have united communities to drive change, from
           education to health initiatives, making a lasting impact on those in
           need.

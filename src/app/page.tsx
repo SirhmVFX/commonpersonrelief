@@ -25,7 +25,7 @@ export default function Home() {
       title: "Clothing the Needy",
       image: "/images/blog1.png",
       description:
-        "our plan is to create our Winter Warmth Campaign and distribute over 2,000 clothing items to those in need. Thank you to our donors and volunteers for making this possible!",
+        "Our plan is to create our Winter Warmth Campaign and distribute over 2,000 clothing items to those in need. Thank you to our donors and volunteers for making this possible!",
     },
     {
       id: 2,
@@ -71,7 +71,7 @@ export default function Home() {
           <div className="w-full lg:w-3/4 flex flex-col gap-4 items-start">
             <div className="w-full h-[300px] md:h-[400px] lg:h-[500px]">
               <Image
-                src="/images/hero2.png"
+                src="/images/wee.png"
                 alt="about"
                 width={1000}
                 height={1000}
@@ -91,7 +91,7 @@ export default function Home() {
           <div className="hidden lg:flex flex-col gap-4">
             <div className="w-full h-[300px]">
               <Image
-                src="/images/hero2.png"
+                src="/images/wee2.png"
                 alt="about"
                 width={1000}
                 height={1000}
@@ -100,7 +100,7 @@ export default function Home() {
             </div>
             <div className="w-full h-[300px]">
               <Image
-                src="/images/hero2.png"
+                src="/images/wee3.png"
                 alt="about"
                 width={1000}
                 height={1000}
@@ -168,26 +168,31 @@ export default function Home() {
             {[
               {
                 title: "Food Programs",
+                img: "/images/food.jpeg",
                 description:
                   "Distribution of food packs, establishing food banks, and organizing community kitchens in underserved areas.",
               },
               {
                 title: "Shelter Programs",
+                img: "/images/shelt.jpeg",
                 description:
                   "Providing temporary and permanent housing solutions, offering shelter kits for disaster-stricken areas.",
               },
               {
                 title: "Clothing Programs",
+                img: "/images/cloth.jpg",
                 description:
                   "Distributing essential clothing and winter wear to communities in need across the region.",
               },
               {
                 title: "Education & Skills Training",
+                img: "/images/edu.jpeg",
                 description:
                   "Offering vocational training, literacy programs, and skill development workshops to empower communities.",
               },
               {
                 title: "Emergency Response",
+                img: "/images/emerg.jpg",
                 description:
                   "Rapid deployment of resources and support during natural disasters, crises, and emergency situations.",
               },
@@ -197,7 +202,7 @@ export default function Home() {
                 className="w-full flex-shrink-0 relative h-[500px]"
               >
                 <Image
-                  src="/images/hero2.png"
+                  src={card.img}
                   alt={card.title}
                   width={1000}
                   height={1000}

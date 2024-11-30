@@ -28,7 +28,7 @@ export default function Partners() {
       </div>
       <div className="w-full md:w-1/3 h-[300px] md:h-[600px] mb-8 md:mb-0">
         <Image
-          src="/images/hero2.png"
+          src="/images/we.jpg"
           alt="partner"
           width={1000}
           height={1000}

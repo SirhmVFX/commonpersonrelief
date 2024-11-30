@@ -10,7 +10,7 @@ export default function Initiatives() {
       <div className="w-5/6 mx-auto py-16 md:py-32">
         <div className="w-full h-[250px] md:h-[400px]">
           <Image
-            src="/images/hero2.png"
+            src="/images/init.jpeg"
             alt="initiatives"
             width={1000}
             height={1000}

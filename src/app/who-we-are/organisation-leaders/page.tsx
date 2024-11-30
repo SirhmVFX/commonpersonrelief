@@ -50,7 +50,7 @@ export default function OrganisationLeaders() {
       <div className="w-5/6 mx-auto">
         <div className="w-full h-[200px] sm:h-[300px] md:h-[400px]">
           <Image
-            src={"/images/hero2.png"}
+            src={"/images/corp.jpeg"}
             alt="Organisation Leaders"
             width={1000}
             height={1000}

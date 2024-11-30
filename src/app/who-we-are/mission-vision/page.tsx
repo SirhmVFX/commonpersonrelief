@@ -94,7 +94,7 @@ export default function MissionVision() {
         </div>
         <div className="w-full md:w-1/3 h-[200px] mt-6 md:mt-0">
           <Image
-            src="/images/hero2.png"
+            src="/images/mis.jpeg"
             alt="mission-vision"
             width={1000}
             height={1000}
