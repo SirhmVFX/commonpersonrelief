@@ -9,7 +9,7 @@ export default function Donate() {
   const [activeTab, setActiveTab] = useState("onetime");
   return (
     <div>
-      <div className="w-full h-[60vh]">
+      <div className="w-full h-[50vh]">
         <div className="w-full h-full relative">
           <Image
             src="/images/hero2.png"
@@ -19,11 +19,11 @@ export default function Donate() {
             className="w-full h-full object-cover"
           />
           <div className="absolute top-0 left-0 right-0 bottom-0 bg-black opacity-50"></div>
-          <div className="absolute top-20 md:top-1/2 md:left-1/2 transform md:-translate-x-1/2 md:-translate-y-1/2 text-white text-center">
-            <h1 className="md:text-7xl text-3xl font-bold mb-4">
+          <div className="absolute top-32 left-10 botton-10 right-10 md:top-1/2 md:left-1/2 transform md:-translate-x-1/2 md:-translate-y-1/2 text-white text-center">
+            <h1 className="md:text-7xl text-3xl font-bold ">
               Support a Life Today
             </h1>
-            <p className="mb-4">
+            <p className="mb-4 text-xs md:text-base">
               Your donation to Common Person Relief has the power to transform
               lives. Together, we can provide food for the hungry, education for
               underprivileged children, and economic opportunities for
@@ -36,9 +36,9 @@ export default function Donate() {
           </div>
         </div>
       </div>
-      <div className="w-5/6 mx-auto py-16 md:py-32 flex flex-col gap-4">
-        <h1>Where Your Donation Goes:</h1>
-        <div className="grid md:grid-cols-2 gap-8 pt-10">
+      <div className="w-5/6 mx-auto md:py-32 flex flex-col gap-4 mt-8">
+        <h1 className="text-2xl md:text-5xl lg:text-6xl font-medium text-center">Where Your Donation Goes</h1>
+        <div className="grid md:grid-cols-2 gap-8 ">
           <div className="flex flex-col gap-4 p-4 bg-gray-50">
             <h1 className="text-2xl md:text-3xl text-primarycolor font-medium">
               01
@@ -92,22 +92,22 @@ export default function Donate() {
         </div>
       </div>
 
-      <div className="w-5/6 mx-auto py-16 md:py-32 flex flex-col gap-4">
-        <div className="w-5/6 mx-auto py-16 md:py-32 flex flex-col gap-4">
+      <div className="w-5/6 mx-auto md:py-32 flex flex-col gap-4">
+        <div className=" py-16 md:py-32 flex flex-col gap-4">
           <div className="flex flex-col items-center gap-4">
             <h1 className="text-3xl md:text-5xl lg:text-7xl font-medium">
               Donate now
             </h1>
-            <p className="text-gray-500 text-base md:text-lg">
+            <p className="text-gray-500 text-center text-base md:text-lg">
               Donate now to support our causes and make a difference in the
               lives of those in need.
             </p>
           </div>
 
-          <div className="mt-8">
+          <div className="">
             <div className="border-b border-gray-200">
               <nav
-                className="-mb-px flex justify-center space-x-8"
+                className="flex gap-2 justify-center"
                 aria-label="Tabs"
               >
                 <button
@@ -116,7 +116,7 @@ export default function Donate() {
                     activeTab === "onetime"
                       ? "border-primarycolor text-primarycolor"
                       : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700"
-                  } whitespace-nowrap border-b-2 py-4 px-1 text-xl font-medium `}
+                  } whitespace-nowrap border-b-2 text-xs py-4 px-1 md:text-xl font-medium `}
                 >
                   One-time Donation
                 </button>
@@ -126,7 +126,7 @@ export default function Donate() {
                     activeTab === "monthly"
                       ? "border-primarycolor text-primarycolor"
                       : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700"
-                  } whitespace-nowrap border-b-2 py-4 px-1 text-xl font-medium`}
+                  } whitespace-nowrap border-b-2 text-xs py-4 px-1 md:text-xl font-medium`}
                 >
                   Monthly Support
                 </button>
@@ -136,7 +136,7 @@ export default function Donate() {
                     activeTab === "corporate"
                       ? "border-primarycolor text-primarycolor"
                       : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700"
-                  } whitespace-nowrap border-b-2 py-4 px-1 text-xl font-medium`}
+                  } whitespace-nowrap border-b-2 text-xs py-4 px-1 md:text-xl font-medium`}
                 >
                   Partner with us
                 </button>
@@ -331,8 +331,8 @@ export default function Donate() {
                     </p>
                   </div>
 
-                  <div className="flex gap-4 py-10">
-                    <div className="w-2/3 mt-8">
+                  <div className="md:flex gap-4 py-10">
+                    <div className="md:w-2/3 mt-8">
                       <form className="max-w-2xl mx-auto flex flex-col gap-6">
                         <div className="flex flex-col gap-4">
                           <label htmlFor="corp-name">Full Name</label>
@@ -392,7 +392,7 @@ export default function Donate() {
                         </p>
                       </form>
                     </div>
-                    <div className=" flex flex-col gap-4 w-1/3">
+                    <div className=" flex flex-col gap-4 md:w-1/3 pt-4">
                       <div className="flex items-start gap-4 p-3 md:p-4 border border-gray-200">
                         <div className="bg-primarycolor/10 rounded-full p-3 md:p-4 flex-shrink-0">
                           <BiBrush className="text-primarycolor text-xl md:text-2xl" />

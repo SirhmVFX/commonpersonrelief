@@ -9,10 +9,10 @@ import { CiLocationOn, CiMail, CiPhone } from "react-icons/ci";
 
 function Footer() {
   return (
-    <div className="p-6 sm:py-12 lg:p-24 bg-[#016635]">
-      <div className="w-5/6 mx-auto">
+    <div className="p-6 lg:p-24 bg-[#016635]">
+      <div className="md:w-5/6 mx-auto">
         <div className="flex flex-col sm:flex-row justify-between items-center border-b border-white pb-6 sm:pb-10 gap-6 sm:gap-0">
-          <h1 className="text-white text-xl sm:text-2xl lg:text-4xl text-center sm:text-left break-all">
+          <h1 className="text-white  sm:text-2xl lg:text-4xl text-center sm:text-left break-all">
             info@commonpersonrelief.com
           </h1>
           <div className="flex gap-4 flex-wrap justify-center">

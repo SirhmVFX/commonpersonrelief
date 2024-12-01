@@ -5,7 +5,7 @@ import { CgMail } from "react-icons/cg";
 export default function Oppourtunities() {
   return (
     <div>
-      <div className="w-5/6 mx-auto py-16 md:py-32 flex flex-col items-center gap-4">
+      <div className="w-5/6 mx-auto pt-20 md:py-32 flex flex-col items-center gap-4">
         <h1 className="text-3xl md:text-5xl lg:text-7xl font-medium">
           Join the visionary team
         </h1>
@@ -25,7 +25,7 @@ export default function Oppourtunities() {
         </div>
       </div>
 
-      <div className="w-5/6 mx-auto py-16 md:py-32 flex flex-col md:flex-row items-center gap-10">
+      <div className="w-5/6 mx-auto  md:py-32 flex flex-col md:flex-row items-center gap-10">
         <div className="w-full md:w-1/2">
           <Image
             src="/images/op.jpeg"

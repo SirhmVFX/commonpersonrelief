@@ -15,6 +15,8 @@
   position: relative;
 }
 
+
+
 .calltoaction {
   background-image: url("/images/cta.png");
   background-size: cover;
@@ -22,6 +24,16 @@
   height: 600px;
   width: 100%;
   position: relative;
+}
+
+@media (max-width: 768px) {
+  .herosection {
+    height: 640px;
+  }
+
+  .calltoaction {
+    height: 540px;
+  }
 }
 
 .calltoaction::before {

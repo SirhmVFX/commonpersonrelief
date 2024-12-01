@@ -57,11 +57,11 @@ function Header() {
           showGiveDropdown ||
           isMobileMenuOpen ||
           isScrolled
-            ? "bg-black/30 backdrop-blur-md"
+            ? "bg-black/70 backdrop-blur-md"
             : "bg-transparent"
         }`}
       >
-        <div className="mx-auto w-5/6 flex justify-between items-center p-4">
+        <div className="mx-auto w-5/6 flex justify-between items-center py-4">
           <Link href="/" className="w-[125px]">
             <Image
               src="/images/logo.png"
@@ -76,7 +76,7 @@ function Header() {
           <div className="hidden lg:flex gap-10 items-center">
             <div>
               <Link
-                className="text-white hover:text-primarycolor flex items-center"
+                className="text-primarycolor hover:text-primarycolor flex items-center"
                 href="/"
                 onMouseEnter={() => {
                   setShowWhoDropdown(true);
@@ -89,7 +89,7 @@ function Header() {
             </div>
             <div>
               <Link
-                className="text-white hover:text-primarycolor flex items-center"
+                className="text-primarycolor hover:text-primarycolor flex items-center"
                 href="/what-we-serve"
                 onMouseEnter={() => {
                   setShowWhoDropdown(false);
@@ -101,7 +101,7 @@ function Header() {
               </Link>
             </div>
             <Link
-              className="text-white hover:text-primarycolor "
+              className="text-primarycolor hover:text-primarycolor "
               href="/"
               onMouseEnter={() => {
                 setShowWhoDropdown(false);
@@ -111,16 +111,16 @@ function Header() {
             >
               Give Aid
             </Link>
-            <Link className="text-white hover:text-primarycolor " href="/about">
+            <Link className="text-primarycolor hover:text-primarycolor " href="/about">
               About Us
             </Link>
-            <Link className="text-white hover:text-primarycolor " href="/contact">
+            <Link className="text-primarycolor hover:text-primarycolor " href="/contact">
               Contact Us
             </Link>
-            <Link className="text-white hover:text-primarycolor " href="/who-we-are/stories">
+            <Link className="text-primarycolor hover:text-primarycolor " href="/who-we-are/stories">
               News and Events
             </Link>
-            <Link className="text-white hover:text-primarycolor " href="/volunteer">
+            <Link className="text-primarycolor hover:text-primarycolor " href="/volunteer">
               Volunteer
             </Link>
             <Link href="/donate" className="bg-primarycolor text-white p-3 rounded-md">
@@ -130,7 +130,7 @@ function Header() {
 
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden text-white text-2xl"
+            className="lg:hidden text-primarycolor text-2xl"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <CgClose /> : <BiMenu />}

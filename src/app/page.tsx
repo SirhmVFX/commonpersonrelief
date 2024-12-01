@@ -7,6 +7,7 @@ import { useState, useRef } from "react";
 import BlogCard from "@/components/BlogCard";
 import CtaPage from "@/components/Cta.page";
 import Herosection from "@/components/Herosection";
+import Link from "next/link";
 
 interface Blog {
   id: number;
@@ -126,9 +127,9 @@ export default function Home() {
               distribution, we focus on creating lasting impact in the lives of
               those we serve
             </p>
-            <button className="w-full sm:w-auto bg-primarycolor text-white p-3 rounded-md">
+            <Link href={"/who-we-are/#feeding-hungry"} className="w-full hidden md:block text-center sm:w-auto bg-primarycolor text-white p-3 rounded-md">
               Learn More
-            </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -162,7 +163,7 @@ export default function Home() {
           <div
             className="flex gap-8 transition-transform duration-500 ease-in-out"
             style={{
-              transform: `translateX(-${(currentSlide - 1) * (100 + 2)}%)`,
+              transform: `translateX(-${(currentSlide - 1) * (100 + 9)}%)`,
             }}
           >
             {[

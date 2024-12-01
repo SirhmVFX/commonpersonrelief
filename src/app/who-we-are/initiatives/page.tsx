@@ -7,7 +7,7 @@ import { GiArm, GiHumanTarget } from "react-icons/gi";
 export default function Initiatives() {
   return (
     <div>
-      <div className="w-5/6 mx-auto py-16 md:py-32">
+      <div className="w-5/6 mx-auto py-20 md:py-32">
         <div className="w-full h-[250px] md:h-[400px]">
           <Image
             src="/images/init.jpeg"
@@ -20,11 +20,11 @@ export default function Initiatives() {
 
         <div className="flex flex-col md:flex-row gap-4 md:gap-8">
           <div className="w-full md:w-1/2">
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-medium py-6 md:py-10">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-medium pt-2 md:py-10">
               Hope for a peaceful world
             </h1>
           </div>
-          <p className="text-gray-500 text-base md:text-lg py-6 w-full md:w-1/2">
+          <p className="text-gray-500 text-base md:text-lg md:py-6 w-full md:w-1/2">
             We believe that challenges like those faced in Nigeria should not
             exist anywhere in the world. Lasting change occurs in every
             community when people have access to essential services, such as
@@ -41,7 +41,7 @@ export default function Initiatives() {
         </div>
       </div>
 
-      <div className="w-5/6 mx-auto py-8 md:py-10">
+      <div className="w-5/6 mx-auto md:py-10">
         <div className="flex flex-col gap-4 py-4 border-b border-gray-200">
           <p className="text-primarycolor text-sm">why choose us</p>
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-medium">

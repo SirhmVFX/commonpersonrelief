@@ -25,8 +25,8 @@ export default function MissionVision() {
   ];
   return (
     <div>
-      <div className="w-5/6 mx-auto py-10 md:py-20 flex flex-col md:flex-row gap-10">
-        <div className="w-full md:w-1/2">
+      <div className="w-5/6 mx-auto py-10 md:py-20 flex flex-col md:flex-row md:gap-10">
+        <div className="w-full pt-10 md:pt-0 md:w-1/2">
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-medium py-6 md:py-10 border-b border-gray-200">
             Our Vision
           </h1>
