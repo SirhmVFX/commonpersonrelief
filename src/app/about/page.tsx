@@ -4,7 +4,7 @@ import { BiCheck } from "react-icons/bi";
 export default function About() {
   return (
     <div>
-      <div className="w-5/6 mx-auto py-16 md:py-32 h-[600px]">
+      <div className="w-5/6 mx-auto py-16 md:pt-32 h-[600px]">
         <Image
           src="/images/op.jpeg"
           alt="about"
@@ -14,7 +14,7 @@ export default function About() {
         />
       </div>
 
-      <div className="w-5/6 mx-auto py-16 md:py-32 md:flex gap-4">
+      <div className="w-5/6 mx-auto py-16 md:flex gap-4">
         <div className="flex flex-col items-start gap-4 md:w-1/2">
           <p className="text-primarycolor text-sm md:text-lg py-2 px-4 rounded-full border border-primarycolor">
             About us

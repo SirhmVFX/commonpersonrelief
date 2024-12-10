@@ -79,7 +79,7 @@ export default function OrganisationLeaders() {
           <div className="flex gap-2 items-center">
             <BiCheck className="text-xl sm:text-2xl text-green-500 border border-green-500 rounded-full p-1 flex-shrink-0" />
             <h1 className="text-xl sm:text-2xl font-medium">
-              How common person relief plans to transform others
+              How Common Person Relief plans to transform others
             </h1>
           </div>
           <p className="text-gray-500 text-base sm:text-lg">

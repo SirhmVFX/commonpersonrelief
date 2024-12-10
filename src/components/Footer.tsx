@@ -13,14 +13,14 @@ function Footer() {
       <div className="md:w-5/6 mx-auto">
         <div className="flex flex-col sm:flex-row justify-between items-center border-b border-white pb-6 sm:pb-10 gap-6 sm:gap-0">
           <h1 className="text-white  sm:text-2xl lg:text-4xl text-center sm:text-left break-all">
-            info@commonpersonrelief.com
+            info@commonpersonrelief.org
           </h1>
           <div className="flex gap-4 flex-wrap justify-center">
             {[
-              { icon: <BiLogoFacebook />, href: "/" },
-              { icon: <BiLogoInstagram />, href: "/" },
-              { icon: <BiLogoTwitter />, href: "/" },
-              { icon: <BiLogoLinkedin />, href: "/" },
+              { icon: <BiLogoFacebook />, href: "https://web.facebook.com/profile.php?id=61570392260899" },
+              { icon: <BiLogoInstagram />, href: "https://www.instagram.com/cpr_inc_hq/" },
+              { icon: <BiLogoTwitter />, href: "https://x.com/CPR_INC_HQ" },
+              { icon: <BiLogoLinkedin />, href: "https://www.linkedin.com/company/common-person-relief" },
             ].map((social, index) => (
               <Link
                 key={index}
@@ -40,13 +40,13 @@ function Footer() {
             </h1>
             <div className="flex flex-col gap-2">
               <Link
-                href="/"
+                href="/donate"
                 className="text-[#DCECBA] hover:text-white transition-colors"
               >
                 Donate
               </Link>
               <Link
-                href="/"
+                href="/volunteer"
                 className="text-[#DCECBA] hover:text-white transition-colors"
               >
                 Volunteer
@@ -60,19 +60,19 @@ function Footer() {
             </h1>
             <div className="flex flex-col gap-2">
               <Link
-                href="/"
+                href="/about"
                 className="text-[#DCECBA] hover:text-white transition-colors"
               >
                 FAQ&apos;s
               </Link>
               <Link
-                href="/"
+                href="/privacy-policy"
                 className="text-[#DCECBA] hover:text-white transition-colors"
               >
                 Privacy Policy
               </Link>
               <Link
-                href="/"
+                href="/terms-and-conditions"
                 className="text-[#DCECBA] hover:text-white transition-colors"
               >
                 Terms & Conditions
@@ -86,22 +86,22 @@ function Footer() {
             </h1>
             <div className="flex flex-col gap-2">
               <Link
-                href="/"
+                href="/about"
                 className="text-[#DCECBA] hover:text-white transition-colors"
               >
                 About us
               </Link>
               <Link
-                href="/"
+                href="/stories"
                 className="text-[#DCECBA] hover:text-white transition-colors"
               >
                 Blogs
               </Link>
               <Link
-                href="/"
+                href="/what-we-serve"
                 className="text-[#DCECBA] hover:text-white transition-colors"
               >
-                Services
+                What we serve
               </Link>
             </div>
           </div>
@@ -114,15 +114,15 @@ function Footer() {
               {[
                 {
                   icon: <CiLocationOn className="text-xl" />,
-                  text: "No location yet",
+                  text: "Dallas, Texas, USA",
                 },
                 {
                   icon: <CiPhone className="text-xl" />,
-                  text: "+91 9876543210",
+                  text: "+1 (432) 803-1218",
                 },
                 {
                   icon: <CiMail className="text-xl" />,
-                  text: "mail@commonpersonrelief.com",
+                  text: "mail@commonpersonrelief.org",
                 },
               ].map((contact, index) => (
                 <Link
@@ -131,7 +131,7 @@ function Footer() {
                   className="text-[#DCECBA] hover:text-white transition-colors flex items-center gap-2"
                 >
                   {contact.icon}
-                  <span className="break-all">{contact.text}</span>
+                  <span className=" text-sm">{contact.text}</span>
                 </Link>
               ))}
             </div>

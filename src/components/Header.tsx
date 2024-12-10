@@ -51,14 +51,14 @@ function Header() {
   return (
     <>
       <div
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        className={`fixed top-0 left-0 right-0 z-50 transition-all bg-black/70 backdrop-blur-md duration-300 ${
           showWhoDropdown ||
           showServeDropdown ||
           showGiveDropdown ||
           isMobileMenuOpen ||
           isScrolled
             ? "bg-black/70 backdrop-blur-md"
-            : "bg-transparent"
+            : " bg-black/70 backdrop-blur-md"
         }`}
       >
         <div className="mx-auto w-5/6 flex justify-between items-center py-4">
@@ -76,7 +76,7 @@ function Header() {
           <div className="hidden lg:flex gap-10 items-center">
             <div>
               <Link
-                className="text-primarycolor hover:text-primarycolor flex items-center"
+                className="text-white hover:text-primarycolor flex items-center"
                 href="/"
                 onMouseEnter={() => {
                   setShowWhoDropdown(true);
@@ -89,7 +89,7 @@ function Header() {
             </div>
             <div>
               <Link
-                className="text-primarycolor hover:text-primarycolor flex items-center"
+                className="text-white hover:text-primarycolor flex items-center"
                 href="/what-we-serve"
                 onMouseEnter={() => {
                   setShowWhoDropdown(false);
@@ -101,7 +101,7 @@ function Header() {
               </Link>
             </div>
             <Link
-              className="text-primarycolor hover:text-primarycolor "
+              className="text-white hover:text-primarycolor "
               href="/"
               onMouseEnter={() => {
                 setShowWhoDropdown(false);
@@ -111,18 +111,13 @@ function Header() {
             >
               Give Aid
             </Link>
-            <Link className="text-primarycolor hover:text-primarycolor " href="/about">
+            <Link className="text-white hover:text-primarycolor " href="/about">
               About Us
             </Link>
-            <Link className="text-primarycolor hover:text-primarycolor " href="/contact">
+            <Link className="text-white hover:text-primarycolor " href="/contact">
               Contact Us
             </Link>
-            <Link className="text-primarycolor hover:text-primarycolor " href="/who-we-are/stories">
-              News and Events
-            </Link>
-            <Link className="text-primarycolor hover:text-primarycolor " href="/volunteer">
-              Volunteer
-            </Link>
+            
             <Link href="/donate" className="bg-primarycolor text-white p-3 rounded-md">
               <BiHeart />
             </Link>
@@ -139,7 +134,7 @@ function Header() {
 
         {/* Mobile Menu */}
         <div className={`lg:hidden ${isMobileMenuOpen ? "block" : "hidden"}`}>
-          <div className="w-5/6 mx-auto py-4 space-y-4">
+          <div className="w-5/6 mx-auto pt-4 pb-32 ">
             <div className="space-y-4">
               <div>
                 <button
@@ -298,18 +293,7 @@ function Header() {
               >
                 Contact Us
               </Link>
-              <Link
-                href="/"
-                className="block text-white hover:text-primarycolor py-2"
-              >
-                News and Events
-              </Link>
-              <Link
-                href="/"
-                className="block text-white hover:text-primarycolor py-2"
-              >
-                Volunteer
-              </Link>
+              
               <Link href={"/donate"} className="bg-primarycolor text-white p-3 rounded-md w-full flex items-center justify-center gap-2">
                 <BiHeart /> Donate Now
               </Link>
@@ -321,7 +305,7 @@ function Header() {
       {/* Desktop Dropdowns */}
       <div className="hidden lg:block">
         <div
-          className={`fixed top-[72px] left-0 right-0 bg-black/30 backdrop-blur-md py-8 transition-all duration-300 z-40 ${
+          className={`fixed top-[72px] left-0 right-0 bg-black/70 backdrop-blur-md py-8 transition-all duration-300 z-40 ${
             showWhoDropdown ? "opacity-100 visible" : "opacity-0 invisible"
           }`}
           onMouseLeave={() => setShowWhoDropdown(false)}
@@ -436,7 +420,7 @@ function Header() {
         </div>
 
         <div
-          className={`fixed top-[72px] left-0 right-0 bg-black/30 backdrop-blur-md py-8 transition-all duration-300 z-40 ${
+          className={`fixed top-[72px] left-0 right-0 bg-black/70 backdrop-blur-md py-8 transition-all duration-300 z-40 ${
             showServeDropdown ? "opacity-100 visible" : "opacity-0 invisible"
           }`}
           onMouseLeave={() => setShowServeDropdown(false)}
@@ -552,7 +536,7 @@ function Header() {
         </div>
 
         <div
-          className={`fixed top-[72px] left-0 right-0 bg-black/30 backdrop-blur-md py-8 transition-all duration-300 z-40 ${
+          className={`fixed top-[72px] left-0 right-0 bg-black/70 backdrop-blur-md py-8 transition-all duration-300 z-40 ${
             showGiveDropdown ? "opacity-100 visible" : "opacity-0 invisible"
           }`}
           onMouseLeave={() => setShowGiveDropdown(false)}

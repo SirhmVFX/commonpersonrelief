@@ -1,6 +1,7 @@
 import CtaPage from "@/components/Cta.page";
 import Image from "next/image";
-import { CgMail } from "react-icons/cg";
+import Link from "next/link";
+
 
 export default function Oppourtunities() {
   return (
@@ -12,21 +13,16 @@ export default function Oppourtunities() {
         <p className="text-gray-500 text-base md:text-lg">
           Apply to be a nonprofit board members
         </p>
-        <div className="flex items-center gap-2 bg-gray-100 w-full md:w-2/4 p-2 rounded-md">
-          <CgMail className="text-gray-500 text-4xl" />
-          <input
-            type="text"
-            placeholder="Enter your email"
-            className="w-full p-2 focus:outline-none text-sm md:text-base rounded-full bg-transparent"
-          />
-          <button className="bg-primarycolor px-4 text-white p-2 rounded-md flex-shrink-0">
-            Book a free call
+        <Link href="/contact">
+          <button className="bg-primarycolor text-white rounded-md flex items-center gap-2 justify-center p-3 md:p-4 mt-2">
+            <span className="text-sm md:text-base">Reach out to us</span>
+           
           </button>
-        </div>
+        </Link>
       </div>
 
-      <div className="w-5/6 mx-auto  md:py-32 flex flex-col md:flex-row items-center gap-10">
-        <div className="w-full md:w-1/2">
+      <div className="w-5/6 mx-auto  flex flex-col md:flex-row items-center gap-10">
+        <div className="w-full h-[250px] md:w-1/2">
           <Image
             src="/images/op.jpeg"
             alt="oppourtunities"
@@ -36,7 +32,7 @@ export default function Oppourtunities() {
           />
         </div>
         <div className="w-full md:w-1/2">
-          <h1 className="text-3xl md:text-5xl lg:text-7xl font-medium">
+          <h1 className="text-xl md:text-2xl lg:text-4xl font-medium py-2">
             Nonprofit Organization Board Opportunities
           </h1>
           <p className="text-gray-500 text-base md:text-lg">
@@ -51,7 +47,7 @@ export default function Oppourtunities() {
       </div>
 
       <div className="w-5/6 mx-auto py-16 md:py-32 flex flex-col gap-4">
-        <h1 className="text-3xl md:text-5xl lg:text-7xl ">
+        <h1 className="text-xl md:text-2xl lg:text-4xl ">
           Why you need to join a nonprofit volunteer Board member positions
         </h1>
         <ul className="list-disc list-inside text-gray-500 text-base md:text-lg">

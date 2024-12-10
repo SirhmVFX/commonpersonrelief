@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { BiHeart } from "react-icons/bi";
 
 function CtaPage() {
@@ -16,19 +17,21 @@ function CtaPage() {
           Together, we can create lasting change.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-          <button
+          <Link
+            href="/donate"
             className="bg-primarycolor text-white px-6 sm:px-8 lg:px-10 py-3 rounded-md 
             flex items-center justify-center gap-2 w-full sm:w-auto"
           >
             Make a Donation
             <BiHeart className="text-white" />
-          </button>
-          <button
+          </Link>
+          <Link 
+            href="/contact"
             className="border border-primarycolor text-primarycolor px-6 sm:px-8 lg:px-10 py-3 rounded-md
             w-full sm:w-auto"
           >
             Talk to us
-          </button>
+          </Link>
         </div>
       </div>
     </div>

@@ -43,13 +43,12 @@ export default function Initiatives() {
 
       <div className="w-5/6 mx-auto md:py-10">
         <div className="flex flex-col gap-4 py-4 border-b border-gray-200">
-          <p className="text-primarycolor text-sm">why choose us</p>
+          <p className="text-primarycolor text-sm">What we do</p>
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-medium">
-            Creative and unique solutions
+            Creative and unique solutions building the community
           </h1>
           <p className="text-gray-500 text-base md:text-lg">
-            We adhere to the highest standards of quality in all our products
-            and services. From design and development to manufacturing.
+            We adhere to the highest standards of quality in creating impact for the needy.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 py-6 md:py-10">

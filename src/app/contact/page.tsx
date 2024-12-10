@@ -9,13 +9,13 @@ export default function Contact() {
       <p className="text-gray-500 text-base md:text-lg md:w-1/2">Have questions, suggestions, or want to partner with us? Reach out today and let’s work together to make a difference!</p>
     </div>
 
-    <div className="w-5/6 mx-auto py-16 md:py-32 flex md:flex-row flex-col items-center gap-4">
+    <div className="w-5/6 mx-auto py-16 flex md:flex-row flex-col items-center gap-4">
       <div className="w-full flex md:flex-row flex-col gap-8 p-6 md:p-16 bg-gray-50 rounded-lg">
         <form className="md:w-3/5 flex flex-col gap-4 items-start">
         <h1 className="text-xl md:text-3xl lg:text-4xl font-medium">Leave us your info </h1>
-        <input type="text" className="w-full bg-transparent p-2 rounded-md border border-gray-300" placeholder="Your Name" />
-        <input type="text" className="w-full bg-transparent p-2 rounded-md border border-gray-300" placeholder="Your Email" />
-        <textarea className="w-full bg-transparent p-2 rounded-md border border-gray-300" placeholder="Your Message" rows={5}></textarea>
+        <input type="text" className="w-full bg-transparent p-4 rounded-md border border-gray-300" placeholder="Your Name" />
+        <input type="text" className="w-full bg-transparent p-4 rounded-md border border-gray-300" placeholder="Your Email" />
+        <textarea className="w-full bg-transparent p-4 rounded-md border border-gray-300" placeholder="Your Message" rows={5}></textarea>
         <div>
         <input type="checkbox" className="mr-2" />
         <label htmlFor="">You agree to our friendly <span className="text-primarycolor">privacy policy</span></label>

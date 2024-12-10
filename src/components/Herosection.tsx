@@ -5,8 +5,8 @@ import { BsDot } from "react-icons/bs";
 function Herosection() {
   return (
     <div className="herosection relative">
-      <div className="w-5/6 mx-auto py-32 lg:py-40 absolute top-0 left-0 right-0 flex flex-col gap-4">
-        <h1 className="text-6xl md:text-5xl lg:text-[130px] text-white lg:w-full font-medium leading-tight lg:leading-none">
+      <div className="w-5/6 mx-auto py-20 lg:py-40 absolute top-0 left-0 right-0 flex flex-col gap-4">
+        <h1 className="text-6xl md:text-5xl lg:text-[110px] text-white lg:w-full font-medium leading-tight lg:leading-none">
           Charity is an act of a Soft Heart
         </h1>
         <p className="text-white lg:w-2/4 text-base md:text-xl lg:text-2xl">
@@ -23,7 +23,7 @@ function Herosection() {
           </button>
         </div>
       </div>
-      <div className="w-5/6 pt-[110%] md:pt-[60%] lg:pt-[37%] mx-auto absolute left-0 right-0">
+      <div className="w-5/6 pt-[110%] md:pt-[60%] lg:pt-[40%] mx-auto absolute left-0 right-0">
         <div className="hidden overflow-hidden md:flex gap-4 items-center whitespace-nowrap animate-marquee">
           <p className="text-white text-base md:text-xl lg:text-2xl">
             EMPOWERMENT
@@ -50,9 +50,9 @@ function Herosection() {
           </p>
         </div>
       </div>
-      <div className="hidden md:block w-5/6 mx-auto absolute left-0 right-0 pt-[120%] md:pt-[70%] lg:pt-[40%]">
+      <div className="hidden md:block w-full mx-auto absolute left-0 right-0 pt-[120%] md:pt-[70%] lg:pt-[43%]">
         <div className="overflow-hidden flex gap-4 items-center whitespace-nowrap animate-marquee">
-          <div className="w-[1880px] sm:w-[1400px] md:w-[1800px] lg:w-[1950px] h-[150px] sm:h-[200px] md:h-[250px] lg:h-[300px]">
+          <div className="w-[1880px] sm:w-[1400px] md:w-[1800px] lg:w-[2950px] h-[150px] sm:h-[200px] md:h-[250px] lg:h-[300px]">
             <Image
               src={"/images/hero3.png"}
               width={1000}
@@ -61,7 +61,7 @@ function Herosection() {
               className="w-full h-full object-cover rounded-md"
             />
           </div>
-          <div className="w-[1880px] sm:w-[800px] md:w-[800px] lg:w-[1400px] h-[150px] sm:h-[200px] md:h-[250px] lg:h-[300px]">
+          <div className="w-[1880px] sm:w-[800px] md:w-[800px] lg:w-[2400px] h-[150px] sm:h-[200px] md:h-[250px] lg:h-[300px]">
             <Image
               src={"/images/hero2.png"}
               width={1000}
@@ -70,7 +70,7 @@ function Herosection() {
               className="w-full h-full object-cover rounded-md"
             />
           </div>
-          <div className="w-[1880px] sm:w-[800px] md:w-[850px] lg:w-[1000px] h-[150px] sm:h-[200px] md:h-[250px] lg:h-[300px]">
+          <div className="w-[1880px] sm:w-[800px] md:w-[850px] lg:w-[2000px] h-[150px] sm:h-[200px] md:h-[250px] lg:h-[300px]">
             <Image
               src={"/images/hero1.jpeg"}
               width={1000}
@@ -79,7 +79,43 @@ function Herosection() {
               className="w-full h-full object-cover rounded-md"
             />
           </div>
-          <div className="w-[1880px] sm:w-[800px] md:w-[800px] lg:w-[900px] h-[150px] sm:h-[200px] md:h-[250px] lg:h-[300px]">
+          <div className="w-[1880px] sm:w-[800px] md:w-[800px] lg:w-[2900px] h-[150px] sm:h-[200px] md:h-[250px] lg:h-[300px]">
+            <Image
+              src={"/images/hero4.jpg"}
+              width={1000}
+              height={1000}
+              alt="herosection"
+              className="w-full h-full object-cover rounded-md"
+            />
+          </div>
+          <div className="w-[1880px] sm:w-[1400px] md:w-[1800px] lg:w-[2950px] h-[150px] sm:h-[200px] md:h-[250px] lg:h-[300px]">
+            <Image
+              src={"/images/hero3.png"}
+              width={1000}
+              height={1000}
+              alt="herosection"
+              className="w-full h-full object-cover rounded-md"
+            />
+          </div>
+          <div className="w-[1880px] sm:w-[800px] md:w-[800px] lg:w-[2400px] h-[150px] sm:h-[200px] md:h-[250px] lg:h-[300px]">
+            <Image
+              src={"/images/hero2.png"}
+              width={1000}
+              height={1000}
+              alt="herosection"
+              className="w-full h-full object-cover rounded-md"
+            />
+          </div>
+          <div className="w-[1880px] sm:w-[800px] md:w-[850px] lg:w-[2000px] h-[150px] sm:h-[200px] md:h-[250px] lg:h-[300px]">
+            <Image
+              src={"/images/hero1.jpeg"}
+              width={1000}
+              height={1000}
+              alt="herosection"
+              className="w-full h-full object-cover rounded-md"
+            />
+          </div>
+          <div className="w-[1880px] sm:w-[800px] md:w-[800px] lg:w-[2900px] h-[150px] sm:h-[200px] md:h-[250px] lg:h-[300px]">
             <Image
               src={"/images/hero4.jpg"}
               width={1000}

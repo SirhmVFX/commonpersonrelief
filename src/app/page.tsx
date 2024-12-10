@@ -85,9 +85,9 @@ export default function Home() {
               basic needs. We believe in restoring dignity and building stronger
               communities, one life at a time
             </p>
-            <button className="w-full sm:w-auto bg-primarycolor text-white p-3 rounded-md">
+            <Link href={"/mission-vision"} className="w-full sm:w-auto bg-primarycolor text-white p-3 rounded-md">
               Learn More
-            </button>
+            </Link>
           </div>
           <div className="hidden lg:flex flex-col gap-4">
             <div className="w-full h-[300px]">
@@ -120,7 +120,7 @@ export default function Home() {
             </h1>
           </div>
           <div className="w-full lg:w-1/2 flex flex-col gap-4 items-start">
-            <p className="text-gray-500">What we do</p>
+            <p className="text-gray-500 font-bold">What we do</p>
             <p className="text-gray-500 text-base lg:text-lg">
               Our programs are designed to address essential needs and empower
               individuals. From food drives to housing support and clothing
@@ -163,7 +163,7 @@ export default function Home() {
           <div
             className="flex gap-8 transition-transform duration-500 ease-in-out"
             style={{
-              transform: `translateX(-${(currentSlide - 1) * (100 + 9)}%)`,
+              transform: `translateX(-${(currentSlide - 1) * (100 + 3)}%)`,
             }}
           >
             {[
