@@ -1,9 +1,26 @@
 import Image from "next/image";
 import { BiHeart } from "react-icons/bi";
+import React from "react";
 import { BsDot } from "react-icons/bs";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function Herosection() {
+  const settings = {
+    className: "slider variable-width flex gap-8",
+    infinite: true,
+    centerMode: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    variableWidth: true,
+    autoplay: true,
+    speed: 300,
+  };
+
   return (
+    <>
+  
     <div className="herosection relative">
       <div className="w-5/6 mx-auto py-20 lg:py-40 absolute top-0 left-0 right-0 flex flex-col gap-4">
         <h1 className="text-6xl md:text-5xl lg:text-[110px] text-white lg:w-full font-medium leading-tight lg:leading-none">
@@ -50,83 +67,70 @@ function Herosection() {
           </p>
         </div>
       </div>
+     
       <div className="hidden md:block w-full mx-auto absolute left-0 right-0 pt-[120%] md:pt-[70%] lg:pt-[43%]">
-        <div className="overflow-hidden flex gap-4 items-center whitespace-nowrap animate-marquee">
-          <div className="w-[1880px] sm:w-[1400px] md:w-[1800px] lg:w-[2950px] h-[150px] sm:h-[200px] md:h-[250px] lg:h-[300px]">
-            <Image
+         <div className="slider-container">
+     <Slider {...settings} >
+       <div className="h-[300px] px-2" style={{ width: 400 }}>
+       <Image
               src={"/images/hero3.png"}
               width={1000}
               height={1000}
               alt="herosection"
               className="w-full h-full object-cover rounded-md"
             />
-          </div>
-          <div className="w-[1880px] sm:w-[800px] md:w-[800px] lg:w-[2400px] h-[150px] sm:h-[200px] md:h-[250px] lg:h-[300px]">
-            <Image
-              src={"/images/hero2.png"}
-              width={1000}
-              height={1000}
-              alt="herosection"
-              className="w-full h-full object-cover rounded-md"
-            />
-          </div>
-          <div className="w-[1880px] sm:w-[800px] md:w-[850px] lg:w-[2000px] h-[150px] sm:h-[200px] md:h-[250px] lg:h-[300px]">
-            <Image
+       </div>
+       <div className="h-[300px] px-2" style={{ width: 600 }}>
+       <Image
               src={"/images/hero1.jpeg"}
               width={1000}
               height={1000}
               alt="herosection"
               className="w-full h-full object-cover rounded-md"
             />
-          </div>
-          <div className="w-[1880px] sm:w-[800px] md:w-[800px] lg:w-[2900px] h-[150px] sm:h-[200px] md:h-[250px] lg:h-[300px]">
-            <Image
-              src={"/images/hero4.jpg"}
+       </div>
+       <div className="h-[300px] px-2" style={{ width: 275 }}>
+       <Image
+              src={"/images/im2.png"}
               width={1000}
               height={1000}
               alt="herosection"
               className="w-full h-full object-cover rounded-md"
             />
-          </div>
-          <div className="w-[1880px] sm:w-[1400px] md:w-[1800px] lg:w-[2950px] h-[150px] sm:h-[200px] md:h-[250px] lg:h-[300px]">
-            <Image
-              src={"/images/hero3.png"}
+       </div>
+       <div className="h-[300px] px-2" style={{ width: 350 }}>
+       <Image
+              src={"/images/mis.jpeg"}
               width={1000}
               height={1000}
               alt="herosection"
               className="w-full h-full object-cover rounded-md"
             />
-          </div>
-          <div className="w-[1880px] sm:w-[800px] md:w-[800px] lg:w-[2400px] h-[150px] sm:h-[200px] md:h-[250px] lg:h-[300px]">
-            <Image
-              src={"/images/hero2.png"}
+       </div>
+       <div className="h-[300px] px-2" style={{ width: 225 }}>
+       <Image
+              src={"/images/shelt.jpeg"}
               width={1000}
               height={1000}
               alt="herosection"
               className="w-full h-full object-cover rounded-md"
             />
-          </div>
-          <div className="w-[1880px] sm:w-[800px] md:w-[850px] lg:w-[2000px] h-[150px] sm:h-[200px] md:h-[250px] lg:h-[300px]">
-            <Image
-              src={"/images/hero1.jpeg"}
+       </div>
+       <div className="h-[300px] px-2" style={{ width: 575 }}>
+       <Image
+              src={"/images/im.jpg"}
               width={1000}
               height={1000}
               alt="herosection"
               className="w-full h-full object-cover rounded-md"
             />
-          </div>
-          <div className="w-[1880px] sm:w-[800px] md:w-[800px] lg:w-[2900px] h-[150px] sm:h-[200px] md:h-[250px] lg:h-[300px]">
-            <Image
-              src={"/images/hero4.jpg"}
-              width={1000}
-              height={1000}
-              alt="herosection"
-              className="w-full h-full object-cover rounded-md"
-            />
-          </div>
-        </div>
+       </div>
+     </Slider>
+   </div>
       </div>
     </div>
+    
+   </>
   );
 }
 
