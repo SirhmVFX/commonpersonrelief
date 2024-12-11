@@ -122,7 +122,7 @@ function Footer() {
                 },
                 {
                   icon: <CiMail className="text-xl" />,
-                  text: "mail@commonpersonrelief.org",
+                  text: "info@commonpersonrelief.org",
                 },
               ].map((contact, index) => (
                 <Link

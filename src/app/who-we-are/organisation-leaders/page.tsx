@@ -26,27 +26,34 @@ export default function OrganisationLeaders() {
   ];
   return (
     <>
-      <div className="w-5/6 mx-auto py-[80px] lg:py-[120px] flex flex-col md:flex-row gap-6 md:gap-4">
-        <div className="w-full md:w-1/3">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium">
-            Corporate Brief
+     <div className="w-5/6 mx-auto py-[80px] lg:py-[120px] md:flex gap-4">
+        <div className="flex flex-col items-start gap-4 md:w-1/2">
+          <p className="text-primarycolor text-sm md:text-lg py-2 px-4 rounded-full border border-primarycolor">
+            About us
+          </p>
+          <h1 className="text-3xl md:text-5xl lg:text-7xl font-medium">
+            Empowering Lives, One Step at a Time
           </h1>
         </div>
-        <div className="w-full md:w-2/3">
-          <p className="text-gray-500 text-base sm:text-lg">
-            Common Person Relief is a nonprofit and nonpolitical organization
-            committed to making a difference in the lives of underprivileged
-            children, youth, and women across Africa. With plans to officially
-            register under the appropriate legal frameworks, we aim to focus on
-            education as our primary mission. In the future, we envision
-            establishing schools to offer free education to underserved
-            children, fostering their healthy development. Alongside education,
-            we are dedicated to running programs for economic empowerment and
-            health awareness, creating sustainable opportunities and promoting
-            well-being across communities.
+
+        <div className="flex flex-col gap-4 md:w-1/2">
+          <p className="text-sm md:text-lg text-gray-500">
+            At Common Person Relief, we are driven by a shared commitment to
+            uplift the lives of underprivileged individuals across Africa. Since
+            our inception, we have worked tirelessly to bridge the gap in access
+            to essential resources such as food, education, healthcare, and
+            economic opportunities.
+          </p>
+          <p className="text-sm md:text-lg text-gray-500">
+            Our mission is to empower children, youth, and women by addressing
+            the root causes of poverty and inequality. Through strategic
+            programs and partnerships, we aim to create sustainable solutions
+            that bring hope, dignity, and opportunity to those who need it most.
           </p>
         </div>
       </div>
+
+      
       <div className="w-5/6 mx-auto">
         <div className="w-full h-[200px] sm:h-[300px] md:h-[400px]">
           <Image
@@ -97,6 +104,76 @@ export default function OrganisationLeaders() {
           </p>
         </div>
       </div>
+      <div className="w-5/6 mx-auto py-8 flex flex-col md:flex-row gap-6 md:gap-4">
+        <div className="w-full md:w-1/3">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium">
+            Corporate Brief
+          </h1>
+        </div>
+        <div className="w-full md:w-2/3">
+          <p className="text-gray-500 text-base sm:text-lg">
+            Common Person Relief is a nonprofit and nonpolitical organization
+            committed to making a difference in the lives of underprivileged
+            children, youth, and women across Africa. With plans to officially
+            register under the appropriate legal frameworks, we aim to focus on
+            education as our primary mission. In the future, we envision
+            establishing schools to offer free education to underserved
+            children, fostering their healthy development. Alongside education,
+            we are dedicated to running programs for economic empowerment and
+            health awareness, creating sustainable opportunities and promoting
+            well-being across communities.
+          </p>
+        </div>
+      </div>
+      <div className="w-5/6 mx-auto py-16 md:py-32">
+        <div className=" md:flex items-center gap-4 p-4 border-b border-gray-200">
+          <h1 className="text-3xl md:text-5xl lg:text-7xl font-medium md:w-1/2">
+            Our Impact Areas
+          </h1>
+          <p className="text-sm md:text-lg text-gray-500 md:w-1/2">
+            With the support of dedicated volunteers, partners, and donors,
+            we&apos;re creating lasting change one life at a time.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-8 pt-10">
+          <div className="flex flex-col gap-4 p-4 bg-gray-50">
+            <h1 className="text-2xl md:text-3xl text-primarycolor font-medium">01</h1>
+            <h1 className="text-2xl md:text-3xl font-medium">Feeding programs to combat hunger.</h1>
+            <p className="text-sm md:text-lg text-gray-500">
+              Providing nutritious meals to combat hunger and improve the
+              well-being of vulnerable individuals and families.
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-4 p-4 bg-gray-50">
+            <h1 className="text-2xl md:text-3xl text-primarycolor font-medium">02</h1>
+            <h1 className="text-2xl md:text-3xl font-medium">Free education for children in need.</h1>
+            <p className="text-sm md:text-lg text-gray-500">
+            Offering access to quality education at no cost, ensuring every child has the opportunity to learn and thrive.
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-4 p-4 bg-gray-50">
+            <h1 className="text-2xl md:text-3xl text-primarycolor font-medium">03</h1>
+            <h1 className="text-2xl md:text-3xl font-medium">Vocational training and economic empowerment.</h1>
+            <p className="text-sm md:text-lg text-gray-500">
+            Equipping individuals with skills and resources to achieve financial independence and create sustainable livelihoods.
+            </p>
+          </div>
+          <div className="flex flex-col gap-4 p-4 bg-gray-50">
+            <h1 className="text-2xl md:text-3xl text-primarycolor font-medium">04</h1>
+            <h1 className="text-2xl md:text-3xl font-medium">Emergency relief initiatives.</h1>
+            <p className="text-sm md:text-lg text-gray-500">
+            Delivering essential medical care and timely support during crises to save lives and build healthier communities.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+
+
       <div className="w-5/6 mx-auto py-10 sm:py-16 md:py-20 flex flex-col gap-6 sm:gap-8 md:gap-10">
         <div className="flex flex-col items-center text-center">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium mb-2">

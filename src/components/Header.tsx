@@ -111,9 +111,9 @@ function Header() {
             >
               Give Aid
             </Link>
-            <Link className="text-white hover:text-primarycolor " href="/about">
+            {/* <Link className="text-white hover:text-primarycolor " href="/about">
               About Us
-            </Link>
+            </Link> */}
             <Link className="text-white hover:text-primarycolor " href="/contact">
               Contact Us
             </Link>
@@ -277,15 +277,21 @@ function Header() {
                   >
                     Volunteer With Us
                   </Link>
+                  <Link
+                    href="/partners"
+                    className="block text-white hover:text-primarycolor py-2"
+                  >
+                    Partner With Us
+                  </Link>
                 </div>
               </div>
 
-              <Link
+              {/* <Link
                 href="/about"
                 className="block text-white hover:text-primarycolor py-2"
               >
                 About Us
-              </Link>
+              </Link> */}
 
               <Link
                 href="/contact"

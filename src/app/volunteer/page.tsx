@@ -14,7 +14,7 @@ export default function Volunteer() {
             className="w-full h-full object-cover"
           />
           <div className="absolute top-0 left-0 right-0 bottom-0 bg-black opacity-50"></div>
-          <div className="absolute top-32 left-10 botton-10 right-10 md:top-1/2 md:left-1/2 transform md:-translate-x-1/2 md:-translate-y-1/2 text-white text-center">
+          <div className="absolute top-16 left-10 botton-10 right-10 md:top-1/2 md:left-1/2 transform md:-translate-x-1/2 md:-translate-y-1/2 text-white text-center">
             <h1 className="md:text-7xl text-3xl font-bold ">
               Give a helping hand to those who need it
             </h1>
@@ -58,7 +58,7 @@ export default function Volunteer() {
           </div>
         </div>
 
-        <div className="md:w-3/6 mx-auto py-14">
+        <div className="md:w-3/6 w-5/6 mx-auto py-14">
         <form className="w-full flex flex-col gap-4 items-start">
         <h1 className="text-xl md:text-3xl lg:text-4xl font-medium">Leave us your info </h1>
         <input type="text" className="w-full bg-transparent p-4 rounded-md border border-gray-300" placeholder="Your Name" />

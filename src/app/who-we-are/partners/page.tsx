@@ -8,7 +8,7 @@ export default function Partners() {
     <div className="w-5/6 mx-auto py-8 md:py-16 lg:py-32 flex flex-col items-center gap-8">
       <div className="w-full h-[300px] md:h-[400px] mb-8 md:mb-0 relative rounded-lg">
         <Image
-          src="/images/we.jpg"
+          src="/images/pa.jpg"
           alt="partner"
           width={1000}
           height={1000}
@@ -21,7 +21,7 @@ export default function Partners() {
 
       <h1 className=" border rounded-full p-2 md:text-xl lg:text-xl text-primarycolor text-center">A few reasons why you should collaborate with us</h1>
 
-      <div className="w-full flex gap-4">
+      <div className="w-full flex md:flex-row flex-col gap-4">
         <div className="flex items-start gap-4 p-3 md:p-4 border border-gray-200">
           <div className="bg-primarycolor/10 rounded-full p-3 md:p-4 flex-shrink-0">
             <BiBrush className="text-primarycolor text-xl md:text-2xl" />
