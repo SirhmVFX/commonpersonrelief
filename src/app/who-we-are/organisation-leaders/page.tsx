@@ -104,7 +104,7 @@ export default function OrganisationLeaders() {
           </p>
         </div>
       </div>
-      <div className="w-5/6 mx-auto py-8 flex flex-col md:flex-row gap-6 md:gap-4">
+      {/* <div className="w-5/6 mx-auto py-8 flex flex-col md:flex-row gap-6 md:gap-4">
         <div className="w-full md:w-1/3">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium">
             Corporate Brief
@@ -124,7 +124,7 @@ export default function OrganisationLeaders() {
             well-being across communities.
           </p>
         </div>
-      </div>
+      </div> */}
       <div className="w-5/6 mx-auto py-16 md:py-32">
         <div className=" md:flex items-center gap-4 p-4 border-b border-gray-200">
           <h1 className="text-3xl md:text-5xl lg:text-7xl font-medium md:w-1/2">

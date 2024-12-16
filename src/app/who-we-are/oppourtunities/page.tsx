@@ -6,18 +6,18 @@ import Link from "next/link";
 export default function Oppourtunities() {
   return (
     <div>
-      <div className="w-5/6 mx-auto pt-20 md:py-32 flex flex-col items-center gap-4">
+      <div className="w-5/6 mx-auto pt-20 md:py-32 flex flex-col items-center gap-2">
         <h1 className="text-3xl md:text-5xl lg:text-7xl font-medium">
           Join the visionary team
         </h1>
         <p className="text-gray-500 text-base md:text-lg">
           Apply to be a nonprofit board members
         </p>
-        <Link href="/contact">
-          <button className="bg-primarycolor text-white rounded-md flex items-center gap-2 justify-center p-3 md:p-4 mt-2">
-            <span className="text-sm md:text-base">Reach out to us</span>
+        <Link href="/contact" className="bg-primarycolor text-white rounded-md flex items-center gap-2 justify-center p-3 md:p-4 mb-2">
+          
+           Reach out to us
            
-          </button>
+         
         </Link>
       </div>
 

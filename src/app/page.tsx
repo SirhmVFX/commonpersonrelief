@@ -1,13 +1,14 @@
 "use client";
 
 import Image from "next/image";
-import { BiArrowToLeft, BiArrowToRight } from "react-icons/bi";
-
-import { useState, useRef } from "react";
 import BlogCard from "@/components/BlogCard";
 import CtaPage from "@/components/Cta.page";
 import Herosection from "@/components/Herosection";
 import Link from "next/link";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 
 interface Blog {
   id: number;
@@ -17,8 +18,7 @@ interface Blog {
 }
 
 export default function Home() {
-  const [currentSlide, setCurrentSlide] = useState(1);
-  const scrollContainerRef = useRef<HTMLDivElement>(null);
+
 
   const blogs: Blog[] = [
     {
@@ -50,26 +50,26 @@ export default function Home() {
         "We've plan to launched a new shelter initiative to provide safe, temporary housing for displaced individuals. Together, we're creating spaces of hope and recovery.",
     },
   ];
-  const handleScroll = (direction: "left" | "right") => {
-    const newSlide =
-      direction === "left"
-        ? Math.max(1, currentSlide - 1)
-        : Math.min(5, currentSlide + 1);
-    setCurrentSlide(newSlide);
+
+
+  const settings = {
+    className: "center",
+    centerMode: true,
+    infinite: true,
+    centerPadding: "20px",
+    slidesToShow: 1,
+    speed: 500, 
+    autoplay: true,
+   
   };
 
   return (
     <>
       <Herosection />
-      <div className="w-5/6 mx-auto pt-[80px] lg:pt-[120px] flex flex-col gap-4">
-        <div>
-          <p className="text-gray-500">About us</p>
-          <h1 className="text-4xl md:text-5xl lg:text-7xl font-medium">
-            Who we are
-          </h1>
-        </div>
-        <div className="flex flex-col lg:flex-row gap-4">
-          <div className="w-full lg:w-3/4 flex flex-col gap-4 items-start">
+      <div className="w-5/6 h-screen mx-auto pt-[80px] lg:pt-[120px] flex flex-col justify-center gap-4">
+        
+        <div className="flex  gap-4">
+          <div className="w-full flex  gap-10 items-center">
             <div className="w-full h-[300px] md:h-[400px] lg:h-[500px]">
               <Image
                 src="/images/wee.png"
@@ -79,6 +79,13 @@ export default function Home() {
                 className="w-full h-full object-cover rounded-md"
               />
             </div>
+            <div className="flex flex-col gap-4 items-start">
+          
+          <p className="text-gray-500">About us</p>
+          <h1 className="text-4xl md:text-5xl lg:text-7xl font-medium">
+            Who we are
+          </h1>
+      
             <p className="text-gray-500">
               Common Person Relief is a nonprofit organization committed to
               helping the underserved with food, shelter, clothing, and other
@@ -89,84 +96,37 @@ export default function Home() {
               Learn More
             </Link>
           </div>
-          <div className="hidden lg:flex flex-col gap-4">
-            <div className="w-full h-[300px]">
-              <Image
-                src="/images/wee2.png"
-                alt="about"
-                width={1000}
-                height={1000}
-                className="w-full h-full object-cover rounded-md"
-              />
             </div>
-            <div className="w-full h-[300px]">
-              <Image
-                src="/images/wee3.png"
-                alt="about"
-                width={1000}
-                height={1000}
-                className="w-full h-full object-cover rounded-md"
-              />
-            </div>
-          </div>
+         
         </div>
       </div>
 
-      <div className="w-5/6 mx-auto pt-10 lg:pt-20">
-        <div className="flex flex-col lg:flex-row gap-4 pb-10 lg:pb-20">
-          <div className="w-full lg:w-1/2">
+      <div className="w-5/6 h-screen mx-auto pt-10 lg:pt-32">
+        <div className=" flex flex-col text-center gap-4">
+       
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-medium">
               Our Programs
             </h1>
-          </div>
-          <div className="w-full lg:w-1/2 flex flex-col gap-4 items-start">
-            <p className="text-gray-500 font-bold">What we do</p>
-            <p className="text-gray-500 text-base lg:text-lg">
+      
+          <div className="w-full flex flex-col gap-4 items-start">
+            
+            <p className="text-gray-500 md:w-4/6 mx-auto text-base text-center lg:text-lg">
               Our programs are designed to address essential needs and empower
               individuals. From food drives to housing support and clothing
               distribution, we focus on creating lasting impact in the lives of
               those we serve
             </p>
-            <Link href={"/who-we-are/#feeding-hungry"} className="w-full hidden md:block text-center sm:w-auto bg-primarycolor text-white p-3 rounded-md">
+            {/* <Link href={"/who-we-are/#feeding-hungry"} className="w-full hidden md:block text-center sm:w-auto bg-primarycolor text-white p-3 rounded-md">
               Learn More
-            </Link>
+            </Link> */}
           </div>
         </div>
-      </div>
-
-      <div className="bg-gray-100 p-6 md:p-10 lg:p-20 flex flex-col lg:flex-row gap-4 items-center lg:items-end">
-        <div className="flex flex-col gap-2 items-center">
-          <div className="flex gap-4">
-            <button
-              className="bg-white p-3 rounded-full hover:bg-gray-100"
-              onClick={() => handleScroll("left")}
-              disabled={currentSlide === 1}
-            >
-              <BiArrowToLeft />
-            </button>
-            <button
-              className="bg-white p-3 rounded-full hover:bg-gray-100"
-              onClick={() => handleScroll("right")}
-              disabled={currentSlide === 5}
-            >
-              <BiArrowToRight />
-            </button>
-          </div>
-          <h1 className="text-4xl md:text-5xl lg:text-7xl font-medium">
-            {currentSlide.toString().padStart(2, "0")}
-          </h1>
-        </div>
-        <div
-          ref={scrollContainerRef}
-          className="flex-1 overflow-x-hidden scroll-smooth"
-        >
-          <div
-            className="flex gap-8 transition-transform duration-500 ease-in-out"
-            style={{
-              transform: `translateX(-${(currentSlide - 1) * (100 + 3)}%)`,
-            }}
-          >
-            {[
+        <div className="pt-6">
+        
+        <div className="slider-container">
+      <Slider {...settings}>
+      
+        {[
               {
                 title: "Food Programs",
                 img: "/images/food.jpeg",
@@ -200,7 +160,7 @@ export default function Home() {
             ].map((card, index) => (
               <div
                 key={index}
-                className="w-full flex-shrink-0 relative h-[500px]"
+                className="w-full relative h-[500px]"
               >
                 <Image
                   src={card.img}
@@ -211,18 +171,22 @@ export default function Home() {
                 />
                 <div className="absolute rounded-md top-0 left-0 w-full h-full bg-gradient-to-t from-black to-transparent"></div>
                 <div className="absolute bottom-0 left-0 w-full p-8">
-                  <h1 className="text-white text-2xl font-medium">
+                  <h1 className="text-white text-2xl md:text-4xl  font-medium">
                     {card.title}
                   </h1>
                   <p className="text-gray-500">{card.description}</p>
                 </div>
               </div>
             ))}
-          </div>
-        </div>
+      </Slider>
+    </div>
+       
+      </div>
       </div>
 
-      <div className="w-5/6 mx-auto py-10 lg:py-20 flex flex-col gap-4">
+      
+
+      <div className="w-5/6 h-[60vh] justify-center mx-auto py-10 lg:py-20 flex flex-col gap-4">
         <div className="flex flex-col gap-4 items-center text-center">
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-medium">
             Our Approach Trustworthiness
@@ -251,7 +215,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-5/6 mx-auto py-10 lg:py-20 flex flex-col gap-4">
+      <div className="w-5/6 h-screen justify-center mx-auto py-10 lg:py-20 flex flex-col gap-4">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium">
           Read our latest events and news
         </h1>

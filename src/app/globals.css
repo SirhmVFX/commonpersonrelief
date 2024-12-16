@@ -7,7 +7,7 @@
 }
 
 .herosection {
-  background-image: url("/images/hero.jpeg");
+  background-image: url("/images/h1.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -85,3 +85,8 @@
   width: 80%;
 }
 
+.slick-prev:before, .slick-next:before {
+  color: #016635 !important;
+  font-size: 30px !important;
+
+}

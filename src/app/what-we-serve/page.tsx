@@ -5,7 +5,7 @@ export default function WhoWeServe() {
   return (
     <div>
       <div
-        className="w-5/6 mx-auto py-20 md:pt-32 flex flex-col gap-4"
+        className="w-5/6 mx-auto md:h-screen justify-center py-20 md:pt-32 flex flex-col gap-4"
         id="food-programs"
       >
         <h1 className="text-xl md:text-2xl lg:text-4xl font-medium border-b-2 border-gray-200">
@@ -41,7 +41,7 @@ export default function WhoWeServe() {
             </div>
           </div>
           <div className="flex flex-col justify-between  w-full md:w-1/3">
-            <div>
+            <div className="h-[190px] py-4">
               <div className="flex gap-2 items-center">
                 <BiCheck className="text-xl sm:text-2xl text-green-500 border border-green-500 rounded-full p-1 flex-shrink-0" />
                 <h1 className="text-xl  font-medium">Local Partnerships</h1>
@@ -53,7 +53,7 @@ export default function WhoWeServe() {
               </p>
             </div>
             <div className="h-[1px] w-full bg-gray-200"></div>
-            <div>
+            <div className="h-[190px] py-4">
               <div className="flex gap-2 items-center">
                 <BiCheck className="text-xl sm:text-2xl text-green-500 border border-green-500 rounded-full p-1 flex-shrink-0" />
                 <h1 className="text-xl  font-medium">Emergency Response</h1>
@@ -78,7 +78,7 @@ export default function WhoWeServe() {
       </div>
 
       <div
-        className="w-5/6 mx-auto py-16 md:pt-32 flex flex-col gap-4"
+        className="w-5/6 md:h-screen justify-center mx-auto py-16 md:pt-32 flex flex-col gap-4"
         id="economic-empowerment"
       >
         <h1 className="text-xl md:text-2xl lg:text-4xl font-medium border-b-2 border-gray-200">
@@ -151,7 +151,7 @@ export default function WhoWeServe() {
       </div>
 
       <div
-        className="w-5/6 mx-auto py-16 md:pt-32 flex flex-col gap-4"
+        className="w-5/6 md:h-screen justify-center mx-auto py-16 md:pt-32 flex flex-col gap-4"
         id="clothing-drive"
       >
         <h1 className="text-xl md:text-2xl lg:text-4xl font-medium border-b-2 border-gray-200">
@@ -219,7 +219,7 @@ export default function WhoWeServe() {
       </div>
 
       <div
-        className="w-5/6 mx-auto py-16 md:pt-32 flex flex-col gap-4"
+        className="w-5/6 md:h-screen justify-center mx-auto py-16 md:pt-32 flex flex-col gap-4"
         id="education-support"
       >
         <h1 className="text-xl md:text-2xl lg:text-4xl font-medium border-b-2 border-gray-200">
@@ -291,7 +291,7 @@ export default function WhoWeServe() {
       </div>
 
       <div
-        className="w-5/6 mx-auto py-8 md:pt-32 flex flex-col gap-4"
+        className="w-5/6 md:h-screen justify-center mx-auto py-8 md:pt-32 flex flex-col gap-4"
         id="emergency-response"
       >
         <h1 className="text-xl md:text-2xl lg:text-4xl font-medium border-b-2 border-gray-200">
@@ -360,7 +360,7 @@ export default function WhoWeServe() {
       </div>
 
       <div
-        className="w-5/6 mx-auto py-8 md:pt-32 flex flex-col gap-4"
+        className="w-5/6 mx-auto md:h-screen justify-center py-8 md:pt-32 flex flex-col gap-4"
         id="emergency-response"
       >
         <h1 className="text-xl md:text-2xl lg:text-4xl font-medium border-b-2 border-gray-200">

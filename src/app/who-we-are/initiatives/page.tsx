@@ -41,7 +41,7 @@ export default function Initiatives() {
         </div>
       </div>
 
-      <div className="w-5/6 mx-auto md:py-10">
+      <div className="w-5/6 md:h-screen flex flex-col justify-center mx-auto md:py-10">
         <div className="flex flex-col gap-4 py-4 border-b border-gray-200">
           <p className="text-primarycolor text-sm">What we do</p>
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-medium">
