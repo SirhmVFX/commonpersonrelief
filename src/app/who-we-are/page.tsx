@@ -83,53 +83,6 @@ function WhoWeAre() {
           </p>
         </div>
       </div>
-      
-      <div className="w-5/6 mx-auto py-16 md:py-32">
-        <div className=" md:flex items-center gap-4 p-4 border-b border-gray-200">
-          <h1 className="text-3xl md:text-5xl lg:text-7xl font-medium md:w-1/2">
-            Our Initiatives
-          </h1>
-          <p className="text-sm md:text-lg text-gray-500 md:w-1/2">
-            With the support of dedicated volunteers, partners, and donors,
-            we&apos;re creating lasting change one life at a time.
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-2 gap-8 pt-10">
-          <div className="flex flex-col gap-4 p-4 bg-gray-50">
-            <h1 className="text-2xl md:text-3xl text-primarycolor font-medium">01</h1>
-            <h1 className="text-2xl md:text-3xl font-medium">Feeding programs to combat hunger.</h1>
-            <p className="text-sm md:text-lg text-gray-500">
-              Providing nutritious meals to combat hunger and improve the
-              well-being of vulnerable individuals and families.
-            </p>
-          </div>
-
-          <div className="flex flex-col gap-4 p-4 bg-gray-50">
-            <h1 className="text-2xl md:text-3xl text-primarycolor font-medium">02</h1>
-            <h1 className="text-2xl md:text-3xl font-medium">Free education for children in need.</h1>
-            <p className="text-sm md:text-lg text-gray-500">
-            Offering access to quality education at no cost, ensuring every child has the opportunity to learn and thrive.
-            </p>
-          </div>
-
-          <div className="flex flex-col gap-4 p-4 bg-gray-50">
-            <h1 className="text-2xl md:text-3xl text-primarycolor font-medium">03</h1>
-            <h1 className="text-2xl md:text-3xl font-medium">Vocational training and economic empowerment.</h1>
-            <p className="text-sm md:text-lg text-gray-500">
-            Equipping individuals with skills and resources to achieve financial independence and create sustainable livelihoods.
-            </p>
-          </div>
-          <div className="flex flex-col gap-4 p-4 bg-gray-50">
-            <h1 className="text-2xl md:text-3xl text-primarycolor font-medium">04</h1>
-            <h1 className="text-2xl md:text-3xl font-medium">Emergency relief initiatives.</h1>
-            <p className="text-sm md:text-lg text-gray-500">
-            Delivering essential medical care and timely support during crises to save lives and build healthier communities.
-            </p>
-          </div>
-        </div>
-      </div>
-
       <div className="w-5/6 md:h-screen flex flex-col justify-center mx-auto py-10 md:py-20  ">
         <div className="justify-center items-center  flex flex-col md:flex-row md:gap-10">
           <div className="w-full pt-10 md:pt-0 md:w-1/2">
@@ -210,6 +163,54 @@ function WhoWeAre() {
           </div>
         </div>
       </div>
+      
+      <div className="w-5/6 mx-auto py-16 md:py-32">
+        <div className=" md:flex items-center gap-4 p-4 border-b border-gray-200">
+          <h1 className="text-3xl md:text-5xl lg:text-7xl font-medium md:w-1/2">
+            Our Initiatives
+          </h1>
+          <p className="text-sm md:text-lg text-gray-500 md:w-1/2">
+            With the support of dedicated volunteers, partners, and donors,
+            we&apos;re creating lasting change one life at a time.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-8 pt-10">
+          <div className="flex flex-col gap-4 p-4 bg-gray-50">
+            <h1 className="text-2xl md:text-3xl text-primarycolor font-medium">01</h1>
+            <h1 className="text-2xl md:text-3xl font-medium">Feeding programs to combat hunger.</h1>
+            <p className="text-sm md:text-lg text-gray-500">
+              Providing nutritious meals to combat hunger and improve the
+              well-being of vulnerable individuals and families.
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-4 p-4 bg-gray-50">
+            <h1 className="text-2xl md:text-3xl text-primarycolor font-medium">02</h1>
+            <h1 className="text-2xl md:text-3xl font-medium">Free education for children in need.</h1>
+            <p className="text-sm md:text-lg text-gray-500">
+            Offering access to quality education at no cost, ensuring every child has the opportunity to learn and thrive.
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-4 p-4 bg-gray-50">
+            <h1 className="text-2xl md:text-3xl text-primarycolor font-medium">03</h1>
+            <h1 className="text-2xl md:text-3xl font-medium">Vocational training and economic empowerment.</h1>
+            <p className="text-sm md:text-lg text-gray-500">
+            Equipping individuals with skills and resources to achieve financial independence and create sustainable livelihoods.
+            </p>
+          </div>
+          <div className="flex flex-col gap-4 p-4 bg-gray-50">
+            <h1 className="text-2xl md:text-3xl text-primarycolor font-medium">04</h1>
+            <h1 className="text-2xl md:text-3xl font-medium">Emergency relief initiatives.</h1>
+            <p className="text-sm md:text-lg text-gray-500">
+            Delivering essential medical care and timely support during crises to save lives and build healthier communities.
+            </p>
+          </div>
+        </div>
+      </div>
+
+     
     </div>
   );
 }

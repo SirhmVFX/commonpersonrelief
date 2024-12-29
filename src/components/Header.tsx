@@ -4,7 +4,6 @@ import Link from "next/link";
 import {
   BiHeart,
   BiBuilding,
-  BiHistory,
   BiAward,
   BiFirstAid,
   BiFoodMenu,
@@ -409,7 +408,7 @@ function Header() {
                 </div>
               </Link>
 
-              <Link
+              {/* <Link
                 href="/who-we-are/oppourtunities"
                 className="flex items-start gap-3 p-8 hover:bg-[#ffffff10] rounded-md"
               >
@@ -424,7 +423,7 @@ function Header() {
                     Why we do what we do and what we plan to achieve
                   </p>
                 </div>
-              </Link>
+              </Link> */}
 
               <Link
                 href="/who-we-are/stories"
