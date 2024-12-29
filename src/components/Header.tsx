@@ -4,8 +4,6 @@ import Link from "next/link";
 import {
   BiHeart,
   BiBuilding,
-  BiGroup,
-  BiChart,
   BiHistory,
   BiAward,
   BiFirstAid,
@@ -155,20 +153,26 @@ function Header() {
                     href="/who-we-are"
                     className="block text-white hover:text-primarycolor py-2"
                   >
-                    Our Organization and leaders
+                    About us
                   </Link>
-                  <Link
+                  {/* <Link
+                    href="/who-we-are"
+                    className="block text-white hover:text-primarycolor py-2"
+                  >
+                    Our Organization and leaders
+                  </Link> */}
+                  {/* <Link
                     href="/who-we-are/mission-vision"
                     className="block text-white hover:text-primarycolor py-2"
                   >
                     Our Mission and Vision
-                  </Link>
-                  <Link
+                  </Link> */}
+                  {/* <Link
                     href="/who-we-are/initiatives"
                     className="block text-white hover:text-primarycolor py-2"
                   >
                     Our Initiatives
-                  </Link>
+                  </Link> */}
                   <Link
                     href="/who-we-are/partners"
                     className="block text-white hover:text-primarycolor py-2"
@@ -320,7 +324,7 @@ function Header() {
           <div className="mx-auto w-5/6">
             <div className="grid grid-cols-3 gap-4">
               {/* Who we are dropdown content */}
-              <Link
+              {/* <Link
                 href="/who-we-are/organisation-leaders"
                 className="flex items-start gap-3 p-8 hover:bg-[#ffffff10] rounded-md"
               >
@@ -335,9 +339,26 @@ function Header() {
                     Who we are, What we stand for and the team
                   </p>
                 </div>
-              </Link>
+              </Link> */}
 
               <Link
+                href="/who-we-are"
+                className="flex items-start gap-3 p-8 hover:bg-[#ffffff10] rounded-md"
+              >
+                <div className="text-primarycolor text-3xl mt-1">
+                  <BiBuilding />
+                </div>
+                <div>
+                  <h1 className="text-2xl text-white font-bold">
+                    About us
+                  </h1>
+                  <p className="text-gray-300 text-sm">
+                    Who we are, What we stand for and the team
+                  </p>
+                </div>
+              </Link>
+
+              {/* <Link
                 href="/who-we-are/mission-vision"
                 className="flex items-start gap-3 p-8 hover:bg-[#ffffff10] rounded-md"
               >
@@ -352,9 +373,9 @@ function Header() {
                     Why we do what we do and what we plan to achieve
                   </p>
                 </div>
-              </Link>
+              </Link> */}
 
-              <Link
+              {/* <Link
                 href="/who-we-are/initiatives"
                 className="flex items-start gap-3 p-8 hover:bg-[#ffffff10] rounded-md"
               >
@@ -369,7 +390,7 @@ function Header() {
                     Why we do what we do and what we plan to achieve
                   </p>
                 </div>
-              </Link>
+              </Link> */}
 
               <Link
                 href="/who-we-are/partners"
