@@ -77,7 +77,7 @@ function Header() {
             <div>
               <Link
                 className="text-white hover:text-primarycolor flex items-center"
-                href="/"
+                href="/who-we-are"
                 onMouseEnter={() => {
                   setShowWhoDropdown(true);
                   setShowServeDropdown(false);
@@ -152,7 +152,7 @@ function Header() {
                   }`}
                 >
                   <Link
-                    href="/who-we-are/organisation-leaders"
+                    href="/who-we-are"
                     className="block text-white hover:text-primarycolor py-2"
                   >
                     Our Organization and leaders

@@ -104,27 +104,7 @@ export default function OrganisationLeaders() {
           </p>
         </div>
       </div>
-      {/* <div className="w-5/6 mx-auto py-8 flex flex-col md:flex-row gap-6 md:gap-4">
-        <div className="w-full md:w-1/3">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium">
-            Corporate Brief
-          </h1>
-        </div>
-        <div className="w-full md:w-2/3">
-          <p className="text-gray-500 text-base sm:text-lg">
-            Common Person Relief is a nonprofit and nonpolitical organization
-            committed to making a difference in the lives of underprivileged
-            children, youth, and women across Africa. With plans to officially
-            register under the appropriate legal frameworks, we aim to focus on
-            education as our primary mission. In the future, we envision
-            establishing schools to offer free education to underserved
-            children, fostering their healthy development. Alongside education,
-            we are dedicated to running programs for economic empowerment and
-            health awareness, creating sustainable opportunities and promoting
-            well-being across communities.
-          </p>
-        </div>
-      </div> */}
+      
       <div className="w-5/6 mx-auto py-16 md:py-32">
         <div className=" md:flex items-center gap-4 p-4 border-b border-gray-200">
           <h1 className="text-3xl md:text-5xl lg:text-7xl font-medium md:w-1/2">
