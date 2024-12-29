@@ -61,7 +61,7 @@ export default function Home() {
   return (
     <>
       <Herosection />
-      <div className="w-5/6 h-screen mx-auto pt-[80px] lg:pt-[120px] flex flex-col justify-center gap-4">
+      <div className="w-5/6 h-screen md:h-[80vh] mx-auto pt-[80px] lg:pt-[120px] flex flex-col justify-center gap-4">
         <div className="flex  gap-4">
           <div className="w-full flex flex-col md:flex-row gap-10 items-center ">
             <div className="w-full h-[300px] md:h-[400px] lg:h-[500px]">
@@ -97,13 +97,13 @@ export default function Home() {
       </div>
 
       <div className="w-5/6 h-screen mx-auto pt-10 lg:pt-32">
-        <div className=" flex flex-col text-center gap-4">
+        <div className=" flex flex-col gap-4">
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-medium">
             Our Programs
           </h1>
 
           <div className="w-full flex flex-col gap-4 items-start">
-            <p className="text-gray-500 md:w-4/6 mx-auto text-base text-center lg:text-lg">
+            <p className="text-gray-500 mx-auto text-base  lg:text-lg">
               Our programs are designed to address essential needs and empower
               individuals. From food drives to housing support and clothing
               distribution, we focus on creating lasting impact in the lives of
@@ -163,6 +163,12 @@ export default function Home() {
                       {card.title}
                     </h1>
                     <p className="text-gray-500">{card.description}</p>
+                    <Link
+                      href={"/what-we-serve"}
+                      className=" hidden md:block text-center w-fit  text-primarycolor underline p-2 rounded-md"
+                    >
+                      Learn More
+                    </Link>
                   </div>
                 </div>
               ))}
@@ -171,10 +177,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-5/6 h-[60vh] justify-center mx-auto py-10 lg:py-20 flex flex-col gap-4">
-        <div className="flex flex-col gap-4 items-center text-center">
+      <div className="w-5/6 h-[60vh] mx-auto py-10 lg:py-20 flex flex-col gap-4">
+        <div className="flex flex-col gap-4 ">
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-medium">
-            Our Approach Trustworthiness
+            Our Partners
           </h1>
           <p className="text-gray-500">
             These are brands we look forward to patronize and work with
@@ -204,7 +210,7 @@ export default function Home() {
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium">
           Read our latest events and news
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-20 pt-10">
+        <div className="grid grid-cols-2 md:grid-cols-2 gap-8 lg:gap-20 pt-10">
           {blogs.map((blog) => (
             <BlogCard key={blog.id} {...blog} />
           ))}

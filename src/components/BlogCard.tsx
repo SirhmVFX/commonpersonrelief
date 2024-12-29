@@ -18,10 +18,10 @@ function BlogCard({ title, image, description }: Blog) {
       </div>
       <div className="md:w-1/2 flex flex-col justify-between items-start ">
         <div className="flex flex-col gap-4 items-start py-2">
-          <h1 className="md:text-[30px] text-2xl leading-none font-medium">{title}</h1>
-          <p className="text-gray-500 text-sm md:text-sm">{description}</p>
+          <h1 className="md:text-[24px] text-xl leading-none font-medium">{title}</h1>
+          <p className="text-gray-500 text-sm md:text-sm">{description.split(" ").slice(0, 10).join(" ")}</p>
         </div>
-        <button className="border-b border-primarycolor text-primarycolor p-3 rounded-md">
+        <button className=" text-primarycolor underline rounded-md">
           Read
         </button>
       </div>
