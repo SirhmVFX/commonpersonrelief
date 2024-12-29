@@ -37,8 +37,7 @@ function Herosection() {
               Charity is an act of a Soft Heart
             </h1>
             <p className="text-white lg:w-3/4 text-base md:text-xl lg:text-lg">
-              Providing food, shelter, and hope to those who need it most.
-              Together, we can make a difference
+            Creating lasting change for those in need. Provide food, shelter, education, and hope to countless lives. Together, we can make a difference.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mt-4">
               <button className="flex items-center justify-center gap-2 bg-primarycolor text-white p-3 rounded-md w-full sm:w-auto">

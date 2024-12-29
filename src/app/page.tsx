@@ -9,7 +9,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-
 interface Blog {
   id: number;
   title: string;
@@ -18,8 +17,6 @@ interface Blog {
 }
 
 export default function Home() {
-
-
   const blogs: Blog[] = [
     {
       id: 1,
@@ -51,25 +48,22 @@ export default function Home() {
     },
   ];
 
-
   const settings = {
     className: "center",
     centerMode: true,
     infinite: true,
     centerPadding: "20px",
     slidesToShow: 1,
-    speed: 500, 
+    speed: 500,
     autoplay: true,
-   
   };
 
   return (
     <>
       <Herosection />
       <div className="w-5/6 h-screen mx-auto pt-[80px] lg:pt-[120px] flex flex-col justify-center gap-4">
-        
         <div className="flex  gap-4">
-          <div className="w-full flex  gap-10 items-center">
+          <div className="w-full flex flex-col md:flex-row gap-10 items-center ">
             <div className="w-full h-[300px] md:h-[400px] lg:h-[500px]">
               <Image
                 src="/images/wee.png"
@@ -79,37 +73,36 @@ export default function Home() {
                 className="w-full h-full object-cover rounded-md"
               />
             </div>
-            <div className="flex flex-col gap-4 items-start">
-          
-          <p className="text-gray-500">About us</p>
-          <h1 className="text-4xl md:text-5xl lg:text-7xl font-medium">
-            Who we are
-          </h1>
-      
-            <p className="text-gray-500">
-              Common Person Relief is a nonprofit organization committed to
-              helping the underserved with food, shelter, clothing, and other
-              basic needs. We believe in restoring dignity and building stronger
-              communities, one life at a time
-            </p>
-            <Link href={"/mission-vision"} className="w-full sm:w-auto bg-primarycolor text-white p-3 rounded-md">
-              Learn More
-            </Link>
-          </div>
+            <div className="flex flex-col gap-4 items-start ">
+              <p className="text-gray-500">About us</p>
+              <h1 className="text-4xl md:text-5xl lg:text-7xl font-medium">
+                Who we are
+              </h1>
+
+              <p className="text-gray-500">
+                Common Person Relief is a nonprofit organization committed to
+                helping the underserved with food, shelter, clothing, and other
+                basic needs. We believe in restoring dignity and building
+                stronger communities, one life at a time
+              </p>
+              <Link
+                href={"/mission-vision"}
+                className=" sm:w-auto bg-primarycolor text-white p-3 rounded-md"
+              >
+                Learn More
+              </Link>
             </div>
-         
+          </div>
         </div>
       </div>
 
       <div className="w-5/6 h-screen mx-auto pt-10 lg:pt-32">
         <div className=" flex flex-col text-center gap-4">
-       
-            <h1 className="text-4xl md:text-5xl lg:text-7xl font-medium">
-              Our Programs
-            </h1>
-      
+          <h1 className="text-4xl md:text-5xl lg:text-7xl font-medium">
+            Our Programs
+          </h1>
+
           <div className="w-full flex flex-col gap-4 items-start">
-            
             <p className="text-gray-500 md:w-4/6 mx-auto text-base text-center lg:text-lg">
               Our programs are designed to address essential needs and empower
               individuals. From food drives to housing support and clothing
@@ -122,69 +115,61 @@ export default function Home() {
           </div>
         </div>
         <div className="pt-6">
-        
-        <div className="slider-container">
-      <Slider {...settings}>
-      
-        {[
-              {
-                title: "Food Programs",
-                img: "/images/food.jpeg",
-                description:
-                  "Distribution of food packs, establishing food banks, and organizing community kitchens in underserved areas.",
-              },
-              {
-                title: "Shelter Programs",
-                img: "/images/shelt.jpeg",
-                description:
-                  "Providing temporary and permanent housing solutions, offering shelter kits for disaster-stricken areas.",
-              },
-              {
-                title: "Clothing Programs",
-                img: "/images/cloth.jpg",
-                description:
-                  "Distributing essential clothing and winter wear to communities in need across the region.",
-              },
-              {
-                title: "Education & Skills Training",
-                img: "/images/edu.jpeg",
-                description:
-                  "Offering vocational training, literacy programs, and skill development workshops to empower communities.",
-              },
-              {
-                title: "Emergency Response",
-                img: "/images/emerg.jpg",
-                description:
-                  "Rapid deployment of resources and support during natural disasters, crises, and emergency situations.",
-              },
-            ].map((card, index) => (
-              <div
-                key={index}
-                className="w-full relative h-[500px]"
-              >
-                <Image
-                  src={card.img}
-                  alt={card.title}
-                  width={1000}
-                  height={1000}
-                  className="w-full h-full object-cover rounded-md"
-                />
-                <div className="absolute rounded-md top-0 left-0 w-full h-full bg-gradient-to-t from-black to-transparent"></div>
-                <div className="absolute bottom-0 left-0 w-full p-8">
-                  <h1 className="text-white text-2xl md:text-4xl  font-medium">
-                    {card.title}
-                  </h1>
-                  <p className="text-gray-500">{card.description}</p>
+          <div className="slider-container">
+            <Slider {...settings}>
+              {[
+                {
+                  title: "Food Programs",
+                  img: "/images/food.jpeg",
+                  description:
+                    "Distribution of food packs, establishing food banks, and organizing community kitchens in underserved areas.",
+                },
+                {
+                  title: "Shelter Programs",
+                  img: "/images/shelt.jpeg",
+                  description:
+                    "Providing temporary and permanent housing solutions, offering shelter kits for disaster-stricken areas.",
+                },
+                {
+                  title: "Clothing Programs",
+                  img: "/images/cloth.jpg",
+                  description:
+                    "Distributing essential clothing and winter wear to communities in need across the region.",
+                },
+                {
+                  title: "Education & Skills Training",
+                  img: "/images/edu.jpeg",
+                  description:
+                    "Offering vocational training, literacy programs, and skill development workshops to empower communities.",
+                },
+                {
+                  title: "Emergency Response",
+                  img: "/images/emerg.jpg",
+                  description:
+                    "Rapid deployment of resources and support during natural disasters, crises, and emergency situations.",
+                },
+              ].map((card, index) => (
+                <div key={index} className="w-full relative h-[500px]">
+                  <Image
+                    src={card.img}
+                    alt={card.title}
+                    width={1000}
+                    height={1000}
+                    className="w-full h-full object-cover rounded-md"
+                  />
+                  <div className="absolute rounded-md top-0 left-0 w-full h-full bg-gradient-to-t from-black to-transparent"></div>
+                  <div className="absolute bottom-0 left-0 w-full p-8">
+                    <h1 className="text-white text-2xl md:text-4xl  font-medium">
+                      {card.title}
+                    </h1>
+                    <p className="text-gray-500">{card.description}</p>
+                  </div>
                 </div>
-              </div>
-            ))}
-      </Slider>
-    </div>
-       
+              ))}
+            </Slider>
+          </div>
+        </div>
       </div>
-      </div>
-
-      
 
       <div className="w-5/6 h-[60vh] justify-center mx-auto py-10 lg:py-20 flex flex-col gap-4">
         <div className="flex flex-col gap-4 items-center text-center">
