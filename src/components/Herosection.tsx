@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { BiHeart } from "react-icons/bi";
 import React from "react";
-import { BsDot } from "react-icons/bs";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -21,7 +20,7 @@ function Herosection() {
   return (
     <>
       <div className="">
-        <div className="relative">
+        <div className="relative h-screen">
           <div className=" w-full h-full">
             <Image
               src="/images/h1.jpg"
@@ -33,11 +32,11 @@ function Herosection() {
             <div className="absolute top-0 left-0 right-0 bottom-0 bg-black opacity-50"></div>
           </div>
           <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col items-center justify-center">
-          <div className="w-5/6 mx-auto flex items-center text-center flex-col gap-4 ">
-            <h1 className="text-6xl md:text-5xl lg:text-[130px] text-white lg:w-full font-medium leading-tight lg:leading-none">
+          <div className="w-5/6 mx-auto flex md:items-center md:text-center flex-col gap-4 py-16 ">
+            <h1 className="text-6xl md:text-3xl lg:text-[70px] text-white lg:w-full leading-tight lg:leading-none">
               Charity is an act of a Soft Heart
             </h1>
-            <p className="text-white lg:w-2/4 text-base md:text-xl lg:text-2xl">
+            <p className="text-white lg:w-3/4 text-base md:text-xl lg:text-lg">
               Providing food, shelter, and hope to those who need it most.
               Together, we can make a difference
             </p>
@@ -51,7 +50,7 @@ function Herosection() {
               </button>
             </div>
           </div>
-          <div className="w-5/6  mx-auto py-8 ">
+          {/* <div className="w-5/6  mx-auto py-8 ">
             <div className="hidden overflow-hidden md:flex gap-4 items-center whitespace-nowrap animate-marquee">
               <p className="text-white text-base md:text-xl lg:text-2xl">
                 EMPOWERMENT
@@ -77,9 +76,9 @@ function Herosection() {
                 SUSTAINABILITY
               </p>
             </div>
-          </div>
+          </div> */}
 
-          <div className="hidden md:block w-full mx-auto ">
+          <div className="hidden md:block w-full mx-auto py-4 ">
             <div className="slider-container">
               <Slider {...settings}>
                 <div className="h-[300px] px-2" style={{ width: 400 }}>
