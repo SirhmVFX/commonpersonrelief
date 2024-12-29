@@ -206,7 +206,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-5/6 h-screen justify-center mx-auto py-10 lg:py-20 flex flex-col gap-4">
+      <div className="w-5/6 justify-center mx-auto py-10 lg:py-20 flex flex-col gap-4">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium">
           Read our latest events and news
         </h1>
