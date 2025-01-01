@@ -151,22 +151,22 @@ export default function WhoWeServe() {
             <div className="h-[190px] py-4">
               <div className="flex gap-2 items-center">
                 <BiCheck className="text-xl sm:text-2xl text-green-500 border border-green-500 rounded-full p-1 flex-shrink-0" />
-                <h1 className="text-xl  font-medium">Clothing Drive</h1>
+                <h1 className="text-xl  font-medium">Clothing Donation Drive</h1>
               </div>
               <p className="text-gray-500 text-base sm:text-lg">
-                We will provide clothing to the needy, ensuring they have access
-                to essential clothing items.
+              Partnering with individuals and organizations, we collect new and gently used clothing to provide for underserved communities.
+
+
               </p>
             </div>
             <div className="h-[1px] w-full bg-gray-200"></div>
             <div className="h-[190px] py-4">
               <div className="flex gap-2 items-center">
                 <BiCheck className="text-xl sm:text-2xl text-green-500 border border-green-500 rounded-full p-1 flex-shrink-0" />
-                <h1 className="text-xl  font-medium">Donation Collection</h1>
+                <h1 className="text-xl  font-medium">Efficient Distribution</h1>
               </div>
               <p className="text-gray-500 text-base sm:text-lg">
-                We will collect donations from individuals and organizations to
-                ensure a steady supply of clothing for distribution.
+              Our streamlined distribution channels ensure clothing reaches the right people efficiently, addressing their immediate needs.
               </p>
             </div>
           </div>
@@ -174,23 +174,20 @@ export default function WhoWeServe() {
             <div className="h-[190px] py-4">
               <div className="flex gap-2 items-center">
                 <BiCheck className="text-xl sm:text-2xl text-green-500 border border-green-500 rounded-full p-1 flex-shrink-0" />
-                <h1 className="text-xl  font-medium">Distribution</h1>
+                <h1 className="text-xl  font-medium">Sustainability Focus</h1>
               </div>
               <p className="text-gray-500 text-base sm:text-lg">
-                We will distribute the collected clothing to the needy, ensuring
-                they have access to essential clothing items.
+              By promoting reuse and reducing waste, we contribute to a more sustainable future while addressing pressing needs.
               </p>
             </div>
             <div className="h-[1px] w-full bg-gray-200"></div>
             <div className="h-[190px] py-4">
               <div className="flex gap-2 items-center">
                 <BiCheck className="text-xl sm:text-2xl text-green-500 border border-green-500 rounded-full p-1 flex-shrink-0" />
-                <h1 className="text-xl  font-medium">Community Support</h1>
+                <h1 className="text-xl  font-medium">Creating Community Engagement</h1>
               </div>
               <p className="text-gray-500 text-base sm:text-lg">
-                Our community networks will provide ongoing mentorship,
-                resources, and guidance to ensure long-term success in economic
-                empowerment efforts.
+              Our outreach programs foster a sense of belonging, encouraging communities to come together and support one another.
               </p>
             </div>
           </div>
