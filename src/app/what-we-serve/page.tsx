@@ -208,31 +208,29 @@ export default function WhoWeServe() {
         id="education-support"
       >
         <h1 className="text-xl md:text-2xl lg:text-4xl font-medium border-b-2 border-gray-200">
-          Our Plan for Education and Skills Training
+          Our Education and Skills Training Plan
         </h1>
+        <p className="text-gray-500 text-base md:text-lg">Education is the foundation for a brighter future. We focus on providing quality education and skills training to empower individuals and communities:</p>
 
         <div className=" pt-8 flex flex-col md:flex-row gap-6 md:gap-10 ">
           <div className="flex flex-col justify-between gap-8 w-full md:w-1/3">
             <div className="h-[190px] py-4">
               <div className="flex gap-2 items-center">
                 <BiCheck className="text-xl sm:text-2xl text-green-500 border border-green-500 rounded-full p-1 flex-shrink-0" />
-                <h1 className="text-xl  font-medium">Education</h1>
+                <h1 className="text-xl  font-medium">Access to Education</h1>
               </div>
               <p className="text-gray-500 text-base sm:text-lg">
-                We will provide education to the needy, ensuring they have
-                access to essential education items.
+              Scholarships and school supplies for children in underserved communities ensure no one is left behind.
               </p>
             </div>
             <div className="h-[1px] w-full bg-gray-200"></div>
             <div className="h-[190px] py-4">
               <div className="flex gap-2 items-center">
                 <BiCheck className="text-xl sm:text-2xl text-green-500 border border-green-500 rounded-full p-1 flex-shrink-0" />
-                <h1 className="text-xl  font-medium">Skills Training</h1>
+                <h1 className="text-xl  font-medium">Adult Literacy Programs</h1>
               </div>
               <p className="text-gray-500 text-base sm:text-lg">
-                We will provide skills training to the needy, ensuring they have
-                access to essential skills for sustainable employment or
-                entrepreneurship.
+              Our adult education initiatives help individuals gain essential reading and writing skills to improve their opportunities.
               </p>
             </div>
           </div>
@@ -241,25 +239,21 @@ export default function WhoWeServe() {
               <div className="flex gap-2 items-center">
                 <BiCheck className="text-xl sm:text-2xl text-green-500 border border-green-500 rounded-full p-1 flex-shrink-0" />
                 <h1 className="text-xl  font-medium">
-                  Job Placement Assistance
+                Technical and Vocational Training
                 </h1>
               </div>
               <p className="text-gray-500 text-base sm:text-lg">
-                We will connect trained individuals with job opportunities,
-                ensuring they have a pathway to stable employment and financial
-                independence.
+              Hands-on training in high-demand trades equips individuals with the skills needed to secure stable employment or start businesses.
               </p>
             </div>
             <div className="h-[1px] w-full bg-gray-200"></div>
             <div className="h-[190px] py-4">
               <div className="flex gap-2 items-center">
                 <BiCheck className="text-xl sm:text-2xl text-green-500 border border-green-500 rounded-full p-1 flex-shrink-0" />
-                <h1 className="text-xl  font-medium">Tech Training</h1>
+                <h1 className="text-xl  font-medium">Digital Literacy Programs</h1>
               </div>
               <p className="text-gray-500 text-base sm:text-lg">
-                We will provide tech training to the needy, ensuring they have
-                access to essential tech skills for sustainable employment or
-                entrepreneurship.
+              Bridging the digital divide, we teach essential tech skills to prepare participants for the modern workforce.
               </p>
             </div>
           </div>
