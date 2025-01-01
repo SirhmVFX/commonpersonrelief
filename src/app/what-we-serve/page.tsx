@@ -75,32 +75,30 @@ export default function WhoWeServe() {
         id="economic-empowerment"
       >
         <h1 className="text-xl md:text-2xl lg:text-4xl font-medium border-b-2 border-gray-200">
-          Our Plan for Economic Empowerment
+          What we plan for Economic Empowerment
         </h1>
+
+        <p className="text-gray-500 text-base md:text-lg">Economic growth starts with empowered individuals. Our programs aim to uplift communities by providing the tools they need for sustainable success:</p>
 
         <div className=" pt-8  flex flex-col md:flex-row gap-6 md:gap-10 ">
           <div className="flex flex-col justify-between w-full md:w-1/3">
             <div className="h-[190px] py-4">
               <div className="flex gap-2 items-center">
                 <BiCheck className="text-xl sm:text-2xl text-green-500 border border-green-500 rounded-full p-1 flex-shrink-0" />
-                <h1 className="text-xl  font-medium">Skills Development</h1>
+                <h1 className="text-xl  font-medium"> Providing Skills Development</h1>
               </div>
               <p className="text-gray-500 text-base sm:text-lg">
-                We will offer vocational training and workshops, equipping
-                individuals with valuable skills for sustainable employment or
-                entrepreneurship.
+              Vocational training and workshops equip individuals with practical skills for stable employment or entrepreneurship.
               </p>
             </div>
             <div className="h-[1px] w-full bg-gray-200"></div>
             <div className="h-[190px] py-4">
               <div className="flex gap-2 items-center">
                 <BiCheck className="text-xl sm:text-2xl text-green-500 border border-green-500 rounded-full p-1 flex-shrink-0" />
-                <h1 className="text-xl  font-medium">Microloan Programs</h1>
+                <h1 className="text-xl  font-medium">Accessible Microloan Programs</h1>
               </div>
               <p className="text-gray-500 text-base sm:text-lg">
-                Through small loans and financial support, we will help
-                individuals, particularly women and youth, start or expand their
-                own businesses.
+              Access to small loans helps aspiring entrepreneurs, especially women and youth, start or expand businesses, driving local growth.
               </p>
             </div>
           </div>
@@ -113,21 +111,17 @@ export default function WhoWeServe() {
                 </h1>
               </div>
               <p className="text-gray-500 text-base sm:text-lg">
-                We will connect trained individuals with job opportunities,
-                ensuring they have a pathway to stable employment and financial
-                independence.
+              We connect skilled individuals with employment opportunities, fostering financial independence and stability.
               </p>
             </div>
             <div className="h-[1px] w-full bg-gray-200"></div>
             <div className="h-[190px] py-4">
               <div className="flex gap-2 items-center">
                 <BiCheck className="text-xl sm:text-2xl text-green-500 border border-green-500 rounded-full p-1 flex-shrink-0" />
-                <h1 className="text-xl  font-medium">Community Support</h1>
+                <h1 className="text-xl  font-medium">Empowering Community Support</h1>
               </div>
               <p className="text-gray-500 text-base sm:text-lg">
-                Our community networks will provide ongoing mentorship,
-                resources, and guidance to ensure long-term success in economic
-                empowerment efforts.
+                We&apos;ll provide Mentorship programs and resource networks guide participants toward long-term success and resilience.
               </p>
             </div>
           </div>
@@ -148,8 +142,9 @@ export default function WhoWeServe() {
         id="clothing-drive"
       >
         <h1 className="text-xl md:text-2xl lg:text-4xl font-medium border-b-2 border-gray-200">
-          Our Plan for Clothing Drive
+          Our Clothing Drive Plan
         </h1>
+        <p className="text-gray-500 text-base md:text-lg">We believe that access to essential clothing is a basic right. Our clothing drive initiatives aim to restore dignity and warmth to those in need:</p>
 
         <div className=" pt-8 flex flex-col md:flex-row gap-6 md:gap-10 ">
           <div className="flex flex-col justify-between w-full md:w-1/3">
