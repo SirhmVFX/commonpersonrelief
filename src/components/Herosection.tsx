@@ -4,6 +4,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Link from "next/link";
 
 function Herosection() {
   const settings = {
@@ -40,13 +41,13 @@ function Herosection() {
             Creating lasting change for those in need. Provide food, shelter, education, and hope to countless lives. Together, we can make a difference.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mt-4">
-              <button className="flex items-center justify-center gap-2 bg-primarycolor text-white p-3 rounded-md w-full sm:w-auto">
+              <Link href="/donate" className="flex items-center justify-center gap-2 bg-primarycolor text-white p-3 rounded-md w-full sm:w-auto">
                 Make a donation
                 <BiHeart className="text-xl" />
-              </button>
-              <button className="border border-primarycolor text-primarycolor p-3 rounded-md w-full sm:w-auto">
+              </Link>
+              <Link href={"/contact"} className="border border-primarycolor text-primarycolor p-3 rounded-md w-full sm:w-auto">
                 Talk to us
-              </button>
+              </Link>
             </div>
           </div>
           {/* <div className="w-5/6  mx-auto py-8 ">
