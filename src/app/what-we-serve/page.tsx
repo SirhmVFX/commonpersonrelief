@@ -9,8 +9,9 @@ export default function WhoWeServe() {
         id="food-programs"
       >
         <h1 className="text-xl md:text-2xl lg:text-4xl font-medium border-b-2 border-gray-200">
-          Our Plan to Feed the Hungry
+         How we plan to feed the hungry 
         </h1>
+        <p className="text-gray-500 text-base md:text-lg">Common person relief is committed to tackling hunger and food insecurity in underserved communities. Our initiatives focus on providing immediate relief and fostering long-term solutions</p>
 
         <div className=" pt-8 flex flex-col md:flex-row gap-6 md:gap-10 ">
           <div className="flex flex-col justify-between w-full md:w-1/3">
@@ -18,25 +19,21 @@ export default function WhoWeServe() {
               <div className="flex gap-2 items-center">
                 <BiCheck className="text-xl sm:text-2xl text-green-500 border border-green-500 rounded-full p-1 flex-shrink-0" />
                 <h1 className="text-xl  font-medium">
-                  Food Distribution Programs
+                Providing  Food Distribution Programs
                 </h1>
               </div>
               <p className="text-gray-500 text-base sm:text-lg">
-                We’ll provide essential food supplies to underserved communities
-                through regular distribution drives, ensuring that families have
-                access to nutritious meals.
+              We plan to conduct regular food drives to deliver essential groceries and nutritious meals to families in need, ensuring no one goes hungry.
               </p>
             </div>
             <div className="h-[1px] w-full bg-gray-200"></div>
             <div className="h-[190px] py-4">
               <div className="flex gap-2 items-center">
                 <BiCheck className="text-xl sm:text-2xl text-green-500 border border-green-500 rounded-full p-1 flex-shrink-0" />
-                <h1 className="text-xl  font-medium">Community Kitchens</h1>
+                <h1 className="text-xl  font-medium">Creating Small community kitchens</h1>
               </div>
               <p className="text-gray-500 text-base sm:text-lg">
-                We plan to set up community kitchens in strategic locations to
-                offer hot, balanced meals to the most vulnerable, including
-                children, the elderly, and low-income families.
+              Strategically locating community kitchens to provide hot, balanced meals to vulnerable groups, including children, the elderly, and low-income households.
               </p>
             </div>
           </div>
@@ -44,24 +41,20 @@ export default function WhoWeServe() {
             <div className="h-[190px] py-4">
               <div className="flex gap-2 items-center">
                 <BiCheck className="text-xl sm:text-2xl text-green-500 border border-green-500 rounded-full p-1 flex-shrink-0" />
-                <h1 className="text-xl  font-medium">Local Partnerships</h1>
+                <h1 className="text-xl  font-medium">Enhancing Local Partnerships</h1>
               </div>
               <p className="text-gray-500 text-base sm:text-lg">
-                By partnering with local farmers and suppliers, we aim to source
-                fresh produce and reduce food insecurity, supporting local
-                economies and communities.
+              By collaborating with local retailers, farmers and suppliers, we source fresh, healthy produce, supporting both local economies and food security.
               </p>
             </div>
             <div className="h-[1px] w-full bg-gray-200"></div>
             <div className="h-[190px] py-4">
               <div className="flex gap-2 items-center">
                 <BiCheck className="text-xl sm:text-2xl text-green-500 border border-green-500 rounded-full p-1 flex-shrink-0" />
-                <h1 className="text-xl  font-medium">Emergency Response</h1>
+                <h1 className="text-xl  font-medium">Creating Food Emergency Response</h1>
               </div>
               <p className="text-gray-500 text-base sm:text-lg">
-                In times of crisis, our rapid-response food relief programs will
-                ensure that the most affected populations receive immediate
-                support.
+              During crises, we deploy rapid-response food relief programs to ensure immediate support for affected populations.
               </p>
             </div>
           </div>
