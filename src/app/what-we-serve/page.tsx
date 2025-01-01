@@ -274,30 +274,30 @@ export default function WhoWeServe() {
         id="emergency-response"
       >
         <h1 className="text-xl md:text-2xl lg:text-4xl font-medium border-b-2 border-gray-200">
-          Our Plan for Emergency Response
+          Our Emergency Response Plan
         </h1>
+
+        <p className="text-gray-500 text-base md:text-lg">When disasters strike, timely action saves lives. Our emergency response plan ensures swift and effective support for affected communities:</p>
 
         <div className=" py-8 md:pt-16 flex flex-col md:flex-row gap-6 md:gap-10 ">
           <div className="flex flex-col justify-between gap-8 w-full md:w-1/3">
             <div className="h-[190px] py-4">
               <div className="flex gap-2 items-center">
                 <BiCheck className="text-xl sm:text-2xl text-green-500 border border-green-500 rounded-full p-1 flex-shrink-0" />
-                <h1 className="text-xl  font-medium">Emergency Response</h1>
+                <h1 className="text-xl  font-medium">Providing Disaster Relief</h1>
               </div>
               <p className="text-gray-500 text-base sm:text-lg">
-                We will provide emergency response to the needy, ensuring they
-                have access to essential emergency response items.
+              Rapid deployment of food, water, and medical supplies to areas impacted by natural disasters or crises.
               </p>
             </div>
             <div className="h-[1px] w-full bg-gray-200"></div>
             <div className="h-[190px] py-4">
               <div className="flex gap-2 items-center">
                 <BiCheck className="text-xl sm:text-2xl text-green-500 border border-green-500 rounded-full p-1 flex-shrink-0" />
-                <h1 className="text-xl  font-medium">Disaster Preparedness</h1>
+                <h1 className="text-xl  font-medium">Creating Shelter Support</h1>
               </div>
               <p className="text-gray-500 text-base sm:text-lg">
-                We will provide disaster preparedness to the needy, ensuring
-                they have access to essential disaster preparedness items.
+              Temporary housing solutions for displaced families provide safety and dignity during emergencies.
               </p>
             </div>
           </div>
@@ -305,24 +305,21 @@ export default function WhoWeServe() {
             <div className="h-[190px] py-4">
               <div className="flex gap-2 items-center">
                 <BiCheck className="text-xl sm:text-2xl text-green-500 border border-green-500 rounded-full p-1 flex-shrink-0" />
-                <h1 className="text-xl  font-medium">Community Support</h1>
+                <h1 className="text-xl  font-medium">First Aid Assistance</h1>
               </div>
               <p className="text-gray-500 text-base sm:text-lg">
-                Our community networks will provide ongoing mentorship,
-                resources, and guidance to ensure long-term success in emergency
-                response efforts.
+              Mobile medical units and essential care for those in urgent need, ensuring emergency crises don&apos;t escalate.
               </p>
             </div>
             <div className="h-[1px] w-full bg-gray-200"></div>
             <div className="h-[190px] py-4">
               <div className="flex gap-2 items-center">
                 <BiCheck className="text-xl sm:text-2xl text-green-500 border border-green-500 rounded-full p-1 flex-shrink-0" />
-                <h1 className="text-xl  font-medium">Tech Training</h1>
+                <h1 className="text-xl  font-medium">Providing Preparedness Programs
+                </h1>
               </div>
               <p className="text-gray-500 text-base sm:text-lg">
-                We will provide tech training to the needy, ensuring they have
-                access to essential tech skills for sustainable employment or
-                entrepreneurship.
+              Training and resources empower communities to prepare for and respond to future emergencies.
               </p>
             </div>
           </div>
@@ -338,7 +335,7 @@ export default function WhoWeServe() {
         </div>
       </div>
 
-      <div
+      {/* <div
         className="w-5/6 mx-auto md:h-screen justify-center py-8 md:pt-32 flex flex-col gap-4"
         id="emergency-response"
       >
@@ -405,7 +402,7 @@ export default function WhoWeServe() {
             />
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

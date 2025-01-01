@@ -10,7 +10,6 @@ import {
   BiHome,
   BiBook,
   BiPulse,
-  BiConversation,
   BiDonateHeart,
   BiX,
   BiMenu,
@@ -244,12 +243,12 @@ function Header() {
                   >
                     Emergency Response
                   </Link>
-                  <Link
+                  {/* <Link
                     href="/what-we-serve/#food-programs"
                     className="block text-white hover:text-primarycolor py-2"
                   >
                     Counseling Support
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
 
@@ -541,7 +540,7 @@ function Header() {
                 </div>
               </Link>
 
-              <Link
+              {/* <Link
                 href="/what-we-serve/#counseling-support"
                 className="flex items-start gap-3 p-8 hover:bg-[#ffffff10] rounded-md"
               >
@@ -556,7 +555,7 @@ function Header() {
                     Mental health and emotional support services
                   </p>
                 </div>
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
