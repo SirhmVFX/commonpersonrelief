@@ -13,6 +13,7 @@ interface Blog {
   id: number;
   title: string;
   image: string;
+  link: string;
   description: string;
 }
 
@@ -20,29 +21,33 @@ export default function Home() {
   const blogs: Blog[] = [
     {
       id: 1,
-      title: "Clothing the Needy",
-      image: "/images/blog1.png",
+      title: " How Your Small Donations Make a Big Impact",
+      image: "/images/at1.jpg",
+      link: "/who-we-are/stories/how-your-small-donations-make-a-big-impact",
       description:
-        "Our plan is to create our Winter Warmth Campaign and distribute over 2,000 clothing items to those in need. Thank you to our donors and volunteers for making this possible!",
+        "When it comes to charity, many people think that only large donations make a difference. However, the truth is that small contributions collectively have the power to transform lives and uplift communities",
     },
     {
       id: 2,
-      title: "Together for Good: Volunteer Day Recap",
-      image: "/images/blog2.png",
+      title: "The Role of Education in Breaking the Cycle of Poverty",
+      image: "/images/at2.jpg",
+      link: "/who-we-are/stories/the-role-of-education-in-breaking-the-cycle-of-poverty",
       description:
-        " Volunteers came together for a day of service, packing relief kits and spreading joy. Check out highlights from this inspiring event and join us next time!",
+        "Education is more than just learning—it’s a pathway to a brighter future.",
     },
     {
       id: 3,
-      title: "Feeding Hope: Monthly Food Drive Success",
-      image: "/images/blog3.png",
+      title: " How Clean Water Access Transforms Lives in Underserved Communities",
+      image: "/images/at3.jpg",
+      link: "/who-we-are/stories/how-clean-water-access-transforms-lives-in-underserved-communities",
       description:
         "Our recent food drive provided over 5,000 meals to underserved communities, ensuring families have the nourishment they need. Join us for next month's drive!",
     },
     {
       id: 4,
-      title: "Building Futures: New Shelter Project Launched",
-      image: "/images/blog4.png",
+      title: "Spreading Smiles: The Joy of Giving in Unique Ways",
+      image: "/images/at4.jpg",
+      link: "/who-we-are/stories/spreading-smiles-the-joy-of-giving-in-unique-ways",
       description:
         "We've plan to launched a new shelter initiative to provide safe, temporary housing for displaced individuals. Together, we're creating spaces of hope and recovery.",
     },

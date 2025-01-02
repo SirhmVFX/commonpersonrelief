@@ -92,7 +92,7 @@ function Footer() {
                 About us
               </Link>
               <Link
-                href="/stories"
+                href="/who-we-are/stories"
                 className="text-[#DCECBA] hover:text-white transition-colors"
               >
                 Blogs
