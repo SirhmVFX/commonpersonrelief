@@ -11,7 +11,7 @@ export default function Donate() {
       <div className="w-full h-[50vh] md:h-[90vh] pt-16">
         <div className="w-full h-full relative">
           <Image
-            src="/images/hero2.png"
+            src="/images/kd.jpg"
             alt="donate"
             width={1000}
             height={1000}

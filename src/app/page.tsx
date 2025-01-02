@@ -86,7 +86,7 @@ export default function Home() {
                 stronger communities, one life at a time
               </p>
               <Link
-                href={"/mission-vision"}
+                href={"/who-we-are"}
                 className=" sm:w-auto bg-primarycolor text-white p-3 rounded-md"
               >
                 Learn More

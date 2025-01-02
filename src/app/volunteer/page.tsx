@@ -7,7 +7,7 @@ export default function Volunteer() {
       <div className="w-full h-[50vh] md:h-[70vh] pt-16">
         <div className="w-full h-full relative">
           <Image
-            src="/images/shelt.jpeg"
+            src="/images/mn.jpg"
             alt="donate"
             width={1000}
             height={1000}
