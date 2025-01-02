@@ -15,7 +15,7 @@ export default function Volunteer() {
           />
           <div className="absolute top-0 left-0 right-0 bottom-0 bg-black opacity-50"></div>
           <div className="absolute top-16 left-10 botton-10 right-10 md:top-1/2 md:left-1/2 transform md:-translate-x-1/2 md:-translate-y-1/2 text-white text-center">
-            <h1 className="md:text-7xl text-3xl font-bold ">
+            <h1 className="md:text-6xl text-3xl font-bold ">
               Give a helping hand to those who need it
             </h1>
             <p className="mb-4 text-xs md:text-base">
@@ -35,8 +35,8 @@ export default function Volunteer() {
       </div>
       <div className="w-5/6 mx-auto py-10 md:py-20 flex flex-col md:flex-row md:gap-10">
           <div className="w-full pt-10 md:pt-0 md:w-1/2">
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-medium py-6 md:py-10 border-b border-gray-200">
-              Our Vision
+            <h1 className="text-3xl  font-medium py-4 border-b border-gray-200">
+             What we are doing?
             </h1>
             <p className="text-gray-500 text-base md:text-lg py-6">
               Our vision is to create a society where children, youth, and women
@@ -46,8 +46,8 @@ export default function Volunteer() {
             </p>
           </div>
           <div className="w-full md:w-1/2">
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-medium py-6 md:py-10 border-b border-gray-200">
-              Our Mission
+            <h1 className="text-3xl   font-medium py-4  border-b border-gray-200">
+            Why are we doing what we do?
             </h1>
             <p className="text-gray-500 text-base md:text-lg py-6">
               We are committed to creating opportunities for children, youth,
