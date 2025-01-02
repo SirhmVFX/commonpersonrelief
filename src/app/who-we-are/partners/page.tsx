@@ -16,7 +16,7 @@ export default function Partners() {
           className="w-full h-full object-cover rounded-lg"
         />
         <div className="absolute top-0 left-0 right-0 bottom-0 rounded-lg bg-black opacity-50"></div>
-      <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white md:text-xl lg:text-3xl w-3/4 text-center font-medium">We are excited to collaborate with dedicated partners who share our vision and mission. Join us in making a lasting impact in communities across the globe.</h1>
+      <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white md:text-xl lg:text-3xl w-3/4 text-center font-medium"><span className="font-bold text-primarycolor">At the moment we do not any sponsors or partners</span> but we would are open to collaborate with dedicated partners who share our vision and mission. Join us in making a lasting impact in communities across the globe.</h1>
 
       </div>
 
