@@ -280,7 +280,7 @@ function Header() {
                     Volunteer With Us
                   </Link>
                   <Link
-                    href="/partners"
+                    href="/who-we-are/partners"
                     className="block text-white hover:text-primarycolor py-2"
                   >
                     Partner With Us
