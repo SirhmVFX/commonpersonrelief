@@ -5,7 +5,7 @@ function CtaPage() {
   return (
     <div className="calltoaction">
       <div
-        className="w-5/6 mx-auto p-6 sm:p-10 lg:p-20 bg-[#ffffff32] backdrop-blur-sm rounded-3xl border border-white 
+        className="w-5/6 mx-auto p-6 sm:p-10 lg:p-20 bg-[#00000032] backdrop-blur-md rounded-3xl  
         flex flex-col gap-4 justify-center items-center text-center 
         absolute top-[50px] sm:top-[75px] lg:top-[100px] left-0 right-0"
       >
