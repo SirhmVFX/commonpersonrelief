@@ -5,7 +5,7 @@ export default function WhoWeServe() {
   return (
     <div>
       <div
-        className="w-5/6 mx-auto md:h-screen justify-center py-20 md:pt-32 flex flex-col gap-4"
+        className="md:w-5/6 mx-auto md:h-screen p-4 justify-center py-20 md:pt-32 md:pb-0 md:pl-0 md:pr-0  flex flex-col gap-4"
         id="food-programs"
       >
         <h1 className="text-xl md:text-2xl lg:text-4xl font-medium border-b-2 border-gray-200">
@@ -13,9 +13,9 @@ export default function WhoWeServe() {
         </h1>
         <p className="text-gray-500 text-base md:text-lg">Common person relief is committed to tackling hunger and food insecurity in underserved communities. Our initiatives focus on providing immediate relief and fostering long-term solutions</p>
 
-        <div className=" pt-8 flex flex-col md:flex-row gap-6 md:gap-10 ">
+        <div className=" pt-8 flex flex-col md:flex-row gap-4 md:gap-10 ">
           <div className="flex flex-col justify-between w-full md:w-1/3">
-            <div className="h-[190px] py-4">
+            <div className="md:h-[190px] py-4">
               <div className="flex gap-2 items-center">
                 <BiCheck className="text-xl sm:text-2xl text-green-500 border border-green-500 rounded-full p-1 flex-shrink-0" />
                 <h1 className="text-xl  font-medium">
@@ -26,8 +26,8 @@ export default function WhoWeServe() {
               We plan to conduct regular food drives to deliver essential groceries and nutritious meals to families in need, ensuring no one goes hungry.
               </p>
             </div>
-            <div className="h-[1px] w-full bg-gray-200"></div>
-            <div className="h-[190px] py-4">
+            <div className="h-[1px] w-full bg-gray-200 md:block hidden"></div>
+            <div className="md:h-[190px] py-4">
               <div className="flex gap-2 items-center">
                 <BiCheck className="text-xl sm:text-2xl text-green-500 border border-green-500 rounded-full p-1 flex-shrink-0" />
                 <h1 className="text-xl  font-medium">Creating Small community kitchens</h1>
@@ -38,7 +38,7 @@ export default function WhoWeServe() {
             </div>
           </div>
           <div className="flex flex-col justify-between  w-full md:w-1/3">
-            <div className="h-[190px] py-4">
+            <div className="md:h-[190px] py-4">
               <div className="flex gap-2 items-center">
                 <BiCheck className="text-xl sm:text-2xl text-green-500 border border-green-500 rounded-full p-1 flex-shrink-0" />
                 <h1 className="text-xl  font-medium">Enhancing Local Partnerships</h1>
@@ -47,8 +47,8 @@ export default function WhoWeServe() {
               By collaborating with local retailers, farmers and suppliers, we source fresh, healthy produce, supporting both local economies and food security.
               </p>
             </div>
-            <div className="h-[1px] w-full bg-gray-200"></div>
-            <div className="h-[190px] py-4">
+            <div className="h-[1px] w-full bg-gray-200 md:block hidden"></div>
+            <div className="md:h-[190px] py-4">
               <div className="flex gap-2 items-center">
                 <BiCheck className="text-xl sm:text-2xl text-green-500 border border-green-500 rounded-full p-1 flex-shrink-0" />
                 <h1 className="text-xl  font-medium">Creating Food Emergency Response</h1>
@@ -71,7 +71,7 @@ export default function WhoWeServe() {
       </div>
 
       <div
-        className="w-5/6 md:h-screen justify-center mx-auto py-16 md:pt-32 flex flex-col gap-4"
+        className="md:w-5/6 md:h-screen justify-center mx-auto p-4 md:py-16 md:pt-32 md:pb-0 md:pl-0 md:pr-0 flex flex-col gap-4"
         id="economic-empowerment"
       >
         <h1 className="text-xl md:text-2xl lg:text-4xl font-medium border-b-2 border-gray-200">
@@ -80,9 +80,9 @@ export default function WhoWeServe() {
 
         <p className="text-gray-500 text-base md:text-lg">Economic growth starts with empowered individuals. Our programs aim to uplift communities by providing the tools they need for sustainable success:</p>
 
-        <div className=" pt-8  flex flex-col md:flex-row gap-6 md:gap-10 ">
+        <div className=" pt-8  flex flex-col md:flex-row gap-4 md:gap-10 ">
           <div className="flex flex-col justify-between w-full md:w-1/3">
-            <div className="h-[190px] py-4">
+            <div className="md:h-[190px] py-4">
               <div className="flex gap-2 items-center">
                 <BiCheck className="text-xl sm:text-2xl text-green-500 border border-green-500 rounded-full p-1 flex-shrink-0" />
                 <h1 className="text-xl  font-medium"> Providing Skills Development</h1>
@@ -91,8 +91,8 @@ export default function WhoWeServe() {
               Vocational training and workshops equip individuals with practical skills for stable employment or entrepreneurship.
               </p>
             </div>
-            <div className="h-[1px] w-full bg-gray-200"></div>
-            <div className="h-[190px] py-4">
+            <div className="h-[1px] w-full bg-gray-200 md:block hidden"></div>
+            <div className="md:h-[190px] py-4">
               <div className="flex gap-2 items-center">
                 <BiCheck className="text-xl sm:text-2xl text-green-500 border border-green-500 rounded-full p-1 flex-shrink-0" />
                 <h1 className="text-xl  font-medium">Accessible Microloan Programs</h1>
@@ -103,7 +103,7 @@ export default function WhoWeServe() {
             </div>
           </div>
           <div className="flex flex-col  gap-8  w-full md:w-1/3">
-            <div className="h-[190px] py-4">
+            <div className="md:h-[190px] py-4">
               <div className="flex gap-2 items-center">
                 <BiCheck className="text-xl sm:text-2xl text-green-500 border border-green-500 rounded-full p-1 flex-shrink-0" />
                 <h1 className="text-xl  font-medium">
@@ -114,8 +114,8 @@ export default function WhoWeServe() {
               We connect skilled individuals with employment opportunities, fostering financial independence and stability.
               </p>
             </div>
-            <div className="h-[1px] w-full bg-gray-200"></div>
-            <div className="h-[190px] py-4">
+            <div className="h-[1px] w-full bg-gray-200 md:block hidden"></div>
+            <div className="md:h-[190px] py-4">
               <div className="flex gap-2 items-center">
                 <BiCheck className="text-xl sm:text-2xl text-green-500 border border-green-500 rounded-full p-1 flex-shrink-0" />
                 <h1 className="text-xl  font-medium">Empowering Community Support</h1>
@@ -138,7 +138,7 @@ export default function WhoWeServe() {
       </div>
 
       <div
-        className="w-5/6 md:h-screen justify-center mx-auto py-16 md:pt-32 flex flex-col gap-4"
+        className="md:w-5/6 md:h-screen justify-center mx-auto p-4 md:py-16 md:pt-32 md:pb-0 md:pl-0 md:pr-0 flex flex-col gap-4"
         id="clothing-drive"
       >
         <h1 className="text-xl md:text-2xl lg:text-4xl font-medium border-b-2 border-gray-200">
@@ -148,7 +148,7 @@ export default function WhoWeServe() {
 
         <div className=" pt-8 flex flex-col md:flex-row gap-6 md:gap-10 ">
           <div className="flex flex-col justify-between w-full md:w-1/3">
-            <div className="h-[190px] py-4">
+            <div className="md:h-[190px] py-4">
               <div className="flex gap-2 items-center">
                 <BiCheck className="text-xl sm:text-2xl text-green-500 border border-green-500 rounded-full p-1 flex-shrink-0" />
                 <h1 className="text-xl  font-medium">Clothing Donation Drive</h1>
@@ -159,8 +159,8 @@ export default function WhoWeServe() {
 
               </p>
             </div>
-            <div className="h-[1px] w-full bg-gray-200"></div>
-            <div className="h-[190px] py-4">
+            <div className="h-[1px] w-full bg-gray-200 md:block hidden"></div>
+            <div className="md:h-[190px] py-4">
               <div className="flex gap-2 items-center">
                 <BiCheck className="text-xl sm:text-2xl text-green-500 border border-green-500 rounded-full p-1 flex-shrink-0" />
                 <h1 className="text-xl  font-medium">Efficient Distribution</h1>
@@ -171,7 +171,7 @@ export default function WhoWeServe() {
             </div>
           </div>
           <div className="flex flex-col justify-between  w-full md:w-1/3">
-            <div className="h-[190px] py-4">
+            <div className="md:h-[190px] py-4">
               <div className="flex gap-2 items-center">
                 <BiCheck className="text-xl sm:text-2xl text-green-500 border border-green-500 rounded-full p-1 flex-shrink-0" />
                 <h1 className="text-xl  font-medium">Sustainability Focus</h1>
@@ -180,8 +180,8 @@ export default function WhoWeServe() {
               By promoting reuse and reducing waste, we contribute to a more sustainable future while addressing pressing needs.
               </p>
             </div>
-            <div className="h-[1px] w-full bg-gray-200"></div>
-            <div className="h-[190px] py-4">
+            <div className="h-[1px] w-full bg-gray-200 md:block hidden"></div>
+            <div className="md:h-[190px] py-4">
               <div className="flex gap-2 items-center">
                 <BiCheck className="text-xl sm:text-2xl text-green-500 border border-green-500 rounded-full p-1 flex-shrink-0" />
                 <h1 className="text-xl  font-medium">Creating Community Engagement</h1>
@@ -204,7 +204,7 @@ export default function WhoWeServe() {
       </div>
 
       <div
-        className="w-5/6 md:h-screen justify-center mx-auto py-16 md:pt-32 flex flex-col gap-4"
+        className="md:w-5/6 md:h-screen justify-center mx-auto p-4 md:py-16 md:pt-32 md:pb-0 md:pl-0 md:pr-0 flex flex-col gap-4"
         id="education-support"
       >
         <h1 className="text-xl md:text-2xl lg:text-4xl font-medium border-b-2 border-gray-200">
@@ -214,7 +214,7 @@ export default function WhoWeServe() {
 
         <div className=" pt-8 flex flex-col md:flex-row gap-6 md:gap-10 ">
           <div className="flex flex-col justify-between gap-8 w-full md:w-1/3">
-            <div className="h-[190px] py-4">
+            <div className="md:h-[190px] py-4">
               <div className="flex gap-2 items-center">
                 <BiCheck className="text-xl sm:text-2xl text-green-500 border border-green-500 rounded-full p-1 flex-shrink-0" />
                 <h1 className="text-xl  font-medium">Access to Education</h1>
@@ -223,8 +223,8 @@ export default function WhoWeServe() {
               Scholarships and school supplies for children in underserved communities ensure no one is left behind.
               </p>
             </div>
-            <div className="h-[1px] w-full bg-gray-200"></div>
-            <div className="h-[190px] py-4">
+            <div className="h-[1px] w-full bg-gray-200 md:block hidden"></div>
+            <div className="md:h-[190px] py-4">
               <div className="flex gap-2 items-center">
                 <BiCheck className="text-xl sm:text-2xl text-green-500 border border-green-500 rounded-full p-1 flex-shrink-0" />
                 <h1 className="text-xl  font-medium">Adult Literacy Programs</h1>
@@ -235,7 +235,7 @@ export default function WhoWeServe() {
             </div>
           </div>
           <div className="flex flex-col justify-between gap-8  w-full md:w-1/3">
-            <div className="h-[190px] py-4">
+            <div className="md:h-[190px] py-4">
               <div className="flex gap-2 items-center">
                 <BiCheck className="text-xl sm:text-2xl text-green-500 border border-green-500 rounded-full p-1 flex-shrink-0" />
                 <h1 className="text-xl  font-medium">
@@ -246,8 +246,8 @@ export default function WhoWeServe() {
               Hands-on training in high-demand trades equips individuals with the skills needed to secure stable employment or start businesses.
               </p>
             </div>
-            <div className="h-[1px] w-full bg-gray-200"></div>
-            <div className="h-[190px] py-4">
+            <div className="h-[1px] w-full bg-gray-200 md:block hidden"></div>
+            <div className="md:h-[190px] py-4">
               <div className="flex gap-2 items-center">
                 <BiCheck className="text-xl sm:text-2xl text-green-500 border border-green-500 rounded-full p-1 flex-shrink-0" />
                 <h1 className="text-xl  font-medium">Digital Literacy Programs</h1>
@@ -270,7 +270,7 @@ export default function WhoWeServe() {
       </div>
 
       <div
-        className="w-5/6 md:h-screen justify-center mx-auto py-8 md:pt-32 flex flex-col gap-4"
+        className="md:w-5/6 md:h-screen justify-center mx-auto p-4 md:py-16 md:pt-32 md:pb-0 md:pl-0 md:pr-0 flex flex-col gap-4"
         id="emergency-response"
       >
         <h1 className="text-xl md:text-2xl lg:text-4xl font-medium border-b-2 border-gray-200">
@@ -281,7 +281,7 @@ export default function WhoWeServe() {
 
         <div className=" py-8 md:pt-16 flex flex-col md:flex-row gap-6 md:gap-10 ">
           <div className="flex flex-col justify-between gap-8 w-full md:w-1/3">
-            <div className="h-[190px] py-4">
+            <div className="md:h-[190px] py-4">
               <div className="flex gap-2 items-center">
                 <BiCheck className="text-xl sm:text-2xl text-green-500 border border-green-500 rounded-full p-1 flex-shrink-0" />
                 <h1 className="text-xl  font-medium">Providing Disaster Relief</h1>
@@ -290,8 +290,8 @@ export default function WhoWeServe() {
               Rapid deployment of food, water, and medical supplies to areas impacted by natural disasters or crises.
               </p>
             </div>
-            <div className="h-[1px] w-full bg-gray-200"></div>
-            <div className="h-[190px] py-4">
+            <div className="h-[1px] w-full bg-gray-200 md:block hidden"></div>
+            <div className="md:h-[190px] py-4">
               <div className="flex gap-2 items-center">
                 <BiCheck className="text-xl sm:text-2xl text-green-500 border border-green-500 rounded-full p-1 flex-shrink-0" />
                 <h1 className="text-xl  font-medium">Creating Shelter Support</h1>
@@ -302,7 +302,7 @@ export default function WhoWeServe() {
             </div>
           </div>
           <div className="flex flex-col justify-between gap-8  w-full md:w-1/3">
-            <div className="h-[190px] py-4">
+            <div className="md:h-[190px] py-4">
               <div className="flex gap-2 items-center">
                 <BiCheck className="text-xl sm:text-2xl text-green-500 border border-green-500 rounded-full p-1 flex-shrink-0" />
                 <h1 className="text-xl  font-medium">First Aid Assistance</h1>
@@ -311,8 +311,8 @@ export default function WhoWeServe() {
               Mobile medical units and essential care for those in urgent need, ensuring emergency crises don&apos;t escalate.
               </p>
             </div>
-            <div className="h-[1px] w-full bg-gray-200"></div>
-            <div className="h-[190px] py-4">
+            <div className="h-[1px] w-full bg-gray-200 md:block hidden"></div>
+            <div className="md:h-[190px] py-4">
               <div className="flex gap-2 items-center">
                 <BiCheck className="text-xl sm:text-2xl text-green-500 border border-green-500 rounded-full p-1 flex-shrink-0" />
                 <h1 className="text-xl  font-medium">Providing Preparedness Programs
