@@ -5,6 +5,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Link from "next/link";
+import { BsArrowRight } from "react-icons/bs";
 
 function Herosection() {
   const settings = {
@@ -34,7 +35,7 @@ function Herosection() {
           </div>
           <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col items-center justify-center">
           <div className="w-5/6 mx-auto flex md:items-center md:text-center flex-col gap-4 py-16 ">
-            <h1 className="text-6xl md:text-3xl lg:text-[70px] text-white lg:w-full leading-tight lg:leading-none">
+            <h1 className="text-6xl md:text-3xl lg:text-[70px] text-white lg:w-full leading-none lg:leading-none">
               Charity is an act of a Soft Heart
             </h1>
             <p className="text-white lg:w-3/4 text-base md:text-xl lg:text-lg">
@@ -45,8 +46,9 @@ function Herosection() {
                 Make a donation
                 <BiHeart className="text-xl" />
               </Link>
-              <Link href={"/contact"} className="border border-primarycolor text-primarycolor p-3 rounded-md w-full sm:w-auto">
+              <Link href={"/contact"} className="border flex items-center justify-center border-primarycolor text-primarycolor text-center p-3 rounded-md w-full sm:w-auto">
                 Talk to us
+                <BsArrowRight className="text-xl" />
               </Link>
             </div>
           </div>
