@@ -170,7 +170,7 @@ export default function Home() {
                     <p className="text-gray-500">{card.description}</p>
                     <Link
                       href={"/what-we-serve"}
-                      className=" hidden md:block text-center w-fit  text-primarycolor underline p-2 rounded-md"
+                      className=" text-center w-fit  text-primarycolor underline py-2 rounded-md"
                     >
                       Learn More
                     </Link>
