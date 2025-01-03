@@ -8,7 +8,7 @@ export default function Donate() {
   const [activeTab, setActiveTab] = useState("onetime");
   return (
     <div>
-      <div className="w-full h-[50vh] md:h-[90vh] pt-16">
+      <div className="w-full h-[70vh] md:h-[90vh] flex flex-col items-center justify-center">
         <div className="w-full h-full relative">
           <Image
             src="/images/kd.jpg"

@@ -66,7 +66,7 @@ export default function Home() {
   return (
     <>
       <Herosection />
-      <div className="w-5/6 h-screen md:h-[80vh] mx-auto pt-[80px] lg:pt-[120px] flex flex-col justify-center gap-4">
+      <div className="md:w-5/6 h-screen md:h-[80vh] mx-auto p-4 md:py-[40px] lg:pt-[120px] flex flex-col justify-center gap-4">
         <div className="flex  gap-4">
           <div className="w-full flex flex-col md:flex-row gap-10 items-center ">
             <div className="w-full h-[300px] md:h-[400px] lg:h-[500px]">
@@ -101,7 +101,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-5/6 h-screen mx-auto pt-10 lg:pt-32">
+      <div className="md:w-5/6 h-screen mx-auto py-10 p-4 lg:pt-32">
         <div className=" flex flex-col gap-4">
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-medium">
             Our Programs
