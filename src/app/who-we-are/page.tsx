@@ -5,7 +5,7 @@ function WhoWeAre() {
   return (
     <div>
       
-      <div className="w-5/6 mx-auto py-[80px] lg:py-[120px] gap-4">
+      <div className="md:w-5/6 mx-auto p-4 py-[80px] lg:py-[120px] gap-4">
         <div className="flex flex-col items-start gap-4 ">
           <p className="text-primarycolor text-sm md:text-lg py-2 px-4 rounded-full border border-primarycolor">
             About us
@@ -33,7 +33,7 @@ function WhoWeAre() {
       </div>
 
       
-      <div className="w-5/6 mx-auto">
+      <div className="md:w-5/6 p-4 mx-auto">
         <div className="w-full h-[200px] sm:h-[300px] md:h-[400px]">
           <Image
             src={"/images/corp.jpeg"}
@@ -83,7 +83,7 @@ function WhoWeAre() {
           </p>
         </div>
       </div>
-      <div className="w-5/6 md:h-screen flex flex-col justify-center mx-auto py-10 md:py-20  ">
+      <div className="md:w-5/6 md:h-screen p-4 flex flex-col justify-center mx-auto py-10 md:py-20  ">
         <div className="justify-center items-center  flex flex-col md:flex-row md:gap-10">
           <div className="w-full pt-10 md:pt-0 md:w-1/2">
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-medium py-6 md:py-10 border-b border-gray-200">
@@ -164,7 +164,7 @@ function WhoWeAre() {
         </div>
       </div>
       
-      <div className="w-5/6 mx-auto py-16 md:py-32">
+      <div className="md:w-5/6 mx-auto p-4 py-16 md:py-32">
         <div className=" md:flex items-center gap-4 p-4 border-b border-gray-200">
           <h1 className="text-3xl md:text-5xl lg:text-7xl font-medium md:w-1/2">
             Our Initiatives
