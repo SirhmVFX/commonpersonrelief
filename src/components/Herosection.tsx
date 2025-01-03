@@ -46,7 +46,7 @@ function Herosection() {
                 Make a donation
                 <BiHeart className="text-xl" />
               </Link>
-              <Link href={"/contact"} className="border flex items-center justify-center border-primarycolor text-primarycolor text-center p-3 rounded-md w-full sm:w-auto">
+              <Link href={"/contact"} className="border gap-2 flex items-center justify-center border-primarycolor text-primarycolor text-center p-3 rounded-md w-full sm:w-auto">
                 Talk to us
                 <BsArrowRight className="text-xl" />
               </Link>
