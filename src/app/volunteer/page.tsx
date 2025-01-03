@@ -30,48 +30,58 @@ export default function Volunteer() {
             </button>
           </div>
         </div>
-
-        
       </div>
-      <div className="w-5/6 mx-auto py-10 md:py-20 flex flex-col md:flex-row md:gap-10">
-          <div className="w-full pt-10 md:pt-0 md:w-1/2">
-            <h1 className="text-3xl  font-medium py-4 border-b border-gray-200">
-             What we are doing?
-            </h1>
-            <p className="text-gray-500 text-base md:text-lg py-6">
-              Our vision is to create a society where children, youth, and women
-              have equal access to essential services, including quality
-              healthcare, economic empowerment, education, clean water, and
-              climate resilience, regardless of their gender or religion.
-            </p>
-          </div>
-          <div className="w-full md:w-1/2">
-            <h1 className="text-3xl   font-medium py-4  border-b border-gray-200">
+      <div className="md:w-5/6 mx-auto p-4 py-10 md:py-20 flex flex-col md:flex-row md:gap-10">
+        <div className="w-full pt-10 md:pt-0 md:w-1/2">
+          <h1 className="text-3xl  font-medium py-4 border-b border-gray-200">
+            What we are doing?
+          </h1>
+          <p className="text-gray-500 text-base md:text-lg py-6">
+            Our vision is to create a society where children, youth, and women
+            have equal access to essential services, including quality
+            healthcare, economic empowerment, education, clean water, and
+            climate resilience, regardless of their gender or religion.
+          </p>
+        </div>
+        <div className="w-full md:w-1/2">
+          <h1 className="text-3xl   font-medium py-4  border-b border-gray-200">
             Why are we doing what we do?
-            </h1>
-            <p className="text-gray-500 text-base md:text-lg py-6">
-              We are committed to creating opportunities for children, youth,
-              and women to benefit from initiatives focused on education,
-              quality healthcare, climate change, water access, and economic
-              empowerment.
-            </p>
-          </div>
+          </h1>
+          <p className="text-gray-500 text-base md:text-lg py-6">
+            We are committed to creating opportunities for children, youth, and
+            women to benefit from initiatives focused on education, quality
+            healthcare, climate change, water access, and economic empowerment.
+          </p>
         </div>
+      </div>
 
-        <div className="md:w-3/6 w-5/6 mx-auto py-14">
+      <div className="md:w-3/6 p-4 mx-auto py-14">
         <form className="w-full flex flex-col gap-4 items-start">
-        <h1 className="text-xl md:text-3xl lg:text-4xl font-medium">Leave us your info </h1>
-        <input type="text" className="w-full bg-transparent p-4 rounded-md border border-gray-300" placeholder="Your Name" />
-        <input type="text" className="w-full bg-transparent p-4 rounded-md border border-gray-300" placeholder="Your Email" />
-        <textarea className="w-full bg-transparent p-4 rounded-md border border-gray-300" placeholder="Your Message" rows={5}></textarea>
-        
-        <button className="bg-primarycolor text-white p-2 rounded-md flex items-center gap-2">
-          Send Message 
-          <BsArrowRight className="text-white" />
-        </button>
-        
+          <h1 className="text-xl md:text-3xl lg:text-4xl font-medium">
+            Leave us your info{" "}
+          </h1>
+          <input
+            type="text"
+            className="w-full bg-transparent p-4 rounded-md border border-gray-300"
+            placeholder="Your Name"
+          />
+          <input
+            type="text"
+            className="w-full bg-transparent p-4 rounded-md border border-gray-300"
+            placeholder="Your Email"
+          />
+          <textarea
+            className="w-full bg-transparent p-4 rounded-md border border-gray-300"
+            placeholder="Your Message"
+            rows={5}
+          ></textarea>
+
+          <button className="bg-primarycolor text-white p-2 rounded-md flex items-center gap-2">
+            Send Message
+            <BsArrowRight className="text-white" />
+          </button>
         </form>
-        </div>
+      </div>
     </div>
   );
 }
