@@ -4,7 +4,7 @@ import { BsArrowRight } from "react-icons/bs";
 export default function Contact() {
   return <div>
 
-    <div className="w-5/6 mx-auto py-24 md:py-32 md:flex items-center gap-4">
+    <div className="md:w-5/6 p-4 mx-auto pt-24 md:py-32 md:flex items-center gap-4">
       <h1 className="text-3xl md:text-5xl lg:text-7xl font-medium md:w-1/2">We&apos;d Love to Hear From You</h1>
       <p className="text-gray-500 text-base md:text-lg md:w-1/2">Have questions, suggestions, or want to partner with us? Reach out today and let’s work together to make a difference!</p>
     </div>
