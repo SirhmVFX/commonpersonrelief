@@ -6,6 +6,22 @@ import Link from "next/link";
 
 export default function Donate() {
   const [activeTab, setActiveTab] = useState("onetime");
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    amount: '',
+    phone: '',
+    country: '',
+  });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    const mailtoLink = `mailto:donations@commonpersonrelief.org?subject=Donation%20Submission&body=Name:%20${encodeURIComponent(formData.name)}%0AEmail:%20${encodeURIComponent(formData.email)}%0AAmount:%20$${encodeURIComponent(formData.amount)}`;
+    
+    window.location.href = mailtoLink;
+  };
+
   return (
     <div>
       <div className="w-full h-[70vh] md:h-[90vh] flex flex-col items-center justify-center">
@@ -35,7 +51,7 @@ export default function Donate() {
           </div>
         </div>
       </div>
-      <div className="w-5/6 mx-auto md:py-32 flex flex-col gap-4 mt-8">
+      <div className="md:w-5/6 mx-auto p-4 md:py-32 flex flex-col gap-4 mt-8">
         <h1 className="text-2xl md:text-5xl lg:text-6xl font-medium text-center">Where Your Donation Goes</h1>
         <div className="grid md:grid-cols-2 gap-8 ">
           <div className="flex flex-col gap-4 p-4 bg-gray-50">
@@ -91,7 +107,7 @@ export default function Donate() {
         </div>
       </div>
 
-      <div className="w-5/6 mx-auto flex flex-col gap-4">
+      <div className="md:w-5/6 mx-auto flex p-4 flex-col gap-4">
         <div className=" py-16 md:py-20 flex flex-col gap-4">
           <div className="flex flex-col items-center gap-4">
             <h1 className="text-xl md:text-2xl lg:text-4xl font-medium">
@@ -120,7 +136,7 @@ export default function Donate() {
                   One-time Donation
                 </button>
                 <button
-                  onClick={() => setActiveTab("monthly")}
+                  
                   className={`${
                     activeTab === "monthly"
                       ? "border-primarycolor text-primarycolor"
@@ -147,6 +163,7 @@ export default function Donate() {
 
                   <form
                     action=""
+                    onSubmit={handleSubmit}
                     className="flex items-start flex-col gap-4 max-w-2xl mx-auto"
                   >
                     <div className="flex flex-col gap-4 w-full">
@@ -155,11 +172,12 @@ export default function Donate() {
                       </label>
                       <input
                         type="text"
+                        onChange={(e) => setFormData({ ...formData, amount: e.target.value })}
                         className="w-full bg-transparent p-4 rounded-md border border-gray-300"
                         placeholder="Amount"
                       />
                     </div>
-                    <div className="p-6 border w-full border-gray-300 rounded-lg flex flex-col gap-4">
+                    {/* <div className="p-6 border w-full border-gray-300 rounded-lg flex flex-col gap-4">
                       <div className="flex flex-col gap-4">
                         <label htmlFor="">Card Number</label>
                         <input
@@ -194,12 +212,13 @@ export default function Donate() {
                         Common Person Relief. to charge your card for future payments in
                         accordance with their terms.
                       </p>
-                    </div>
+                    </div> */}
 
                     <div className="w-full flex flex-col gap-4">
                       <label htmlFor="">Name</label>
                       <input
                         type="text"
+                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                         className="w-full bg-transparent p-4 rounded-md border border-gray-300"
                         placeholder="Your Name"
                       />
@@ -210,6 +229,7 @@ export default function Donate() {
                         <label htmlFor="">Phone number</label>
                         <input
                           type="text"
+                          onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                           className="w-full bg-transparent p-4 rounded-md border border-gray-300"
                         />
                       </div>
@@ -217,6 +237,7 @@ export default function Donate() {
                         <label htmlFor="">Email Address</label>
                         <input
                           type="email"
+                          onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                           name=""
                           id=""
                           className="w-full bg-transparent p-4 rounded-md border border-gray-300"
@@ -227,6 +248,7 @@ export default function Donate() {
                       <label htmlFor="">Country</label>
                       <input
                         type="text"
+                        onChange={(e) => setFormData({ ...formData, country: e.target.value })}
                         className="w-full bg-transparent p-4 rounded-md border border-gray-300"
                       />
                     </div>
@@ -235,7 +257,7 @@ export default function Donate() {
                       I agree to the Terms of Use, Refund Policy, and Privacy
                       Policy.
                     </p>
-                    <button className="bg-primarycolor text-white p-2 rounded-md flex items-center gap-2">
+                    <button type="submit" className="bg-primarycolor text-white p-2 rounded-md flex items-center gap-2">
                       Donate
                     </button>
                   </form>
