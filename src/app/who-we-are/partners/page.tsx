@@ -6,7 +6,7 @@ import { FaRibbon } from "react-icons/fa";
 export default function Partners() {
   return (
     <>
-    <div className="w-5/6 mx-auto py-8 md:py-16 lg:py-32 flex flex-col items-center gap-8">
+    <div className="md:w-5/6 mx-auto p-4 pt-20 md:py-16 lg:py-32 flex flex-col items-center gap-8">
       <div className="w-full h-[300px] md:h-[400px] mb-8 md:mb-0 relative rounded-lg">
         <Image
           src="/images/pa.jpg"
@@ -78,7 +78,7 @@ export default function Partners() {
       
     </div>
 
-    <div className=" w-5/6 mx-auto  md:h-[50vh] justify-center md:w-2/4 flex flex-col items-center mb-8 md:mb-0 pt-12 md:pt-0">
+    <div className=" md:w-5/6 mx-auto p-4 md:h-[50vh] justify-center  flex flex-col items-center mb-8 md:mb-0 pt-12 md:pt-0">
         <h1 className="text-2xl text-center sm:text-3xl md:text-4xl lg:text-5xl font-medium">
           Are you ready to join Us in Creating Lasting Impact
         </h1>
