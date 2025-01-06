@@ -110,11 +110,17 @@ function Header() {
             {/* <Link className="text-white hover:text-primarycolor " href="/about">
               About Us
             </Link> */}
-            <Link className="text-white hover:text-primarycolor " href="/contact">
+            <Link
+              className="text-white hover:text-primarycolor "
+              href="/contact"
+            >
               Contact Us
             </Link>
-            
-            <Link href="/donate" className="bg-primarycolor text-white p-3 rounded-md">
+
+            <Link
+              href="/donate"
+              className="bg-primarycolor text-white p-3 rounded-md"
+            >
               <BiHeart />
             </Link>
           </div>
@@ -149,6 +155,10 @@ function Header() {
                 >
                   <Link
                     href="/who-we-are"
+                    onClick={() => {
+                      setIsMobileMenuOpen(false);
+                      setShowWhoDropdown(false);
+                    }}
                     className="block text-white hover:text-primarycolor py-2"
                   >
                     About us
@@ -173,18 +183,30 @@ function Header() {
                   </Link> */}
                   <Link
                     href="/who-we-are/partners"
+                    onClick={() => {
+                      setIsMobileMenuOpen(false);
+                      setShowWhoDropdown(false);
+                    }}
                     className="block text-white hover:text-primarycolor py-2"
                   >
                     Our Partners
                   </Link>
                   <Link
                     href="/who-we-are/oppourtunities"
+                    onClick={() => {
+                      setIsMobileMenuOpen(false);
+                      setShowWhoDropdown(false);
+                    }}
                     className="block text-white hover:text-primarycolor py-2"
                   >
                     Oppourtunities
                   </Link>
                   <Link
                     href="/who-we-are/stories"
+                    onClick={() => {
+                      setIsMobileMenuOpen(false);
+                      setShowWhoDropdown(false);
+                    }}
                     className="block text-white hover:text-primarycolor py-2"
                   >
                     Our success stories
@@ -208,37 +230,52 @@ function Header() {
                   }`}
                 >
                   <Link
-                   href="/what-we-serve/#food-programs"
+                    href="/what-we-serve/#food-programs"
+                    onClick={() => {
+                      setIsMobileMenuOpen(false);
+                      setShowWhoDropdown(false);
+                    }}
                     className="block text-white hover:text-primarycolor py-2"
                   >
                     Feeding the Hungry
                   </Link>
                   <Link
-                    href="/what-we-serve/#food-programs"
+                    href="/what-we-serve/#economic-empowerment"
+                    onClick={() => {
+                      setIsMobileMenuOpen(false);
+                      setShowWhoDropdown(false);
+                    }}
                     className="block text-white hover:text-primarycolor py-2"
                   >
-                    Economic Empowerment 
+                    Economic Empowerment
                   </Link>
                   <Link
-                    href="/what-we-serve/#food-programs"
+                    href="/what-we-serve/#clothing-drive"
+                    onClick={() => {
+                      setIsMobileMenuOpen(false);
+                      setShowWhoDropdown(false);
+                    }}
                     className="block text-white hover:text-primarycolor py-2"
                   >
                     Clothing Drives
                   </Link>
                   <Link
-                    href="/what-we-serve/#food-programs"
+                    href="/what-we-serve/#education-support"
+                    onClick={() => {
+                      setIsMobileMenuOpen(false);
+                      setShowWhoDropdown(false);
+                    }}
                     className="block text-white hover:text-primarycolor py-2"
                   >
                     Education Skills & Training
                   </Link>
+                 
                   <Link
-                    href="/what-we-serve/#food-programs"
-                    className="block text-white hover:text-primarycolor py-2"
-                  >
-                    Economic Empowerment 
-                  </Link>
-                  <Link
-                    href="/what-we-serve/#food-programs"
+                    href="/what-we-serve/#emergency-response"
+                    onClick={() => {
+                      setIsMobileMenuOpen(false);
+                      setShowWhoDropdown(false);
+                    }}
                     className="block text-white hover:text-primarycolor py-2"
                   >
                     Emergency Response
@@ -301,8 +338,11 @@ function Header() {
               >
                 Contact Us
               </Link>
-              
-              <Link href={"/donate"} className="bg-primarycolor text-white p-3 rounded-md w-full flex items-center justify-center gap-2">
+
+              <Link
+                href={"/donate"}
+                className="bg-primarycolor text-white p-3 rounded-md w-full flex items-center justify-center gap-2"
+              >
                 <BiHeart /> Donate Now
               </Link>
             </div>
@@ -347,9 +387,7 @@ function Header() {
                   <BiBuilding />
                 </div>
                 <div>
-                  <h1 className="text-2xl text-white font-bold">
-                    About us
-                  </h1>
+                  <h1 className="text-2xl text-white font-bold">About us</h1>
                   <p className="text-gray-300 text-sm">
                     Who we are, What we stand for and the team
                   </p>
