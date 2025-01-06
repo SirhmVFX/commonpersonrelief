@@ -77,6 +77,12 @@ function Footer() {
               >
                 Terms & Conditions
               </Link>
+              <Link
+                href="/refund-policy"
+                className="text-[#DCECBA] hover:text-white transition-colors"
+              >
+                Refund Policy
+              </Link>
             </div>
           </div>
 
