@@ -34,8 +34,8 @@ export default function Donate() {
             className="w-full h-full object-cover"
           />
           <div className="absolute top-0 left-0 right-0 bottom-0 bg-black opacity-50"></div>
-          <div className="absolute top-32 left-10 botton-10 right-10 md:top-1/2 md:left-1/2 transform md:-translate-x-1/2 md:-translate-y-1/2 text-white text-center">
-            <h1 className="md:text-7xl text-3xl font-bold ">
+          <div className="absolute  left-10 bottom-10 right-10 md:top-1/2 md:left-1/2 transform md:-translate-x-1/2 md:-translate-y-1/2 text-white md:text-center text-left ">
+            <h1 className="md:text-7xl text-5xl my-2 font-bold ">
               Support a Life Today
             </h1>
             <p className="mb-4 text-xs md:text-base">
@@ -45,9 +45,7 @@ export default function Donate() {
               struggling families. Every contribution, no matter the size, helps
               us create lasting change in the lives of those who need it most.
             </p>
-            <button className="bg-primarycolor text-white px-6 py-2 rounded-md  transition">
-              Donate Now
-            </button>
+           
           </div>
         </div>
       </div>
