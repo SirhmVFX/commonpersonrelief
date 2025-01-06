@@ -4,7 +4,7 @@ import React from "react";
 const CharityArticle = () => {
   return (
     <div className=" min-h-screen py-10 ">
-      <article className="w-5/6 mx-auto pt-20 ">
+      <article className="md:w-5/6 p-4 mx-auto pt-14 ">
         <header className=" h-[60vh] relative ">
           <div className="w-full h-full">
             <Image
@@ -17,7 +17,7 @@ const CharityArticle = () => {
           </div>
           <div className="absolute top-0 left-0 right-0 bottom-0 bg-black opacity-50"></div>
           <div className="absolute bottom-0 left-0 right-0 text-white p-8">
-          <h1 className="md:text-6xl">
+          <h1 className="md:text-6xl text-4xl">
             How Your Small Donations Make a Big Impact
           </h1>
           <p className="mt-2 text-lg">Transforming lives, one small step at a time.</p>
