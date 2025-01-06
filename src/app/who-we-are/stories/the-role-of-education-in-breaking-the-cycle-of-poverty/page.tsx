@@ -4,7 +4,7 @@ import React from "react";
 const CharityArticle = () => {
   return (
     <div className="min-h-screen py-10">
-      <article className="w-5/6 mx-auto pt-20">
+      <article className="md:w-5/6 p-4 mx-auto pt-14">
         <header className="h-[60vh] relative">
           <div className="w-full h-full">
             <Image
