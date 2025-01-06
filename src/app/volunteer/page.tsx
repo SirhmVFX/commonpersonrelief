@@ -1,7 +1,26 @@
+'use client';
 import Image from "next/image";
+import React, { useState, FormEvent } from 'react';
 import { BsArrowRight } from "react-icons/bs";
 
 export default function Volunteer() {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = (e: FormEvent) => {
+    e.preventDefault();
+    
+    const mailtoLink = `mailto:info@commonpersonrelief.org?subject=Volunteer%20Interest&body=Name:%20${encodeURIComponent(name)}%0AEmail:%20${encodeURIComponent(email)}%0A%0AMessage:%0A${encodeURIComponent(message)}`;
+    
+    window.location.href = mailtoLink;
+    
+    // Reset form after submission
+    setName('');
+    setEmail('');
+    setMessage('');
+  };
+
   return (
     <div>
       <div className="w-full h-[50vh] md:h-[70vh] pt-16">
@@ -25,13 +44,11 @@ export default function Volunteer() {
               struggling families. Every contribution, no matter the size, helps
               us create lasting change in the lives of those who need it most.
             </p>
-            <button className="bg-primarycolor text-white px-6 py-2 rounded-md  transition">
-              Volunteer
-            </button>
+            
           </div>
         </div>
       </div>
-      <div className="md:w-5/6 mx-auto p-4 py-10 md:py-20 flex flex-col md:flex-row md:gap-10">
+      <div className="md:w-5/6 mx-auto p-4 py-4 md:py-4 flex flex-col md:flex-row md:gap-10">
         <div className="w-full pt-10 md:pt-0 md:w-1/2">
           <h1 className="text-3xl  font-medium py-4 border-b border-gray-200">
             What we are doing?
@@ -55,7 +72,7 @@ export default function Volunteer() {
         </div>
       </div>
 
-      <div className="md:w-3/6 p-4 mx-auto py-14">
+      <div className="md:w-5/6 p-4 mx-auto py-6"  onSubmit={handleSubmit}>
         <form className="w-full flex flex-col gap-4 items-start">
           <h1 className="text-xl md:text-3xl lg:text-4xl font-medium">
             Leave us your info{" "}
@@ -64,20 +81,29 @@ export default function Volunteer() {
             type="text"
             className="w-full bg-transparent p-4 rounded-md border border-gray-300"
             placeholder="Your Name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            required
           />
           <input
             type="text"
             className="w-full bg-transparent p-4 rounded-md border border-gray-300"
             placeholder="Your Email"
+            value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
           />
           <textarea
             className="w-full bg-transparent p-4 rounded-md border border-gray-300"
             placeholder="Your Message"
             rows={5}
+            value={message}
+          onChange={(e) => setMessage(e.target.value)}
+          required
           ></textarea>
 
-          <button className="bg-primarycolor text-white p-2 rounded-md flex items-center gap-2">
-            Send Message
+          <button className="bg-primarycolor text-white p-2 rounded-md flex items-center gap-2" type="submit">
+            Volunteer with us
             <BsArrowRight className="text-white" />
           </button>
         </form>
