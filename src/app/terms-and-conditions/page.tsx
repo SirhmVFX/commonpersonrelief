@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 function TermsAndConditions() {
     return (
         <div className="md:w-5/6 mx-auto px-4 py-20">
@@ -26,7 +28,7 @@ function TermsAndConditions() {
 
       <h3 className="text-xl font-bold mt-6 mb-2">4. Donations and Contributions</h3>
       <p>
-        All donations made through this website are voluntary. By donating, you agree to our refund policy, which states that donations are non-refundable except in the case of an error.
+        All donations made through this website are voluntary. By donating, you agree to our <Link href="/refund-policy" className="text-blue-600 underline">Refund Policy</Link>, which states that donations are non-refundable except in the case of an error.
       </p>
 
       <h3 className="text-xl font-bold mt-6 mb-2">5. Limitation of Liability</h3>
