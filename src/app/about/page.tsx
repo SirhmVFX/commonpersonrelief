@@ -4,7 +4,7 @@ import { BiCheck } from "react-icons/bi";
 export default function About() {
   return (
     <div>
-      <div className="md:w-5/6 mx-auto p-4 py-16 md:pt-32 h-[600px]">
+      <div className="md:w-5/6 mx-auto p-4 pt-[90px] md:pt-[90px] h-[600px]">
         <Image
           src="/images/op.jpeg"
           alt="about"
@@ -14,12 +14,12 @@ export default function About() {
         />
       </div>
 
-      <div className="w-5/6 mx-auto py-16 md:flex gap-4">
+      <div className="md:w-5/6 px-4 mx-auto py-4 md:flex gap-4">
         <div className="flex flex-col items-start gap-4 md:w-1/2">
           <p className="text-primarycolor text-sm md:text-lg py-2 px-4 rounded-full border border-primarycolor">
             About us
           </p>
-          <h1 className="text-3xl md:text-5xl lg:text-7xl font-medium">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-medium">
             Empowering Lives, One Step at a Time
           </h1>
         </div>
@@ -41,7 +41,7 @@ export default function About() {
         </div>
       </div>
 
-      <div className="w-5/6 mx-auto py-16 md:py-32 md:flex items-center gap-10">
+      <div className="md:w-5/6 px-4 mx-auto py-4 md:py-6 md:flex items-center gap-10">
         <div className="md:w-1/2 h-[400px]">
           <Image
             src="/images/hero1.jpeg"
@@ -52,7 +52,7 @@ export default function About() {
           />
         </div>
         <div className="md:w-1/2 flex flex-col gap-4">
-          <h1 className="text-3xl md:text-5xl lg:text-7xl font-medium">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl md:my-0 mt-6 font-medium">
             What we stand for
           </h1>
           <div className="flex flex-col gap-2 py-2">
@@ -89,9 +89,9 @@ export default function About() {
         </div>
       </div>
 
-      <div className="w-5/6 mx-auto py-16 md:py-32">
+      <div className="md:w-5/6 px-4 mx-auto py-2 md:py-6">
         <div className=" md:flex items-center gap-4 p-4 border-b border-gray-200">
-          <h1 className="text-3xl md:text-5xl lg:text-7xl font-medium md:w-1/2">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-medium md:w-1/2">
             Our Impact Areas
           </h1>
           <p className="text-sm md:text-lg text-gray-500 md:w-1/2">
