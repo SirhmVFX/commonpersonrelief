@@ -5,11 +5,6 @@ import {
   BiHeart,
   BiBuilding,
   BiAward,
-  BiFirstAid,
-  BiFoodMenu,
-  BiHome,
-  BiBook,
-  BiPulse,
   BiDonateHeart,
   BiX,
   BiMenu,
@@ -454,121 +449,7 @@ function Header() {
           </div>
         </div>
 
-        <div
-          className={`fixed top-[72px] left-0 right-0 bg-black/70 backdrop-blur-md py-8 transition-all duration-300 z-40 ${
-            showServeDropdown ? "opacity-100 visible" : "opacity-0 invisible"
-          }`}
-          onMouseLeave={() => setShowServeDropdown(false)}
-          onMouseEnter={() => setShowServeDropdown(true)}
-        >
-          <div className="mx-auto w-5/6">
-            <div className="grid grid-cols-3 gap-4">
-              {/* What we serve dropdown content */}
-
-              <Link
-                href="/what-we-serve/#food-programs"
-                className="flex items-start gap-3 p-8 hover:bg-[#ffffff10] rounded-md"
-              >
-                <div className="text-primarycolor text-3xl mt-1">
-                  <BiFoodMenu />
-                </div>
-                <div>
-                  <h1 className="text-2xl text-white font-bold">
-                    Feeding the Hungry
-                  </h1>
-                  <p className="text-gray-300 text-sm">
-                    Nutritional support and meal services
-                  </p>
-                </div>
-              </Link>
-
-              <Link
-                href="/what-we-serve/#economic-empowerment"
-                className="flex items-start gap-3 p-8 hover:bg-[#ffffff10] rounded-md"
-              >
-                <div className="text-primarycolor text-3xl mt-1">
-                  <BiFirstAid />
-                </div>
-                <div>
-                  <h1 className="text-2xl text-white font-bold">
-                    Economic Empowerment
-                  </h1>
-                  <p className="text-gray-300 text-sm">
-                    Skills development and job placement
-                  </p>
-                </div>
-              </Link>
-
-              <Link
-                href="/what-we-serve/#clothing-drive"
-                className="flex items-start gap-3 p-8 hover:bg-[#ffffff10] rounded-md"
-              >
-                <div className="text-primarycolor text-3xl mt-1">
-                  <BiHome />
-                </div>
-                <div>
-                  <h1 className="text-2xl text-white font-bold">
-                    Clothing Drive
-                  </h1>
-                  <p className="text-gray-300 text-sm">
-                    Providing clothing to the needy
-                  </p>
-                </div>
-              </Link>
-
-              <Link
-                href="/what-we-serve/#education-support"
-                className="flex items-start gap-3 p-8 hover:bg-[#ffffff10] rounded-md"
-              >
-                <div className="text-primarycolor text-3xl mt-1">
-                  <BiBook />
-                </div>
-                <div>
-                  <h1 className="text-2xl text-white font-bold">
-                    Education and Skills Training
-                  </h1>
-                  <p className="text-gray-300 text-sm">
-                    Learning resources and academic assistance
-                  </p>
-                </div>
-              </Link>
-
-              <Link
-                href="/what-we-serve/#emergency-response"
-                className="flex items-start gap-3 p-8 hover:bg-[#ffffff10] rounded-md"
-              >
-                <div className="text-primarycolor text-3xl mt-1">
-                  <BiPulse />
-                </div>
-                <div>
-                  <h1 className="text-2xl text-white font-bold">
-                    Emergency Response
-                  </h1>
-                  <p className="text-gray-300 text-sm">
-                    Giving immediate assistance during crisis situations
-                  </p>
-                </div>
-              </Link>
-
-              {/* <Link
-                href="/what-we-serve/#counseling-support"
-                className="flex items-start gap-3 p-8 hover:bg-[#ffffff10] rounded-md"
-              >
-                <div className="text-primarycolor text-3xl mt-1">
-                  <BiConversation />
-                </div>
-                <div>
-                  <h1 className="text-2xl text-white font-bold">
-                    Counseling Support
-                  </h1>
-                  <p className="text-gray-300 text-sm">
-                    Mental health and emotional support services
-                  </p>
-                </div>
-              </Link> */}
-            </div>
-          </div>
-        </div>
+       
 
         <div
           className={`fixed top-[72px] left-0 right-0 bg-black/70 backdrop-blur-md py-8 transition-all duration-300 z-40 ${
