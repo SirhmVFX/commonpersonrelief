@@ -1,7 +1,5 @@
 import CtaPage from "@/components/Cta.page";
 import Image from "next/image";
-import Link from "next/link";
-
 
 export default function Oppourtunities() {
   return (
@@ -10,15 +8,9 @@ export default function Oppourtunities() {
         <h1 className="text-3xl md:text-5xl lg:text-7xl font-medium">
           Join the visionary team
         </h1>
-        <p className="text-gray-500 text-base md:text-lg">
+        <p className="text-gray-500 text-base md:text-lg mb-8">
           Apply to be a nonprofit board members
         </p>
-        <Link href="/contact" className="bg-primarycolor text-white rounded-md flex items-center gap-2 justify-center p-3 md:p-4 mb-2">
-          
-           Reach out to us
-           
-         
-        </Link>
       </div>
 
       <div className="w-5/6 mx-auto  flex flex-col md:flex-row items-center gap-10">
