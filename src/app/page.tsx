@@ -8,6 +8,7 @@ import Link from "next/link";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { AiOutlineArrowRight } from "react-icons/ai";
 
 interface Blog {
   id: number;
@@ -212,7 +213,10 @@ export default function Home() {
         </div>
       </div> */}
 
-      <div className="w-full h-[70vh] my-10">
+      <div className="md:w-5/6 mx-auto p-4 h-[70vh] my-10">
+      <h1 className="text-4xl md:text-5xl lg:text-7xl font-medium my-4">
+            Upcoming event
+          </h1>
         <div className="w-full h-full relative">
           <Image
             src={"/images/rec.png"}
@@ -221,19 +225,20 @@ export default function Home() {
             alt="event"
             className="w-full h-full object-cover"
           />
-          <div className="absolute top-0 left-0 right-0 bottom-0 from-black  bg-gradient-to-t  opacity-50"></div>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-4">
-            <h1 className="text-4xl md:text-5xl lg:text-7xl font-medium text-white">
-              Volunteer with us
+          <div className="absolute top-0 left-0 right-0 bottom-0 from-black to-transparent  bg-gradient-to-t  "></div>
+          <div className="absolute left-10 bottom-10 right-10 flex flex-col items-start  gap-4">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-medium text-white">
+            January 2025 Events: Empowering Communities Through Outreach in
+            the state of Ibadan
             </h1>
-            <p className="text-gray-500">
-              Join our team of volunteers and make a difference in the lives of
-              those in need /</p>
+            <p className="text-white">
+            Together, we bring hope and relief to those in need.</p>
             <Link
-              href="/volunteer"
-              className=" sm:w-auto bg-primarycolor text-white p-3 rounded-md"
+              href="/who-we-are/stories/january-2025-outreach"
+              className=" sm:w-auto text-primarycolor flex  gap-4 items-center border border-primarycolor p-3 rounded-full"
             >
               Learn More
+              <AiOutlineArrowRight className="w-[30px] h-[30px] p-2 rounded-full border border-white" />
             </Link>
           </div>
         </div>
