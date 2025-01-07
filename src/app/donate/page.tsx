@@ -7,27 +7,31 @@ import Link from "next/link";
 export default function Donate() {
   const [activeTab, setActiveTab] = useState("onetime");
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    amount: '',
-    phone: '',
-    country: '',
+    name: "",
+    email: "",
+    amount: "",
+    phone: "",
+    country: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
-    const mailtoLink = `mailto:donations@commonpersonrelief.org?subject=Donation%20Submission&body=Name:%20${encodeURIComponent(formData.name)}%0AEmail:%20${encodeURIComponent(formData.email)}%0AAmount:%20$${encodeURIComponent(formData.amount)}`;
-    
+
+    const mailtoLink = `mailto:donations@commonpersonrelief.org?subject=Donation%20Submission&body=Name:%20${encodeURIComponent(
+      formData.name
+    )}%0AEmail:%20${encodeURIComponent(
+      formData.email
+    )}%0AAmount:%20$${encodeURIComponent(formData.amount)}`;
+
     window.location.href = mailtoLink;
   };
 
   return (
     <div>
-      <div className="w-full h-[70vh] md:h-[90vh] flex flex-col items-center justify-center">
-        <div className="w-full h-full relative">
+      <div className="w-full h-[70vh] md:h-[90vh] flex flex-col items-center justify-center pt-[80px] p-4">
+        <div className="w-full h-full relative ">
           <Image
-            src="/images/kd.jpg"
+            src="/images/2.jpg"
             alt="donate"
             width={1000}
             height={1000}
@@ -35,7 +39,7 @@ export default function Donate() {
           />
           <div className="absolute top-0 left-0 right-0 bottom-0 bg-black opacity-50"></div>
           <div className="absolute  left-10 bottom-10 right-10 md:top-1/2 md:left-1/2 transform md:-translate-x-1/2 md:-translate-y-1/2 text-white md:text-center text-left ">
-            <h1 className="md:text-7xl text-5xl my-2 font-bold ">
+            <h1 className="md:text-7xl text-4xl my-2 font-bold ">
               Support a Life Today
             </h1>
             <p className="mb-4 text-xs md:text-base">
@@ -45,12 +49,13 @@ export default function Donate() {
               struggling families. Every contribution, no matter the size, helps
               us create lasting change in the lives of those who need it most.
             </p>
-           
           </div>
         </div>
       </div>
       <div className="md:w-5/6 mx-auto p-4 md:py-32 flex flex-col gap-4 mt-8">
-        <h1 className="text-2xl md:text-5xl lg:text-6xl font-medium text-center">Where Your Donation Goes</h1>
+        <h1 className="text-2xl md:text-5xl lg:text-6xl font-medium text-center">
+          Where Your Donation Goes
+        </h1>
         <div className="grid md:grid-cols-2 gap-8 ">
           <div className="flex flex-col gap-4 p-4 bg-gray-50">
             <h1 className="text-2xl md:text-3xl text-primarycolor font-medium">
@@ -119,10 +124,7 @@ export default function Donate() {
 
           <div className="">
             <div className="border-b border-gray-200">
-              <nav
-                className="flex gap-4 justify-center"
-                aria-label="Tabs"
-              >
+              <nav className="flex gap-4 justify-center" aria-label="Tabs">
                 <button
                   onClick={() => setActiveTab("onetime")}
                   className={`${
@@ -134,7 +136,6 @@ export default function Donate() {
                   One-time Donation
                 </button>
                 <button
-                  
                   className={`${
                     activeTab === "monthly"
                       ? "border-primarycolor text-primarycolor"
@@ -143,7 +144,6 @@ export default function Donate() {
                 >
                   Monthly Support / Partners
                 </button>
-                
               </nav>
             </div>
 
@@ -170,7 +170,9 @@ export default function Donate() {
                       </label>
                       <input
                         type="text"
-                        onChange={(e) => setFormData({ ...formData, amount: e.target.value })}
+                        onChange={(e) =>
+                          setFormData({ ...formData, amount: e.target.value })
+                        }
                         className="w-full bg-transparent p-4 rounded-md border border-gray-300"
                         placeholder="Amount"
                       />
@@ -216,7 +218,9 @@ export default function Donate() {
                       <label htmlFor="">Name</label>
                       <input
                         type="text"
-                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                        onChange={(e) =>
+                          setFormData({ ...formData, name: e.target.value })
+                        }
                         className="w-full bg-transparent p-4 rounded-md border border-gray-300"
                         placeholder="Your Name"
                       />
@@ -227,7 +231,9 @@ export default function Donate() {
                         <label htmlFor="">Phone number</label>
                         <input
                           type="text"
-                          onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                          onChange={(e) =>
+                            setFormData({ ...formData, phone: e.target.value })
+                          }
                           className="w-full bg-transparent p-4 rounded-md border border-gray-300"
                         />
                       </div>
@@ -235,7 +241,9 @@ export default function Donate() {
                         <label htmlFor="">Email Address</label>
                         <input
                           type="email"
-                          onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                          onChange={(e) =>
+                            setFormData({ ...formData, email: e.target.value })
+                          }
                           name=""
                           id=""
                           className="w-full bg-transparent p-4 rounded-md border border-gray-300"
@@ -246,7 +254,9 @@ export default function Donate() {
                       <label htmlFor="">Country</label>
                       <input
                         type="text"
-                        onChange={(e) => setFormData({ ...formData, country: e.target.value })}
+                        onChange={(e) =>
+                          setFormData({ ...formData, country: e.target.value })
+                        }
                         className="w-full bg-transparent p-4 rounded-md border border-gray-300"
                       />
                     </div>
@@ -255,7 +265,10 @@ export default function Donate() {
                       I agree to the Terms of Use, Refund Policy, and Privacy
                       Policy.
                     </p>
-                    <button type="submit" className="bg-primarycolor text-white p-2 rounded-md flex items-center gap-2">
+                    <button
+                      type="submit"
+                      className="bg-primarycolor text-white p-2 rounded-md flex items-center gap-2"
+                    >
                       Donate
                     </button>
                   </form>
@@ -272,16 +285,13 @@ export default function Donate() {
                       sustainable change.
                     </p>
                     <Link href="/contact">
-                    <button className="bg-primarycolor text-white p-2 rounded-md flex items-center gap-2">
-                     Send us a Message
-                    </button>
-                  </Link>
+                      <button className="bg-primarycolor text-white p-2 rounded-md flex items-center gap-2">
+                        Send us a Message
+                      </button>
+                    </Link>
                   </div>
-
-                  
                 </div>
               )}
-              
             </div>
           </div>
         </div>
