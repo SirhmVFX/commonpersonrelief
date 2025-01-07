@@ -10,7 +10,7 @@ function WhoWeAre() {
           <p className="text-primarycolor text-sm md:text-lg py-2 px-4 rounded-full border border-primarycolor">
             About us
           </p>
-          <h1 className="text-3xl md:text-5xl lg:text-7xl font-medium">
+          <h1 className="text-3xl md:text-5xl lg:text-7xl font-medium my-2">
             Empowering Lives, One Step at a Time
           </h1>
         </div>
