@@ -21,6 +21,14 @@ export default function Home() {
   const blogs: Blog[] = [
     {
       id: 1,
+      title:
+        " January 2025 Events: Empowering Communities Through Outreach in the state of Ibadan",
+      image: "/images/rec.png",
+      link: "/who-we-are/stories/january-2025-outreach",
+      description: "Together, we bring hope and relief to those in need.",
+    },
+    {
+      id: 2,
       title: " How Your Small Donations Make a Big Impact",
       image: "/images/at1.jpg",
       link: "/who-we-are/stories/how-your-small-donations-make-a-big-impact",
@@ -28,7 +36,7 @@ export default function Home() {
         "When it comes to charity, many people think that only large donations make a difference. However, the truth is that small contributions collectively have the power to transform lives and uplift communities",
     },
     {
-      id: 2,
+      id: 3,
       title: "The Role of Education in Breaking the Cycle of Poverty",
       image: "/images/at2.jpg",
       link: "/who-we-are/stories/the-role-of-education-in-breaking-the-cycle-of-poverty",
@@ -36,20 +44,13 @@ export default function Home() {
         "Education is more than just learning—it’s a pathway to a brighter future.",
     },
     {
-      id: 3,
-      title: " How Clean Water Access Transforms Lives in Underserved Communities",
+      id: 4,
+      title:
+        " How Clean Water Access Transforms Lives in Underserved Communities",
       image: "/images/at3.jpg",
       link: "/who-we-are/stories/how-clean-water-access-transforms-lives-in-underserved-communities",
       description:
         "Our recent food drive provided over 5,000 meals to underserved communities, ensuring families have the nourishment they need. Join us for next month's drive!",
-    },
-    {
-      id: 4,
-      title: "Spreading Smiles: The Joy of Giving in Unique Ways",
-      image: "/images/at4.jpg",
-      link: "/who-we-are/stories/spreading-smiles-the-joy-of-giving-in-unique-ways",
-      description:
-        "We've plan to launched a new shelter initiative to provide safe, temporary housing for displaced individuals. Together, we're creating spaces of hope and recovery.",
     },
   ];
 
@@ -210,6 +211,33 @@ export default function Home() {
           ))}
         </div>
       </div> */}
+
+      <div className="w-full h-[70vh] my-10">
+        <div className="w-full h-full relative">
+          <Image
+            src={"/images/rec.png"}
+            width={1000}
+            height={1000}
+            alt="event"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute top-0 left-0 right-0 bottom-0 from-black  bg-gradient-to-t  opacity-50"></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-4">
+            <h1 className="text-4xl md:text-5xl lg:text-7xl font-medium text-white">
+              Volunteer with us
+            </h1>
+            <p className="text-gray-500">
+              Join our team of volunteers and make a difference in the lives of
+              those in need /</p>
+            <Link
+              href="/volunteer"
+              className=" sm:w-auto bg-primarycolor text-white p-3 rounded-md"
+            >
+              Learn More
+            </Link>
+          </div>
+        </div>
+      </div>
 
       <div className="md:w-5/6 justify-center mx-auto md:py-10 p-4 lg:py-20 flex flex-col gap-4">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium">
