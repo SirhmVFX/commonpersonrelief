@@ -5,7 +5,7 @@ const CharityArticle = () => {
   return (
     <div className="min-h-screen py-10">
       <article className="md:w-5/6 p-4 mx-auto pt-14">
-        <header className="h-[60vh] relative">
+        <header className="h-[90vh] relative">
           <div className="w-full h-full">
             <Image
               src="/images/rec.png"
