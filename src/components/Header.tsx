@@ -15,7 +15,7 @@ import {
   BiMenu,
 } from "react-icons/bi";
 import { FaHandshake } from "react-icons/fa";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { CgClose } from "react-icons/cg";
 
 function Header() {
@@ -24,6 +24,7 @@ function Header() {
   const [showGiveDropdown, setShowGiveDropdown] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const mobileMenuRef = useRef<HTMLDivElement>(null);
 
   // Handle scroll effect
   useEffect(() => {
@@ -41,6 +42,26 @@ function Header() {
     // Cleanup
     return () => {
       window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  // Add click outside handler
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        mobileMenuRef.current &&
+        !mobileMenuRef.current.contains(event.target as Node)
+      ) {
+        setIsMobileMenuOpen(false);
+        setShowWhoDropdown(false);
+        setShowServeDropdown(false);
+        setShowGiveDropdown(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
 
@@ -135,7 +156,10 @@ function Header() {
         </div>
 
         {/* Mobile Menu */}
-        <div className={`lg:hidden ${isMobileMenuOpen ? "block" : "hidden"}`}>
+        <div
+          ref={mobileMenuRef}
+          className={`lg:hidden ${isMobileMenuOpen ? "block" : "hidden"}`}
+        >
           <div className="w-5/6 mx-auto pt-4 pb-32 ">
             <div className="space-y-4">
               <div>
@@ -143,7 +167,7 @@ function Header() {
                   onClick={() => setShowWhoDropdown(!showWhoDropdown)}
                   className="text-white hover:text-primarycolor w-full text-left py-2 flex justify-between items-center"
                 >
-                  Who we are
+                  Who We Are
                   <span className="text-xl">
                     {showWhoDropdown ? <BiX /> : <BiMenu />}
                   </span>
@@ -161,7 +185,7 @@ function Header() {
                     }}
                     className="block text-white hover:text-primarycolor py-2"
                   >
-                    About us
+                    About Us
                   </Link>
                   {/* <Link
                     href="/who-we-are"
@@ -209,83 +233,8 @@ function Header() {
                     }}
                     className="block text-white hover:text-primarycolor py-2"
                   >
-                    Our success stories
+                    Our Success Stories
                   </Link>
-                </div>
-              </div>
-
-              <div>
-                <button
-                  onClick={() => setShowServeDropdown(!showServeDropdown)}
-                  className="text-white hover:text-primarycolor w-full text-left py-2 flex justify-between items-center"
-                >
-                  What we serve
-                  <span className="text-xl">
-                    {showServeDropdown ? <BiX /> : <BiMenu />}
-                  </span>
-                </button>
-                <div
-                  className={`pl-4 space-y-2 ${
-                    showServeDropdown ? "block" : "hidden"
-                  }`}
-                >
-                  <Link
-                    href="/what-we-serve/#food-programs"
-                    onClick={() => {
-                      setIsMobileMenuOpen(false);
-                      setShowWhoDropdown(false);
-                    }}
-                    className="block text-white hover:text-primarycolor py-2"
-                  >
-                    Feeding the Hungry
-                  </Link>
-                  <Link
-                    href="/what-we-serve/#economic-empowerment"
-                    onClick={() => {
-                      setIsMobileMenuOpen(false);
-                      setShowWhoDropdown(false);
-                    }}
-                    className="block text-white hover:text-primarycolor py-2"
-                  >
-                    Economic Empowerment
-                  </Link>
-                  <Link
-                    href="/what-we-serve/#clothing-drive"
-                    onClick={() => {
-                      setIsMobileMenuOpen(false);
-                      setShowWhoDropdown(false);
-                    }}
-                    className="block text-white hover:text-primarycolor py-2"
-                  >
-                    Clothing Drives
-                  </Link>
-                  <Link
-                    href="/what-we-serve/#education-support"
-                    onClick={() => {
-                      setIsMobileMenuOpen(false);
-                      setShowWhoDropdown(false);
-                    }}
-                    className="block text-white hover:text-primarycolor py-2"
-                  >
-                    Education Skills & Training
-                  </Link>
-                 
-                  <Link
-                    href="/what-we-serve/#emergency-response"
-                    onClick={() => {
-                      setIsMobileMenuOpen(false);
-                      setShowWhoDropdown(false);
-                    }}
-                    className="block text-white hover:text-primarycolor py-2"
-                  >
-                    Emergency Response
-                  </Link>
-                  {/* <Link
-                    href="/what-we-serve/#food-programs"
-                    className="block text-white hover:text-primarycolor py-2"
-                  >
-                    Counseling Support
-                  </Link> */}
                 </div>
               </div>
 
@@ -306,25 +255,48 @@ function Header() {
                 >
                   <Link
                     href="/donate"
+                    onClick={() => {
+                      setIsMobileMenuOpen(false);
+                      setShowWhoDropdown(false);
+                    }}
                     className="block text-white hover:text-primarycolor py-2"
                   >
                     Make a Donation
                   </Link>
                   <Link
                     href="/volunteer"
+                    onClick={() => {
+                      setIsMobileMenuOpen(false);
+                      setShowWhoDropdown(false);
+                    }}
                     className="block text-white hover:text-primarycolor py-2"
                   >
                     Volunteer With Us
                   </Link>
                   <Link
                     href="/who-we-are/partners"
+                    onClick={() => {
+                      setIsMobileMenuOpen(false);
+                      setShowWhoDropdown(false);
+                    }}
                     className="block text-white hover:text-primarycolor py-2"
                   >
                     Partner With Us
                   </Link>
                 </div>
               </div>
-
+              <div>
+                <Link
+                  href={"/what-we-serve"}
+                  onClick={() => {
+                    setIsMobileMenuOpen(false);
+                    setShowWhoDropdown(false);
+                  }}
+                  className="text-white hover:text-primarycolor w-full text-left py-2 flex justify-between items-center"
+                >
+                  What We Serve
+                </Link>
+              </div>
               {/* <Link
                 href="/about"
                 className="block text-white hover:text-primarycolor py-2"
