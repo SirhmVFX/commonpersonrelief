@@ -48,7 +48,7 @@ const CharityArticle = () => {
             <p className="text-gray-700 leading-8">
               <strong>Date:</strong> January 14, 2025
               <br />
-              <strong>Time:</strong> 4:30 AM
+              <strong>Time:</strong> 4:30 PM
               <br />
               <strong>Highlights:</strong> Food distribution, health awareness,
               and community empowerment activities aimed at improving the
