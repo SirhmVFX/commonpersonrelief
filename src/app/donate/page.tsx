@@ -151,8 +151,8 @@ export default function Donate() {
 
             <div className="mt-8">
               {activeTab === "onetime" && (
-                <div className="w-3/5 mx-auto p-[50px] border-8 border-gray-50/50 rounded-3xl flex flex-col justify-center items-center">
-                  <div className="flex justify-center">
+                <div className="md:w-3/5 mx-auto md:p-[50px] p-5 border-8 border-gray-50/50 rounded-3xl flex flex-col justify-center md:items-center">
+                  <div className="flex md:justify-center">
                     <div className="bg-primarycolor  flex justify-center items-center w-[50px] h-[50px] rounded-full">
                       <BiArrowToTop className="text-white w-6 h-6" />
                     </div>
@@ -165,7 +165,7 @@ export default function Donate() {
                     </div>
                   </div>
 
-                  <div className="flex flex-col gap-4 text-center my-4">
+                  <div className="flex flex-col gap-4 md:text-center my-4">
                     <h1 className="text-3xl font-bold">
                       🌟 Make a Difference Today!
                     </h1>
@@ -186,7 +186,7 @@ export default function Donate() {
               )}
               {activeTab === "monthly" && (
                 <div className="">
-                  <div className="text-center flex flex-col gap-4 items-center">
+                  <div className="md:text-center flex flex-col gap-4 md:items-center">
                     <h2 className="text-2xl font-medium mb-4">
                     🤝 Join as a Monthly Sponsor
                     </h2>
