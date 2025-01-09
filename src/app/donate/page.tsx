@@ -181,7 +181,7 @@ export default function Donate() {
                     </p>
                   </div>
 
-                  <button className="px-6 py-4 w-fit bg-primarycolor border-2 border-primarycolor/60 text-white rounded-full">Donate</button>
+                  <Link href={"https://buy.stripe.com/4gw5mS6wTa7RaM8fYY"} className="px-6 py-4 w-fit bg-primarycolor border-2 border-primarycolor/60 text-white rounded-full">Donate</Link>
                 </div>
               )}
               {activeTab === "monthly" && (
