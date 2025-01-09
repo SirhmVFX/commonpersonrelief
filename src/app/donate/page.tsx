@@ -3,32 +3,33 @@ import { useState } from "react";
 import Image from "next/image";
 
 import Link from "next/link";
+import { BiArrowToTop, BiSend, BiWallet } from "react-icons/bi";
 
 export default function Donate() {
   const [activeTab, setActiveTab] = useState("onetime");
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    amount: "",
-    phone: "",
-    country: "",
-  });
+  // const [formData, setFormData] = useState({
+  //   name: "",
+  //   email: "",
+  //   amount: "",
+  //   phone: "",
+  //   country: "",
+  // });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+  // const handleSubmit = (e: React.FormEvent) => {
+  //   e.preventDefault();
 
-    const mailtoLink = `mailto:donations@commonpersonrelief.org?subject=Donation%20Submission&body=Name:%20${encodeURIComponent(
-      formData.name
-    )}%0AEmail:%20${encodeURIComponent(
-      formData.email
-    )}%0AAmount:%20$${encodeURIComponent(formData.amount)}`;
+  //   const mailtoLink = `mailto:donations@commonpersonrelief.org?subject=Donation%20Submission&body=Name:%20${encodeURIComponent(
+  //     formData.name
+  //   )}%0AEmail:%20${encodeURIComponent(
+  //     formData.email
+  //   )}%0AAmount:%20$${encodeURIComponent(formData.amount)}`;
 
-    window.location.href = mailtoLink;
-  };
+  //   window.location.href = mailtoLink;
+  // };
 
   return (
     <div>
-      <div className="w-full h-[70vh] md:h-[90vh] flex flex-col items-center justify-center pt-[80px] p-4">
+      <div className="w-full h-[70vh] md:h-[70vh] flex flex-col items-center justify-center pt-[80px] p-4">
         <div className="w-full h-full relative ">
           <Image
             src="/images/2.jpg"
@@ -136,6 +137,7 @@ export default function Donate() {
                   One-time Donation
                 </button>
                 <button
+                  onClick={() => setActiveTab("monthly")}
                   className={`${
                     activeTab === "monthly"
                       ? "border-primarycolor text-primarycolor"
@@ -149,144 +151,53 @@ export default function Donate() {
 
             <div className="mt-8">
               {activeTab === "onetime" && (
-                <div>
-                  <div className="text-center">
-                    <h2 className="text-2xl font-medium">
-                      Make a One-time Donation
-                    </h2>
-                    <p className="text-gray-600">
-                      Your one-time gift can make an immediate impact.
+                <div className="w-3/5 mx-auto p-[50px] border-8 border-gray-50/50 rounded-3xl flex flex-col justify-center items-center">
+                  <div className="flex justify-center">
+                    <div className="bg-primarycolor  flex justify-center items-center w-[50px] h-[50px] rounded-full">
+                      <BiArrowToTop className="text-white w-6 h-6" />
+                    </div>
+                    <div className="bg-white  flex justify-center items-center w-[50px] h-[50px] rounded-full">
+                      <BiWallet className="text-black w-6 h-6" />
+                    </div>
+
+                    <div className="bg-gray-700  flex justify-center items-center w-[50px] h-[50px] rounded-full">
+                      <BiSend className="text-white w-6 h-6 -rotate-45" />
+                    </div>
+                  </div>
+
+                  <div className="flex flex-col gap-4 text-center my-4">
+                    <h1 className="text-3xl font-bold">
+                      🌟 Make a Difference Today!
+                    </h1>
+                    <p className="text-gray-500">
+                      Your generosity has the power to change lives. By donating
+                      to Common Person Relief, you help provide food, clothing,
+                      education, and healthcare to underprivileged communities.
+                    </p>
+                    <p className="text-gray-500">
+                      Together, we can create a brighter future for those in
+                      need. Every contribution, big or small, brings hope and a
+                      chance for a better tomorrow.
                     </p>
                   </div>
 
-                  <form
-                    action=""
-                    onSubmit={handleSubmit}
-                    className="flex items-start flex-col gap-4 max-w-2xl mx-auto"
-                  >
-                    <div className="flex flex-col gap-4 w-full">
-                      <label htmlFor="">
-                        How much would you like to donate?
-                      </label>
-                      <input
-                        type="text"
-                        onChange={(e) =>
-                          setFormData({ ...formData, amount: e.target.value })
-                        }
-                        className="w-full bg-transparent p-4 rounded-md border border-gray-300"
-                        placeholder="Amount"
-                      />
-                    </div>
-                    {/* <div className="p-6 border w-full border-gray-300 rounded-lg flex flex-col gap-4">
-                      <div className="flex flex-col gap-4">
-                        <label htmlFor="">Card Number</label>
-                        <input
-                          type="text"
-                          className="w-full bg-transparent p-4 rounded-md border border-gray-300"
-                          placeholder="0123 4567 8901 2345"
-                        />
-                        <div></div>
-                      </div>
-
-                      <div className="flex gap-4">
-                        <div className="flex flex-col gap-4 w-1/2">
-                          <label htmlFor="">Date</label>
-                          <input
-                            type="text"
-                            className="w-full bg-transparent p-4 rounded-md border border-gray-300"
-                            placeholder="01/23"
-                          />
-                        </div>
-                        <div className="flex flex-col gap-4 w-1/2">
-                          <label htmlFor="">Cvv</label>
-                          <input
-                            type="text"
-                            className="w-full bg-transparent p-4 rounded-md border border-gray-300"
-                            placeholder="123"
-                          />
-                        </div>
-                      </div>
-
-                      <p className="text-gray-600">
-                        By providing your card information, you allow
-                        Common Person Relief. to charge your card for future payments in
-                        accordance with their terms.
-                      </p>
-                    </div> */}
-
-                    <div className="w-full flex flex-col gap-4">
-                      <label htmlFor="">Name</label>
-                      <input
-                        type="text"
-                        onChange={(e) =>
-                          setFormData({ ...formData, name: e.target.value })
-                        }
-                        className="w-full bg-transparent p-4 rounded-md border border-gray-300"
-                        placeholder="Your Name"
-                      />
-                    </div>
-
-                    <div className="flex gap-4 w-full">
-                      <div className="flex flex-col gap-4 w-1/2">
-                        <label htmlFor="">Phone number</label>
-                        <input
-                          type="text"
-                          onChange={(e) =>
-                            setFormData({ ...formData, phone: e.target.value })
-                          }
-                          className="w-full bg-transparent p-4 rounded-md border border-gray-300"
-                        />
-                      </div>
-                      <div className="flex flex-col gap-4 w-1/2">
-                        <label htmlFor="">Email Address</label>
-                        <input
-                          type="email"
-                          onChange={(e) =>
-                            setFormData({ ...formData, email: e.target.value })
-                          }
-                          name=""
-                          id=""
-                          className="w-full bg-transparent p-4 rounded-md border border-gray-300"
-                        />
-                      </div>
-                    </div>
-                    <div className="flex flex-col gap-4 w-full">
-                      <label htmlFor="">Country</label>
-                      <input
-                        type="text"
-                        onChange={(e) =>
-                          setFormData({ ...formData, country: e.target.value })
-                        }
-                        className="w-full bg-transparent p-4 rounded-md border border-gray-300"
-                      />
-                    </div>
-
-                    <p className="text-gray-600">
-                      I agree to the Terms of Use, Refund Policy, and Privacy
-                      Policy.
-                    </p>
-                    <button
-                      type="submit"
-                      className="bg-primarycolor text-white p-2 rounded-md flex items-center gap-2"
-                    >
-                      Donate
-                    </button>
-                  </form>
+                  <button className="px-6 py-4 w-fit bg-primarycolor border-2 border-primarycolor/60 text-white rounded-full">Donate</button>
                 </div>
               )}
               {activeTab === "monthly" && (
                 <div className="">
                   <div className="text-center flex flex-col gap-4 items-center">
                     <h2 className="text-2xl font-medium mb-4">
-                      Monthly Support or Partner with us
+                    🤝 Join as a Monthly Sponsor
                     </h2>
                     <p className="text-gray-600">
-                      Join our community of consistent givers who create
-                      sustainable change.
+                    Are you a business or organization looking to make a difference? Partner with Common Person Relief to amplify your impact and support underprivileged communities. Let’s work together to build a world where no one is left behind.
+
+
                     </p>
                     <Link href="/contact">
-                      <button className="bg-primarycolor text-white p-2 rounded-md flex items-center gap-2">
-                        Send us a Message
+                      <button className="bg-primarycolor text-white p-4 rounded-md flex items-center gap-2">
+                      Partner With Us
                       </button>
                     </Link>
                   </div>
