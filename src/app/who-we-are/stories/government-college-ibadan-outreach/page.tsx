@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 
 const images = [
+  "/images/outreach/1.jpg",
   "/images/outreach/2.jpg",
   "/images/outreach/3.jpg",
   "/images/outreach/4.jpg",
@@ -11,10 +12,7 @@ const images = [
   "/images/outreach/8.jpg",
   "/images/outreach/9.jpg",
   "/images/outreach/10.jpg",
-  "/images/outreach/11.jpg",
-  "/images/outreach/13.jpg",
-  "/images/outreach/14.jpg",
-  "/images/outreach/15.jpg",
+
 ];
 
 const CommunityOutreach = () => {
