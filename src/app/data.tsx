@@ -19,7 +19,7 @@ export const blogs: Blog[] = [
       id: 11,
       title:
         " Restoring Hope at Oni and Sons Memorial Hospital: A Day of Care and Compassion",
-      image: "/images/outreach/1.jpg",
+      image: "/images/outreach/11.jpg",
       link: "/who-we-are/stories/oni-and-sons-outreach",
       description: "A Mission of Care and Comfort",
     },
