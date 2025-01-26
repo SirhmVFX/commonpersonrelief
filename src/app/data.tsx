@@ -5,7 +5,7 @@ interface Blog {
     link: string;
     description: string;
   }
-
+  
 export const blogs: Blog[] = [
     {
       id: 10,
@@ -13,7 +13,15 @@ export const blogs: Blog[] = [
         " Empowering Students at Government College Ibadan: A Community Outreach Recap",
       image: "/images/outreach/1.jpg",
       link: "/who-we-are/stories/government-college-ibadan-outreach",
-      description: "Together, we bring hope and relief to those in need.",
+      description: "A Mission of Care and Comfort",
+    },
+    {
+      id: 11,
+      title:
+        " Restoring Hope at Oni and Sons Memorial Hospital: A Day of Care and Compassion",
+      image: "/images/outreach/1.jpg",
+      link: "/who-we-are/stories/oni-and-sons-outreach",
+      description: "A Mission of Care and Comfort",
     },
     {
       id: 1,
