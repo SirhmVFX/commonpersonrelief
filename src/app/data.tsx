@@ -24,6 +24,14 @@ export const blogs: Blog[] = [
       description: "A Mission of Care and Comfort",
     },
     {
+      id: 12,
+      title:
+        " Bringing Relief and Smiles: Our Outreach at Tabitha Homes",
+      image: "/images/outreach/21.jpg",
+      link: "/who-we-are/stories/tabitha-homes-outreach",
+      description: "Acts of kindness, no matter how small, can change lives.",
+    },
+    {
       id: 1,
       title:
         " January 2025 Events: Empowering Communities Through Outreach in the state of Ibadan",
