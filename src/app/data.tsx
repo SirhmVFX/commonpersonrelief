@@ -37,7 +37,7 @@ export const blogs: Blog[] = [
         " Spreading Hope at Seriko Sabo: A Day of Impactful Outreach",
       image: "/images/outreach/31.jpg",
       link: "/who-we-are/stories/seriki-sabo-outreach",
-      description: "Seriko Sabo is home to many families who face challenges ranging from food insecurity to limited access to healthcare.",
+      description: "Seriki Sabo is home to many families who face challenges ranging from food insecurity to limited access to healthcare.",
     },
     {
       id: 1,
