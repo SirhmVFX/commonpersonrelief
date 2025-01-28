@@ -18,7 +18,7 @@ export default function SerikoSaboOutreach() {
 
     return (
         <div className="max-w-4xl mx-auto p-6">
-            <h1 className="text-3xl font-bold text-gray-900">Spreading Hope at Seriko Sabo: A Day of Impactful Outreach</h1>
+            <h1 className="text-3xl font-bold text-gray-900">Spreading Hope at Seriki Sabo: A Day of Impactful Outreach</h1>
             <p className="mt-2 text-gray-700">Seriki Sabo - Our Last Stop for that day</p>
             
             <div className="mt-4">
