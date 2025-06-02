@@ -107,6 +107,12 @@ function Footer() {
                 href="/what-we-serve"
                 className="text-[#DCECBA] hover:text-white transition-colors"
               >
+                Programs
+              </Link>
+              <Link
+                href="/what-we-serve"
+                className="text-[#DCECBA] hover:text-white transition-colors"
+              >
                 What we serve
               </Link>
             </div>
@@ -143,6 +149,8 @@ function Footer() {
             </div>
           </div>
         </div>
+
+        <h1 className="text-white pt-20 text-center">Copyright © 2025 Common Person Relief</h1>
       </div>
     </div>
   );
