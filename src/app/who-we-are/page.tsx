@@ -2,38 +2,83 @@ import Image from "next/image";
 import { BiCheck } from "react-icons/bi";
 
 function WhoWeAre() {
+  const standFor = [
+    {
+      id: 1,
+      title: "Equity & Inclusion",
+      desc: "We prioritize the underserved, ensuring that no one is left behind.",
+    },
+    {
+      id: 2,
+      title: "Compassion & Dignity",
+      desc: "We treat every individual with empathy and respect, recognizing their inherent worth.",
+    },
+    {
+      id: 3,
+      title: "Community-Led Development",
+      desc: "We work with communities, not just for them—co-designing solutions that reflect local realities.",
+    },
+    {
+      id: 4,
+      title: "Transparency & Accountability",
+      desc: "We uphold integrity in our operations, partnerships, and use of resources.",
+    },
+    {
+      id: 5,
+      title: "Sustainability",
+      desc: "We invest in long-term solutions that foster self-reliance and lasting impact.",
+    },
+  ];
+
   return (
     <div>
-      
       <div className="md:w-5/6 mx-auto p-4 pt-[80px] lg:pt-[120px] gap-4">
         <div className="flex flex-col items-start gap-4 ">
           <p className="text-primarycolor text-sm md:text-lg py-2 px-4 rounded-full border border-primarycolor">
             About us
           </p>
           <h1 className="text-3xl md:text-5xl lg:text-7xl font-medium my-2">
-            Empowering Lives, One Step at a Time
+            Who we are
           </h1>
         </div>
 
         <div className="flex flex-col gap-4 ">
           <p className="text-sm md:text-lg text-gray-500">
-            At Common Person Relief, we are driven by a shared commitment to
-            uplift the lives of underprivileged individuals across Africa. Since
-            our inception, we have worked tirelessly to bridge the gap in access
-            to essential resources such as food, education, healthcare, and
-            economic opportunities.
+            Common Person Relief (CPR) is a nonprofit organization dedicated to
+            uplifting vulnerable communities across Africa through inclusive and
+            sustainable development programs. We exist to serve the “common
+            person”—individuals and families who are often left behind due to
+            poverty, marginalization, and limited access to basic services.
+            Founded with a deep belief in equity, compassion, and dignity, CPR
+            empowers people to break free from systemic barriers and build a
+            better future for themselves and their communities.
           </p>
-          <p className="text-sm md:text-lg text-gray-500">
-            Our mission is to empower children, youth, and women by addressing
-            the root causes of poverty and inequality. Through strategic
-            programs and partnerships, we aim to create sustainable solutions
-            that bring hope, dignity, and opportunity to those who need it most.
-          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 py-8">
+            <div className="p-10 bg-gray-50/50 rounded-xl">
+              <h1 className="text-xl md:text-3xl lg:text-5xl font-medium my-2">
+                Our Mission
+              </h1>
+              <p className="text-sm md:text-lg text-gray-500">
+                To uplift and empower vulnerable communities in Africa through
+                grassroots, sustainable development programs.
+              </p>
+            </div>
+            <div className="p-10 bg-gray-50/50 rounded-xl">
+              <h1 className="text-xl md:text-3xl lg:text-5xl font-medium my-2">
+                Our Vision
+              </h1>
+              <p className="text-sm md:text-lg text-gray-500">
+                A world where every person—regardless of background or
+                circumstance—has the opportunity to live with dignity, achieve
+                their potential, and contribute to a thriving, resilient
+                community.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
-      
-      <div className="md:w-5/6 p-4 mx-auto">
+      <div className="md:w-5/6 p-4 mx-auto flex flex-col gap-20">
         <div className="w-full h-[200px] sm:h-[300px] md:h-[400px]">
           <Image
             src={"/images/corp.jpeg"}
@@ -43,173 +88,49 @@ function WhoWeAre() {
             className="w-full h-full object-cover rounded-lg"
           />
         </div>
-        <div className="py-6 sm:py-8 md:py-10 flex flex-col gap-4">
-          <div className="flex gap-2 items-center">
-            <BiCheck className="text-xl sm:text-2xl text-green-500 border border-green-500 rounded-full p-1 flex-shrink-0" />
-            <h1 className="text-xl sm:text-2xl font-medium">
-              What lead to the establishment of Common Person Relief
-            </h1>
-          </div>
-          <p className="text-gray-500 text-base sm:text-lg">
-            Common Person Relief was founded with the mission to support
-            underprivileged individuals across Africa, providing access to
-            essential resources such as education, healthcare, and economic
-            empowerment. We are dedicated to helping children, youth, and women
-            overcome challenges related to poverty, lack of education, and
-            limited opportunities. Our focus is on creating sustainable
-            solutions that improve lives and uplift communities, ensuring that
-            everyone has the chance to thrive and achieve their full potential.
-          </p>
-        </div>
-        <div className="py-6 sm:py-8 md:py-10 flex flex-col gap-4">
-          <div className="flex gap-2 items-center">
-            <BiCheck className="text-xl sm:text-2xl text-green-500 border border-green-500 rounded-full p-1 flex-shrink-0" />
-            <h1 className="text-xl sm:text-2xl font-medium">
-              How Common Person Relief plans to transform others
-            </h1>
-          </div>
-          <p className="text-gray-500 text-base sm:text-lg">
-            Common Person Relief plans to transform lives by focusing on three
-            key areas: education, economic empowerment, and health awareness. We
-            aim to provide free education to underserved children, ensuring they
-            have the tools to build brighter futures. Through vocational
-            training and support programs, we will empower individuals with
-            skills that enhance their economic opportunities. Additionally, we
-            will raise health awareness, addressing key issues like nutrition
-            and sanitation, to improve overall well-being. By providing these
-            essential services, we strive to create lasting change, helping
-            individuals and communities rise above poverty and reach their full
-            potential.
-          </p>
-        </div>
-      </div>
-      <div className="md:w-5/6  p-4 flex flex-col  mx-auto py-2 md:py-2  ">
-        <div className="justify-center items-center  flex flex-col md:flex-row md:gap-10">
-          <div className="w-full pt-10 md:pt-0 md:w-1/2">
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-medium py-6 md:py-10 border-b border-gray-200">
-              Our Vision
-            </h1>
-            <p className="text-gray-500 text-base md:text-lg py-6">
-              Our vision is to create a society where children, youth, and women
-              have equal access to essential services, including quality
-              healthcare, economic empowerment, education, clean water, and
-              climate resilience, regardless of their gender or religion.
-            </p>
-          </div>
-          <div className="w-full md:w-1/2">
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-medium py-6 md:py-10 border-b border-gray-200">
-              Our Mission
-            </h1>
-            <p className="text-gray-500 text-base md:text-lg py-6">
-              We are committed to creating opportunities for children, youth,
-              and women to benefit from initiatives focused on education,
-              quality healthcare, climate change, water access, and economic
-              empowerment.
-            </p>
-          </div>
-        </div>
 
-        <div className=" py-8 md:py-16 flex flex-col  justify-center md:flex-row gap-6 md:gap-10 items-center">
-          <div className="flex flex-col justify-between gap-4 w-full md:w-1/3">
-            <div>
-              <div className="flex gap-2 items-center">
-                <BiCheck className="text-xl sm:text-2xl text-green-500 border border-green-500 rounded-full p-1 flex-shrink-0" />
-                <h1 className="text-xl  font-medium">Integrity</h1>
-              </div>
-              <p className="text-gray-500 text-base sm:text-lg">
-                Honesty and strong moral principles guide us
-              </p>
-            </div>
-            <div className="h-[1px] w-full bg-gray-200"></div>
-            <div>
-              <div className="flex gap-2 items-center">
-                <BiCheck className="text-xl sm:text-2xl text-green-500 border border-green-500 rounded-full p-1 flex-shrink-0" />
-                <h1 className="text-xl  font-medium">Teamwork</h1>
-              </div>
-              <p className="text-gray-500 text-base sm:text-lg">
-                Together we can achieve anything
-              </p>
-            </div>
-          </div>
-          <div className="flex flex-col gap-4 w-full md:w-1/3">
-            <div>
-              <div className="flex gap-2 items-center">
-                <BiCheck className="text-xl sm:text-2xl text-green-500 border border-green-500 rounded-full p-1 flex-shrink-0" />
-                <h1 className="text-xl  font-medium">Passion</h1>
-              </div>
-              <p className="text-gray-500 text-base sm:text-lg">
-                A consistent desire to transform bad to good
-              </p>
-            </div>
-            <div className="h-[1px] w-full bg-gray-200"></div>
-            <div>
-              <div className="flex gap-2 items-center">
-                <BiCheck className="text-xl sm:text-2xl text-green-500 border border-green-500 rounded-full p-1 flex-shrink-0" />
-                <h1 className="text-xl  font-medium">Goodwill</h1>
-              </div>
-              <p className="text-gray-500 text-base sm:text-lg">
-                To build good long-lasting legacy
-              </p>
-            </div>
-          </div>
-          <div className="w-full md:w-1/3 h-[200px] mt-6 md:mt-0">
-            <Image
-              src="/images/mis.jpeg"
-              alt="mission-vision"
-              width={1000}
-              height={1000}
-              className="w-full h-full object-cover"
-            />
-          </div>
-        </div>
-      </div>
-      
-      <div className="md:w-5/6 mx-auto p-4 py-2 md:py-2">
-        <div className=" md:flex items-center gap-4 p-4 border-b border-gray-200">
-          <h1 className="text-3xl md:text-5xl lg:text-7xl font-medium md:w-1/2">
-            Our Initiatives
+        <div className="flex flex-col justify-center items-center">
+          <h1 className="text-xl md:text-3xl lg:text-5xl font-medium my-2">
+            What We Stand For
           </h1>
-          <p className="text-sm md:text-lg text-gray-500 md:w-1/2">
-            With the support of dedicated volunteers, partners, and donors,
-            we&apos;re creating lasting change one life at a time.
+          <p className="text-sm md:text-lg text-gray-500">
+            We are guided by core values that shape our actions and
+            relationships:
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 pt-10">
-          <div className="flex flex-col gap-4 p-4 bg-gray-50">
-            <h1 className="text-2xl md:text-3xl text-primarycolor font-medium">01</h1>
-            <h1 className="text-2xl md:text-3xl font-medium">Feeding programs to combat hunger.</h1>
-            <p className="text-sm md:text-lg text-gray-500">
-              Providing nutritious meals to combat hunger and improve the
-              well-being of vulnerable individuals and families.
-            </p>
-          </div>
-
-          <div className="flex flex-col gap-4 p-4 bg-gray-50">
-            <h1 className="text-2xl md:text-3xl text-primarycolor font-medium">02</h1>
-            <h1 className="text-2xl md:text-3xl font-medium">Free education for children in need.</h1>
-            <p className="text-sm md:text-lg text-gray-500">
-            Offering access to quality education at no cost, ensuring every child has the opportunity to learn and thrive.
-            </p>
-          </div>
-
-          <div className="flex flex-col gap-4 p-4 bg-gray-50">
-            <h1 className="text-2xl md:text-3xl text-primarycolor font-medium">03</h1>
-            <h1 className="text-2xl md:text-3xl font-medium">Vocational training and economic empowerment.</h1>
-            <p className="text-sm md:text-lg text-gray-500">
-            Equipping individuals with skills and resources to achieve financial independence and create sustainable livelihoods.
-            </p>
-          </div>
-          <div className="flex flex-col gap-4 p-4 bg-gray-50">
-            <h1 className="text-2xl md:text-3xl text-primarycolor font-medium">04</h1>
-            <h1 className="text-2xl md:text-3xl font-medium">Emergency relief initiatives.</h1>
-            <p className="text-sm md:text-lg text-gray-500">
-            Delivering essential medical care and timely support during crises to save lives and build healthier communities.
-            </p>
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {standFor.map((stand) => (
+            <div key={stand.id} className=" p-4 flex flex-col gap-4">
+              <div className="flex gap-2 items-center">
+                <BiCheck className="text-xl sm:text-2xl text-green-500 border border-green-500 rounded-full p-1 flex-shrink-0" />
+                <h1 className="text-xl sm:text-2xl font-medium text-black/80">
+                  {stand.title}
+                </h1>
+              </div>
+              <p className="text-gray-400 text-base sm:text-lg">{stand.desc}</p>
+            </div>
+          ))}
         </div>
       </div>
 
+      <div className="md:w-5/6 p-4 mx-auto flex flex-col gap-4 mb-10">
+      <div className="flex flex-col justify-center items-center"></div>
+        <h1 className="text-xl md:text-3xl lg:text-5xl font-medium my-2 ">
+          What Makes Us Different
+        </h1>
+        <p className="text-sm md:text-lg text-gray-500">
+          At CPR, we believe lasting change begins at the grassroots. Our
+          approach is deeply community-centered—we listen first, then act. We
+          collaborate with local leaders, schools, healthcare providers, and
+          families to design and implement programs that are practical,
+          inclusive, and relevant. Whether we’re drilling boreholes in
+          water-scarce regions, distributing school supplies, supporting digital
+          literacy for youth, or providing emergency food relief—our work is
+          driven by the lived experiences of those we serve. We don’t just
+          provide aid—we empower.
+        </p>
+        </div>
      
     </div>
   );
