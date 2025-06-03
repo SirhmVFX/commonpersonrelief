@@ -6,7 +6,7 @@ export default function About() {
     <div>
       <div className="md:w-5/6 mx-auto p-4 pt-[90px] md:pt-[90px] h-[600px]">
         <Image
-          src="/images/op.jpeg"
+          src="https://res.cloudinary.com/dkeh0cumc/image/upload/v1748891550/corp_suuem4.jpg"
           alt="about"
           width={1000}
           height={1000}
