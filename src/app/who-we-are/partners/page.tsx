@@ -9,7 +9,7 @@ export default function Partners() {
       <div className="md:w-5/6 mx-auto p-4 pt-20 md:py-16 lg:py-32 flex flex-col items-center gap-8">
         <div className="w-full h-[300px] md:h-[400px] mb-8 md:mb-0 relative ">
           <Image
-            src="/images/pa.jpg"
+            src="https://res.cloudinary.com/dkeh0cumc/image/upload/v1748891660/pa_pkqocj.jpg"
             alt="partner"
             width={1000}
             height={1000}
