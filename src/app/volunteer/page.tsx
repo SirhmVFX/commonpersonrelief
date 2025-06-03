@@ -26,7 +26,7 @@ export default function Volunteer() {
       <div className="w-full h-[50vh] md:h-[70vh] pt-16">
         <div className="w-full h-full relative">
           <Image
-            src="/images/mn.jpg"
+            src="https://res.cloudinary.com/dkeh0cumc/image/upload/v1748891825/mn_taoxwu.jpg"
             alt="donate"
             width={1000}
             height={1000}
