@@ -7,7 +7,7 @@ export default function WhoWeServe() {
       <div className="md:w-5/6 py-20 mx-auto pt-24 md:pt-32 flex gap-8">
         <div className="w-[40%]">
           <Image
-            src="/images/workp.jpg"
+            src="https://res.cloudinary.com/dkeh0cumc/image/upload/v1748891730/workp_zr2ybk.jpg"
             alt="wort"
             width={1000}
             height={1000}
