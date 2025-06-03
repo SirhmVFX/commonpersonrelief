@@ -32,7 +32,7 @@ export default function Donate() {
       <div className="w-full h-[70vh] md:h-[70vh] flex flex-col items-center justify-center pt-[80px] p-4">
         <div className="w-full h-full relative ">
           <Image
-            src="/images/2.jpg"
+            src="https://res.cloudinary.com/dkeh0cumc/image/upload/v1748891900/2_pkacld.jpg"
             alt="donate"
             width={1000}
             height={1000}
