@@ -17,17 +17,18 @@ export default function SerikoSaboOutreach() {
     ];
 
     return (
-        <div className="max-w-4xl mx-auto p-6">
+        <div className="max-w-6xl mx-auto pt-20">
             <h1 className="text-3xl font-bold text-gray-900">Spreading Hope at Seriki Sabo: A Day of Impactful Outreach</h1>
             <p className="mt-2 text-gray-700">Seriki Sabo - Our Last Stop for that day</p>
             
             <div className="mt-4">
                 <Image
-                    src="/images/seriko-sabo-1.jpg"
+                    src="/images/outreach/31.jpg"
                     alt="Seriko Sabo Outreach"
-                    width={1000}
-                    height={500}
+                    width={10000}
+                    height={10000}
                     className="w-full h-auto object-cover rounded-lg"
+                    objectFit="cover"
                 />
             </div>
             
@@ -68,7 +69,7 @@ export default function SerikoSaboOutreach() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                     {images.map((src, index) => (
                         <div key={index} className="w-full h-64 relative">
-                            <Image src={src} alt={`Outreach ${index + 1}`} layout="fill" objectFit="cover" className="rounded-lg" />
+                            <Image src={src} alt={`Outreach ${index + 1}`} layout="fill" className="rounded-lg" />
                         </div>
                     ))}
                 </div>
