@@ -12,8 +12,11 @@ import {
 import { FaHandshake } from "react-icons/fa";
 import { useState, useEffect, useRef } from "react";
 import { CgClose } from "react-icons/cg";
+import { usePathname } from "next/navigation";
+
 
 function Header2() {
+  const pathname = usePathname();
   const [showWhoDropdown, setShowWhoDropdown] = useState(false);
   const [showServeDropdown, setShowServeDropdown] = useState(false);
   const [showGiveDropdown, setShowGiveDropdown] = useState(false);
@@ -68,15 +71,16 @@ function Header2() {
           showServeDropdown ||
           showGiveDropdown ||
           isMobileMenuOpen ||
+          pathname !== "/" ||
           isScrolled
-            ? "bg-white text-black/80 backdrop-blur-md"
+            ? "bg-white text-black  backdrop-blur-md"
             : "  backdrop-blur-md"
         }`}
       >
         <div className="mx-auto w-5/6 flex justify-between items-center py-6">
           <Link href="/" className="w-[125px]">
             <Image
-              src="/images/logo.png"
+              src="/images/logo3.svg"
               alt="Common Person Relief"
               width={100}
               height={100}
@@ -92,8 +96,9 @@ function Header2() {
                     showServeDropdown ||
                     showGiveDropdown ||
                     isMobileMenuOpen ||
+                    pathname !== "/" ||
                     isScrolled
-                      ? " text-[#000]/80 "
+                      ? " text-[#000] "
                       : " "
                   }`} 
                 href="/who-we-are"
@@ -112,8 +117,9 @@ function Header2() {
                     showServeDropdown ||
                     showGiveDropdown ||
                     isMobileMenuOpen ||
+                    pathname !== "/" ||
                     isScrolled
-                      ? " text-[#000]/80 "
+                      ? " text-[#000] "
                       : " "
                   }`} 
                 href="/what-we-serve"
@@ -131,8 +137,9 @@ function Header2() {
                 showServeDropdown ||
                 showGiveDropdown ||
                 isMobileMenuOpen ||
+                pathname !== "/" ||
                 isScrolled
-                  ? " text-[#000]/80 "
+                  ? " text-[#000] "
                   : " "
               }`} 
               href="/"
@@ -152,8 +159,9 @@ function Header2() {
                 showServeDropdown ||
                 showGiveDropdown ||
                 isMobileMenuOpen ||
+                pathname !== "/" ||
                 isScrolled
-                  ? " text-[#000]/80 "
+                  ? " text-[#000] "
                   : " "
               }`} 
               href="/contact"
