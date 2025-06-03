@@ -35,7 +35,7 @@ export default function Home() {
           <div className="w-full flex flex-col md:flex-row gap-10 items-center ">
             <div className="w-2/5 h-[300px] md:h-[300px] lg:h-[400px]">
               <Image
-                src="/images/wee.png"
+                src="https://res.cloudinary.com/dkeh0cumc/image/upload/v1748890806/wee_khesmq.png"
                 alt="about"
                 width={1000}
                 height={1000}
@@ -86,31 +86,31 @@ export default function Home() {
               {[
                 {
                   title: "Food Programs",
-                  img: "/images/food.jpeg",
+                  img: "https://res.cloudinary.com/dkeh0cumc/image/upload/v1748890932/food_jmkjmz.jpg",
                   description:
                     "Distribution of food packs, establishing food banks, and organizing community kitchens in underserved areas.",
                 },
                 {
                   title: "Shelter Programs",
-                  img: "/images/shelt.jpeg",
+                  img: "https://res.cloudinary.com/dkeh0cumc/image/upload/v1748890932/shelt_rjrmgq.jpg",
                   description:
                     "Providing temporary and permanent housing solutions, offering shelter kits for disaster-stricken areas.",
                 },
                 {
                   title: "Clothing Programs",
-                  img: "/images/cloth.jpg",
+                  img: "https://res.cloudinary.com/dkeh0cumc/image/upload/v1748890930/cloth_xttqvi.jpg",
                   description:
                     "Distributing essential clothing and winter wear to communities in need across the region.",
                 },
                 {
                   title: "Education & Skills Training",
-                  img: "/images/edu.jpeg",
+                  img: "https://res.cloudinary.com/dkeh0cumc/image/upload/v1748890931/edu_wivjwo.jpg",
                   description:
                     "Offering vocational training, literacy programs, and skill development workshops to empower communities.",
                 },
                 {
                   title: "Emergency Response",
-                  img: "/images/emerg.jpg",
+                  img: "https://res.cloudinary.com/dkeh0cumc/image/upload/v1748890932/emerg_ia247u.jpg",
                   description:
                     "Rapid deployment of resources and support during natural disasters, crises, and emergency situations.",
                 },
@@ -178,7 +178,7 @@ export default function Home() {
           </h1>
         <div className="w-full h-full relative">
           <Image
-            src={"/images/wort1.jpg"}
+            src={"https://res.cloudinary.com/dkeh0cumc/image/upload/v1748891229/wort1_aq9rnn.jpg"}
             width={1000}
             height={1000}
             alt="event"
