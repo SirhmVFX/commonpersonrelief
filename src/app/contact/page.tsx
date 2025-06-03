@@ -96,10 +96,10 @@ export default function Contact() {
             
 
             <div className="flex gap-4">
-            <Link href={"#"} className="text-primarycolor">Facebook</Link>
-            <Link href={"#"} className="text-primarycolor">Instagram </Link>
-            <Link href={"#"} className="text-primarycolor">LinkedIn</Link>
-            <Link href={"#"} className="text-primarycolor">Twitter/X</Link>
+            <Link href={"https://web.facebook.com/profile.php?id=61570392260899"} className="text-primarycolor">Facebook</Link>
+            <Link href={"https://www.instagram.com/cpr_inc_hq/"} className="text-primarycolor">Instagram </Link>
+            <Link href={"https://x.com/CPR_INC_HQ"} className="text-primarycolor">LinkedIn</Link>
+            <Link href={"https://www.linkedin.com/company/common-person-relief/posts/?feedView=all"} className="text-primarycolor">Twitter/X</Link>
             </div>
           </div>
         </div>
